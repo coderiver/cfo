@@ -1,0 +1,132 @@
+.nav
+  background: $blue
+  color: #fff
+  height: 60px
+  overflow: hidden
+  +clr
+  .l
+    position: relative
+    background: none
+
+.nav__slide
+  overflow: hidden
+  position: relative
+
+.nav__search
+  width: 100%
+  height: 60px
+  margin-top: -60px
+  +transition(margin-top 0.2s linear)
+  +clr
+  &.is-visible
+    margin-top: 0
+
+.nav__search-field
+  position: relative
+  margin-right: 70px
+  padding-top: 13px
+  input
+    display: block
+    width: 100%
+    box-sizing: border-box
+    padding: 9px 40px 9px 15px
+    font-size: 14px
+    +head-r
+    border: none
+    border-radius: 3px
+
+.nav__search-icon
+  position: absolute
+  top: 13px
+  bottom: 0
+  right: 0
+  width: 40px
+  text-align: center
+  background: none
+  &:before
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    +icon(search-input)
+  &:hover
+    &:before
+      +icon(search-input-h)
+
+.nav__search-close
+  display: block
+  float: right
+  width: 70px
+  box-sizing: border-box
+  padding: 15px 0 0 20px
+  +head-r
+  font-size: 14px
+  line-height: 1
+  cursor: pointer
+  +tr-color
+  color: #919CA8
+  &:hover
+    color: #FFF
+
+.nav__logo
+  position: absolute
+  top: 0
+  display: block
+  margin-left: -60px
+  width: 60px
+  height: 60px
+  line-height: 60px
+  text-align: center
+  &:before
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    +s(logo)
+
+.nav__links
+  margin-right: 80px
+  line-height: 60px
+  font-size: 0
+  +head-c
+  text-transform: uppercase
+  li
+    display: inline-block
+    vertical-align: top
+    font-size: 16px
+    &.is-active
+      a
+        color: $red
+        text-decoration: none
+  a
+    display: block
+    padding: 0 10px
+    text-decoration: none
+    color: #E7ECF1
+    text-shadow: 0 -1px 0 #0a233a
+    +tr-color
+    &:hover
+      color: #fff
+      text-decoration: underline
+
+.nav__icons
+  float: right
+  margin-right: -10px
+  height: 60px
+  line-height: 60px
+  text-align: right
+  .icon
+    vertical-align: middle
+    padding: 0 10px
+
+.menuFlexBtn
+  position: relative
+
+.menuFlexPopup
+  display: none
+  position: absolute
+  top: 100%
+  right: 0
+  background: $red
+  width: 200px
+  li
+    display: block
+    line-height: 30px

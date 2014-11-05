@@ -1,0 +1,41 @@
+.icon
+  display: inline-block
+  font-size: 0
+  text-align: center
+  &:before
+    content: ""
+    position: relative
+    display: inline-block
+    vertical-align: inherit
+
+.icon_search
+  &:before
+    +icon(search)
+
+.icon_mail
+  &:before
+    +icon(mail)
+
+.icon_mail-red
+  &:before
+    +icon(mail-red)
+
+.icon_arr-l
+  &:before
+    +icon(arr-l)
+
+.icon_arr-r
+  &:before
+    +icon(arr-r)
+
+.icon_calendar-blue
+  &:before
+    +icon(calendar-blue)
+
+
+.wrap
+  position: relative
+  +clr
+
+.title
+  +head-b

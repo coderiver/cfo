@@ -2,7 +2,7 @@
 // ## Sprites
 //     .whatever
 //          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
+//      +s(codedby) //gets default value for spritemap as $icons
 // ### animation example
 //     +include keyframes(rotate)
 //        from
@@ -11,156 +11,120 @@
 //           +rotate(360)
 // ## animation usage
 //     body:hover
-// 	    +animation(rotate 200s linear infinite)
+//      +animation(rotate 200s linear infinite)
 // ## animations easing, see easings.net for full list and examples, tnx @ai
 //     transition: all 1.2s ceaser($ease-in)
 // ## gradient example
 //     +background-image(linear-gradient(#232323, #5c5c5c));
 //     +g(#232323, #5c5c5c);
-//	   horizontal
+//     horizontal
 //     +gh(#232323, #5c5c5c);
 // ## making bw-images
 //     img
-//			@extend %gray
+//      @extend %gray
 // ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
 //     +min-screen(320)
-//			display: none
+//      display: none
 // +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
 //
 // ## use cycles
 //     @for $i from 1 through 3
 //       .item-#{$i}
-//			width: 2em * $i;
+//      width: 2em * $i;
 //     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
+//        #{$s}
+//        display: none
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+//  font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
-// 	+pic("blabla.png")
+//  +pic("blabla.png")
 // span
-// 	+png(blabla)
+//  +png(blabla)
 // p
-// 	+jpg(bla)
+//  +jpg(bla)
 
+$blue: #15395A
+$red: #ff4a39
+$text: #333
+$body: #F5F2F0
+$border: #cdcdcd
+$link: #2a5d8c
+
++font("GHeadlineR", headline-regular)
++font("GHeadlineC", headline-condensed)
++font("GHeadlineB", headline-bold)
++font("GHeadlineI", headline-italic)
++font("PTSansR", sans-regular)
++font("PTSansB", sans-bold)
+
+=sans-r
+  font-family: "PTSansR", Arial, Helvetica, sans-serif
+  font-weight: normal
+  font-style: normal
+=sans-b
+  font-family: "PTSansB", Arial, Helvetica, sans-serif
+  font-weight: normal
+  font-style: normal
+=head-r
+  font-family: "GHeadlineR", Arial, Helvetica, sans-serif
+  font-weight: normal
+  font-style: normal
+=head-c
+  font-family: "GHeadlineC", Arial, Helvetica, sans-serif
+  font-weight: normal
+  font-style: normal
+=head-b
+  font-family: "GHeadlineB", Arial, Helvetica, sans-serif
+  font-weight: normal
+  font-style: normal
+=head-i
+  font-family: "GHeadlineI", Arial, Helvetica, sans-serif
+  font-weight: normal
+  font-style: normal
 
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
-	line-height: 1.4
-
-
-// common blocks      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  +head-c
+  font-size: 16px
+  line-height: 1.25
+  color: $text
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
+  background: $body
+
+a
+  color: inherit
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+input[type="text"],
+input[type="password"],
+textarea
+  padding: 6px 9px
+  font: 14px Arial, Helvetica, sans-serif
+  color: $text
+  background: #fff
+  border: 1px solid $border
+
+=tr-color
+  +transition(color 0.2s linear)
+
+=tr-back
+  +transition(background 0.3s linear)
+
+=tr-all
+  +transition(all 0.3s linear)
+
+=retina
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    @content
+
+=icon($icon-name)
+  +s($icon-name)
+  +retina
+    +sr($icon-name)

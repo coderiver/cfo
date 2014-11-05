@@ -1,0 +1,64 @@
+extend layouts/_layout
+
+block title
+  title Main Page
+
+block main
+  .l
+    include includes/_header
+
+    .wrap
+      //begin slider
+      .slider
+        .slider__list.js-cycle
+          div.slider__slide
+            a(href="#")
+              img(src="http://placehold.it/610x360")
+              .slider__slide-caption
+                strong
+                  | Текст в одну строчку
+          div.slider__slide
+            a(href="#")
+              img(src="http://placehold.it/610x360")
+              .slider__slide-caption
+                strong
+                  | Текст в одну строчку
+          div.slider__slide
+            a(href="#")
+              img(src="http://placehold.it/610x360")
+              .slider__slide-caption
+                strong
+                  | Текст в одну строчку
+          div.slider__slide
+            a(href="#")
+              img(src="http://placehold.it/610x360")
+              .slider__slide-caption
+                strong
+                  | Длинный текст в две строки. Длинный текст в две строки.
+                  | Длинный текст в две строки
+          div.slider__slide
+            a(href="#")
+              img(src="http://placehold.it/610x360")
+              .slider__slide-caption
+                strong
+                  | Длинный текст в две строки. Длинный текст в две строки.
+                  | Длинный текст в две строки. Длинный текст в две строки.
+        .slider__nav
+          .slider__prev
+            i.icon.icon_arr-l
+          .slider__next
+            i.icon.icon_arr-r
+      //end slider
+
+      //begin speech
+      .speech
+        .title
+          | Прямая речь
+        .speech__pic
+          img(src="img/face.jpg")
+        blockquote
+          a(href="#")
+            | "Россияне, изменившие мир» — таким будет лейтмотив Форума будущих
+            | интеллектуальных лидеров России. Верю, что его участники, одаренные
+            | школьники,создадут новые импульсы для развития всего человечества
+      //end speech

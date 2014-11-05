@@ -1,0 +1,47 @@
+//begin nav
+.nav
+  .l
+    a(href="index.html").nav__logo
+    .nav__slide
+      //begin nav__search
+      .nav__search
+        span.nav__search-close
+          | Закрыть поиск
+        fieldset.nav__search-field
+          input(type="text", placeholder="Поиск по сайту")
+          button.nav__search-icon
+      //end nav__search
+
+      .nav__icons
+        a(href="#").icon.icon_search
+        a(href="#").icon.icon_mail
+
+      //begin nav__links
+      nav.nav__links
+        ul.menu-flex
+          li.is-active
+            a(href="#")
+              | На главную
+          li
+            a(href="#")
+              | ЦФО
+          li
+            a(href="#")
+              | Полномочный представитель
+          li
+            a(href="#")
+              | ГФИ
+          li
+            a(href="#")
+              | Документы
+          li
+            a(href="#")
+              | Совещательные органы
+          li
+            a(href="#")
+              | Общество
+          li
+            a(href="#")
+              | Пресс-центр
+      //end nav__links
+//end nav

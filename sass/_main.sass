@@ -1,216 +1,160 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header
+  position: relative
+  height: 60px
+  line-height: 60px
+  +clr
+  .title
+    display: inline-block
+    font-size: 40px
+  &:before
+    content: ""
+    position: absolute
+    z-index: 2
+    top: 0
+    left: -65px
+    height: 20px
+    width: 3px
+    background: $blue
+    border-top: 20px solid #d9d9d9
+    border-bottom: 20px solid $red
+
+.header__links
+  float: right
+  +head-r
+  a
+    display: inline-block
+    vertical-align: middle
+    color: $link
+  .icon_mail-red
+    margin-right: 15px
+
+.header__calendar
+  position: absolute
+  top: 100%
+  right: -65px
+  text-align: center
+  width: 64px
+  height: 64px
+  border: 1px solid $border
+  line-height: 1.5
+  &:hover
+    text-decoration: none
+  .icon
+    display: block
+    margin-top: 18px
+    text-align: center
+  span
+    display: block
+    text-align: center
+    font-size: 10px
+    text-transform: uppercase
+    +head-r
+    color: $red
+
+
+.slider
+  width: percentage(610/955)
+  height: 360px
+  overflow: hidden
+  position: relative
+
+.slider__slide
+  height: 360px
+  position: relative
+  img
+    display: block
+    height: 100%
+  > a
+    display: block
+.slider__slide-caption
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  box-sizing: border-box
+  min-height: 60px
+  line-height: 60px
+  padding: 10px 145px 10px 25px
+  background: #000000
+  background: rgba(0,0,0,0.6)
+  color: #FFF
+  text-shadow: 0 -1px 3px #051727
+  font-size: 19px
+  line-height: 1
+  strong
+    font-weight: normal
+
+
+.slider__nav
+  position: absolute
+  z-index: 101
+  bottom: 0
+  right: 0
+  +clr
+
+.slider__prev,
+.slider__next
+  float: left
+  width: 60px
+  height: 60px
+  line-height: 60px
+  text-align: center
+  background: $red
+  +user-select(none)
+  cursor: pointer
+  +tr-back
+  &:hover
+    background: $blue
+  .icon
+    vertical-align: middle
+
+
+.speech
+  position: absolute
+  padding: 20px 20px 0 30px
+  box-sizing: border-box
+  top: 0
+  right: 0
+  bottom: 0
+  width: percentage(345/955)
+  border: 1px solid $border
+  border-width: 1px 1px 1px 0
+  blockquote
+    position: relative
+    padding: 90px 20px 0 0
+    +head-i
+    font-size: 16px
+    line-height: 1.5
+    a
+      padding-top: 6px
+    &:before
+      content: ""
+      position: absolute
+      top: 20px
+      left: 0
+      +icon(quote-big)
+    &:after
+      content: ""
+      position: absolute
+      bottom: 4px
+      right: 0
+      +icon(quote)
+  .title
+    display: inline-block
+    padding-bottom: 18px
+    border-bottom: 1px solid $border
+    font-size: 30px
+    line-height: 1
+
+.speech__pic
+  position: absolute
+  top: 18px
+  right: 0
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    background: url('../img/face-overlay.png')
+    width: 210px
+    height: 265px
