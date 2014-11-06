@@ -53,6 +53,9 @@ $text: #333
 $body: #F5F2F0
 $border: #cdcdcd
 $link: #2a5d8c
+$meta: #7c7c7c
+
+$lightblue: #EBEFF2
 
 +font("GHeadlineR", headline-regular)
 +font("GHeadlineC", headline-condensed)
@@ -87,7 +90,7 @@ $link: #2a5d8c
   font-style: normal
 
 body
-  +head-c
+  +head-r
   font-size: 16px
   line-height: 1.25
   color: $text
@@ -102,6 +105,13 @@ a
   &:hover
     text-decoration: underline
 
+hr
+  width: 100%
+  height: 1px
+  background: $border
+  border: none
+  margin: 0
+
 input[type="text"],
 input[type="password"],
 textarea
@@ -111,6 +121,20 @@ textarea
   background: #fff
   border: 1px solid $border
 
+.float-left
+  float: left
+
+.float-right
+  float: right
+
+.out
+  // margin-top: 60px
+
+.main-wrap
+  background: #FFF
+  padding-top: 60px
+  padding-bottom: 60px
+
 =tr-color
   +transition(color 0.2s linear)
 
@@ -118,7 +142,7 @@ textarea
   +transition(background 0.3s linear)
 
 =tr-all
-  +transition(all 0.3s linear)
+  +transition(all 0.2s linear)
 
 =retina
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)

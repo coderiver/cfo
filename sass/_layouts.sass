@@ -2,5 +2,21 @@
   max-width: 955px
   min-width: 320px
   margin: 0 auto
-  padding: 0 65px
-  background: #FFF
+  padding-left: 65px
+  padding-right: 65px
+  +r(1100)
+    padding-left: 20px
+    padding-right: 20px
+
+.l-three-col
+  +clr
+  .col-one,
+  .col-two
+    float: left
+    width: percentage(305/955)
+    padding-right: percentage(50/955)
+    box-sizing: border-box
+  .col-three
+    float: right
+    width: percentage(345/955)
+    box-sizing: border-box

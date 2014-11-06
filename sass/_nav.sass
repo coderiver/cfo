@@ -1,4 +1,9 @@
 .nav
+  position: fixed
+  z-index: 200
+  top: 0
+  left: 0
+  right: 0
   background: $blue
   color: #fff
   height: 60px
@@ -7,6 +12,19 @@
   .l
     position: relative
     background: none
+  &_footer
+    position: static
+    .nav__icons
+      margin-right: 0
+      a
+        +head-c
+        text-transform: uppercase
+        color: $red
+  +r(1100)
+    .nav__slide
+      margin-left: 40px
+    .nav__logo
+      margin-left: -20px
 
 .nav__slide
   overflow: hidden
@@ -74,6 +92,7 @@
   margin-left: -60px
   width: 60px
   height: 60px
+  font-size: 0.1px
   line-height: 60px
   text-align: center
   &:before

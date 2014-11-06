@@ -1,5 +1,6 @@
 .icon
   display: inline-block
+  position: relative
   font-size: 0
   text-align: center
   &:before
@@ -32,10 +33,73 @@
   &:before
     +icon(calendar-blue)
 
+.icon_close
+  +icon(close)
+  &:hover
+    +icon(close-h)
+
+.icon_back
+  +icon(arr-l-dark)
+  &:hover
+    +icon(arr-l-red)
+
 
 .wrap
   position: relative
   +clr
 
 .title
+  display: inline-block
   +head-b
+  font-size: 30px
+  line-height: 1
+  a
+    text-decoration: underline
+    +tr-color
+    &:hover
+      color: $red
+  &.has-border
+    padding-bottom: 29px
+    border-bottom: 1px solid $border
+
+.title-small
+  display: inline-block
+  +head-c
+  font-size: 26px
+  line-height: 1.1
+
+
+.link-more
+  color: $link
+  font-style: italic
+
+
+.list
+  li
+    margin-top: 20px
+    line-height: 1.35
+  a
+    padding-top: 3px
+
+.meta
+  display: block
+  margin-top: 5px
+  font: italic 12px/1.4 Helvetica, Arial, sans-serif
+  color: $meta
+
+.btn
+  padding: 19px 30px 21px
+  +head-r
+  font-size: 16px
+  box-sizing: border-box
+  color: white
+  text-align: center
+  background: #15395a
+  border: none
+  +tr-all
+  &_light
+    background: none
+    color: $link
+    border: 1px solid $border
+    &:hover
+      color: $red
