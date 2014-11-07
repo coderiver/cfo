@@ -49,7 +49,7 @@
   +clr
 
 .title
-  display: inline-block
+  display: block
   +head-b
   font-size: 30px
   line-height: 1
@@ -59,14 +59,19 @@
     &:hover
       color: $red
   &.has-border
+    display: inline-block
     padding-bottom: 29px
     border-bottom: 1px solid $border
+  +r(600)
+    font-size: 20px
 
 .title-small
   display: inline-block
   +head-c
   font-size: 26px
   line-height: 1.1
+  +r(600)
+    font-size: 18px
 
 
 .link-more
@@ -103,3 +108,43 @@
     border: 1px solid $border
     &:hover
       color: $red
+
+.radio-btn
+  display: inline-block
+  position: relative
+  padding-left: 40px
+  cursor: pointer
+  input[type="radio"]
+    position: absolute
+    top: 4px
+    left: 0
+    opacity: 0
+  span
+    display: inline-block
+    &:before
+      content: ""
+      position: absolute
+      top: 4px
+      left: 0
+      width: 12px
+      height: 12px
+      border: 1px solid $border
+      border-radius: 50%
+    &:after
+      display: none
+      content: ""
+      position: absolute
+      top: 9px
+      left: 5px
+      width: 4px
+      height: 4px
+      border-radius: 50%
+      background: $text
+  input[type="radio"]:checked
+    + span:after
+      display: block
+
+.eq-ie8 .radio-btn
+  span
+    &:before, &:after
+      display: none

@@ -1,0 +1,15 @@
+extends layouts/_layout
+
+block title
+  title Index
+
+block main
+  ol.index-page-list
+    each page in ['main','inner-page']
+      li
+        a(href=page + '.html')=page
+
+  style
+    | .index-page-list {list-style-type: decimal; font-size: 20px; color: #333; margin: 100px 0; font: 18/1 Helvetica, Arial; padding-left: 40px};
+    | .index-page-list li {margin-top: 10px};
+    | .index-page-list li a {color: inherit};

@@ -16,18 +16,48 @@ head.ready(function() {
     $('.nav__search').removeClass('is-visible');
   });
 
-  $('.js-cycle').cycle({
-    slides: '> div',
-    prev: '.slider__prev',
-    next: '.slider__next',
-    fx: 'scrollHorz'
+  // $('.js-cycle').cycle({
+  //   slides: '> .slider__slide',
+  //   prev: '.slider__prev',
+  //   next: '.slider__next',
+  //   fx: 'scrollHorz'
+  // });
+
+  $('.slider__list').slick({
+    slide: '.slider__slide',
+    prevArrow: '.slider__prev',
+    nextArrow: '.slider__next',
+    autoplay: true,
+    autoplaySpeed: 8000
   });
 
-  // $('.js-slick').slick({
-  //   prevArrow: '.slider__prev',
-  //   nextArrow: '.slider__next',
-  //   autoplay: true,
-  //   autoplaySpeed: 8000
-  // });
+  $('.carousel__slides').slick({
+    slide: 'li',
+    prevArrow: '.carousel__prev',
+    nextArrow: '.carousel__next',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    // responsive: [
+    //     {
+    //       breakpoint: 900,
+    //       settings: {
+    //         slidesToShow: 3,
+    //         prevArrow: '.carousel__prev',
+    //         nextArrow: '.carousel__next'
+    //       }
+    //     },
+    //     {
+    //       breakpoint: 600,
+    //       settings: {
+    //         slidesToShow: 2,
+    //         prevArrow: '.carousel__prev',
+    //         nextArrow: '.carousel__next'
+    //       }
+    //     },
+    //   ]
+  });
 
 });

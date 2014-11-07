@@ -84,13 +84,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-retina-s652f6ba8e7.png": {
+	"\/img\/icons-retina-sb4cd24d840.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/img\/icons-retina-s652f6ba8e7.png",
-		"outputAbbreviatedPath": "\/img\/icons-retina-s652f6ba8e7.png",
+		"initialSize": 7974,
+		"inputAbbreviatedPath": "\/img\/icons-retina-sb4cd24d840.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina-sb4cd24d840.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -106,6 +106,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons-retina\/arr-l-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 318,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-l-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-l-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons-retina\/arr-l-dark.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -113,6 +124,17 @@
 		"initialSize": 318,
 		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-l-dark.png",
 		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-l-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-l-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 318,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-l-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-l-gray.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -139,6 +161,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons-retina\/arr-r-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 285,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-r-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-r-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons-retina\/arr-r-dark.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -146,6 +179,17 @@
 		"initialSize": 285,
 		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-r-dark.png",
 		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-r-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-r-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 317,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-r-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-r-gray.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -337,13 +381,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-s303c53de78.png": {
+	"\/img\/icons-sbb85b03887.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6806,
-		"inputAbbreviatedPath": "\/img\/icons-s303c53de78.png",
-		"outputAbbreviatedPath": "\/img\/icons-s303c53de78.png",
+		"initialSize": 7332,
+		"inputAbbreviatedPath": "\/img\/icons-sbb85b03887.png",
+		"outputAbbreviatedPath": "\/img\/icons-sbb85b03887.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -370,6 +414,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/arr-l-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-l-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-l-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/arr-l-dark.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -377,6 +432,17 @@
 		"initialSize": 277,
 		"inputAbbreviatedPath": "\/img\/icons\/arr-l-dark.png",
 		"outputAbbreviatedPath": "\/img\/icons\/arr-l-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-l-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 278,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-l-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-l-gray.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -403,6 +469,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/arr-r-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 273,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-r-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-r-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/arr-r-dark.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -410,6 +487,17 @@
 		"initialSize": 273,
 		"inputAbbreviatedPath": "\/img\/icons\/arr-r-dark.png",
 		"outputAbbreviatedPath": "\/img\/icons\/arr-r-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-r-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 274,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-r-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-r-gray.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -634,14 +722,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
+	"\/jade\/includes\/_carousel.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/jade\/includes\/_carousel.jade",
+		"outputAbbreviatedPath": "\/_carousel.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/jade\/includes\/_footer-nav.jade": {
 		"compileDebug": 1,
@@ -703,6 +793,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/includes\/_top-nav.jade",
 		"outputAbbreviatedPath": "\/_top-nav.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/index.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/index.jade",
+		"outputAbbreviatedPath": "\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/inner-page.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/inner-page.jade",
+		"outputAbbreviatedPath": "\/inner-page.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -870,6 +982,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/main.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/main.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sass\/_blocks.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -966,21 +1087,37 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/_slick.sass": {
+	"\/sass\/_slick-old.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/_slick.sass",
-		"outputAbbreviatedPath": "\/css\/_slick.css",
+		"inputAbbreviatedPath": "\/sass\/_slick-old.sass",
+		"outputAbbreviatedPath": "\/css\/_slick-old.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/sass\/_slick.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_slick.scss",
+		"outputAbbreviatedPath": "\/css\/_slick.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/sass\/_styledocco.sass": {
 		"createSourceMap": 0,

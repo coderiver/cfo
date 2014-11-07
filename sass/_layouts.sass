@@ -1,9 +1,9 @@
 .l
   max-width: 955px
-  min-width: 320px
+  min-width: 280px
   margin: 0 auto
-  padding-left: 65px
-  padding-right: 65px
+  padding-left: 60px
+  padding-right: 60px
   +r(1100)
     padding-left: 20px
     padding-right: 20px
@@ -20,3 +20,13 @@
     float: right
     width: percentage(345/955)
     box-sizing: border-box
+  +r(600)
+    .col-one,
+    .col-two,
+    .col-three
+      width: 100%
+      padding: 0
+    .col-two,
+    .col-three
+      margin-top: 25px
+

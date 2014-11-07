@@ -10,38 +10,44 @@ block main
     //begin slider
     .slider
       .slider__list.js-cycle
-        div.slider__slide
-          a(href="#")
+        a(href="#").slider__slide
+          .slider__slide-pic
             img(src="http://placehold.it/610x360")
-            .slider__slide-caption
-              strong
-                | Текст в одну строчку
-        div.slider__slide
-          a(href="#")
+          .slider__slide-caption
+            strong
+              | Текст в одну строчку
+        a(href="#").slider__slide
+          .slider__slide-pic
             img(src="http://placehold.it/610x360")
-            .slider__slide-caption
-              strong
-                | Текст в одну строчку
-        div.slider__slide
-          a(href="#")
+          .slider__slide-caption
+            strong
+              | Текст в одну строчку
+        a(href="#").slider__slide
+          .slider__slide-pic
             img(src="http://placehold.it/610x360")
-            .slider__slide-caption
-              strong
-                | Текст в одну строчку
-        div.slider__slide
-          a(href="#")
+          .slider__slide-caption
+            strong
+              | Текст в одну строчку
+        a(href="#").slider__slide
+          .slider__slide-pic
             img(src="http://placehold.it/610x360")
-            .slider__slide-caption
-              strong
-                | Длинный текст в две строки. Длинный текст в две строки.
-                | Длинный текст в две строки
-        div.slider__slide
-          a(href="#")
+          .slider__slide-caption
+            strong
+              | Длинный текст в две строки. Длинный текст в две строки.
+              | Длинный текст в две строки
+        a(href="#").slider__slide
+          .slider__slide-pic
             img(src="http://placehold.it/610x360")
-            .slider__slide-caption
-              strong
-                | Длинный текст в две строки. Длинный текст в две строки.
-                | Длинный текст в две строки. Длинный текст в две строки.
+          .slider__slide-caption
+            strong
+              | Длинный текст в две строки. Длинный текст в две строки.
+              | Длинный текст в две строки. Длинный текст в две строки.
+        a(href="#").slider__slide
+          .slider__slide-pic
+            img(src="http://placehold.it/610x200")
+          .slider__slide-caption
+            strong
+              | Текст в одну строчку
       .slider__nav
         .slider__prev
           i.icon.icon_arr-l
@@ -458,18 +464,18 @@ block main
           | известен и дорог россиянам больше как:
         ul.poll__answers
           li
-            label
+            label.radio-btn
               input(type="radio", name="poll")
               span
                 | один из самых почитаемых русских святых
           li
-            label
+            label.radio-btn
               input(type="radio", name="poll")
               span
                 | объединитель русских земель, благословивший
                 | русские войска на Куликовскую битву против Мамая
           li
-            label
+            label.radio-btn
               input(type="radio", name="poll")
               span
                 | общественный деятель, внесший огромный вклад в

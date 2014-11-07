@@ -1,0 +1,36 @@
+extends layouts/_layout
+
+block title
+  title Inner Page
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | субъекты рф в <br> цфо
+      li
+        a(href="#")
+          | авторитетное <br> мнение
+      li.is-active
+        a(href="#")
+          | основные <br> сведения
+      li
+        a(href="#")
+          | социально-экономическая <br> деятельность
+      li
+        a(href="#")
+          | инвестиционный <br> уполномоченный
+      li
+        a(href="#")
+          | совет федерации <br> и государственная дума фс рф
+  //end nav-inner
+
+  .breadcrumbs
+    a(href="#").title
+      | К области
+    a(href="#").title
+      | Достопримечательности
