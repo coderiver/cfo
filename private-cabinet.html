@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Index</title>
+    <title>Private Cabinet</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <link rel="stylesheet" media="all" href="css/screen.css"><!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -42,16 +42,80 @@
       <!--end nav-->
     </div>
     <div class="l main-wrap">
-      <ol class="index-page-list">
-        <li><a href="main.html">main</a></li>
-        <li><a href="inner-page.html">inner-page</a></li>
-        <li><a href="private-cabinet.html">private-cabinet</a></li>
-      </ol>
-      <style>
-        .index-page-list {list-style-type: decimal; font-size: 20px; color: #333; margin: 100px 0; font: 18/1 Helvetica, Arial; padding-left: 40px};
-        .index-page-list li {margin-top: 10px};
-        .index-page-list li a {color: inherit};
-      </style>
+      <!--begin header-->
+      <header class="header">
+        <div class="header__flag"></div>
+        <h1 class="title">Центральный федеральный округ</h1>
+        <div class="header__links"><a href="#"><i class="icon icon_mail-red"></i>Отправить обращение</a></div><a href="#" class="header__calendar"><i class="icon icon_calendar-blue"></i><span>Дата</span></a>
+      </header>
+      <!--end header-->
+      <!--begin cabinet-->
+      <div class="cabinet">
+        <header class="cabinet__header">
+          <h2 class="title">Личный кабинет</h2>
+          <ul class="cabinet__header-links">
+            <li><a href="#" class="link-dotted">Переписка с администратором</a></li>
+            <li><a href="#" class="link-dotted">Правила пользователя</a></li>
+          </ul>
+        </header>
+        <div class="cabinet__left">
+          <div class="cabinet__user-photo"><img src="img/person.png"></div>
+        </div>
+        <div class="cabinet__center">
+          <div class="input is-required is-error">
+            <label for="name" class="input__label">Имя</label>
+            <input type="text" name="name"><small class="input__error-msg">Извините, но поле обязательно для заполнения</small>
+          </div>
+          <div class="input">
+            <label for="name" class="input__label">Отчество</label>
+            <input type="text" name="name">
+          </div>
+          <div class="input">
+            <label for="name" class="input__label">Фамилия</label>
+            <input type="text" name="name" value="Андреевич">
+          </div>
+          <hr>
+          <div class="input">
+            <label for="name" class="input__label">Субъект РФ</label>
+            <div class="select"><span class="select__value">Первый по алфавиту</span>
+              <div class="select__arrow"></div>
+              <select name="name">
+                <option value="значение 1">значение 1</option>
+                <option value="значение 2">значение 2</option>
+                <option value="значение 3">значение 3</option>
+                <option value="значение 4">значение 4</option>
+                <option value="значение 5">значение 5</option>
+                <option value="значение 6">значение 6</option>
+                <option value="значение 7">значение 7</option>
+              </select>
+            </div><small class="input__info-text">Заполнение данного поля позволит пользователю получать информацию по всему региону</small>
+          </div>
+          <hr>
+          <div class="input is-required">
+            <label for="name" class="input__label">E-mail</label>
+            <input type="text" name="name">
+          </div>
+          <div class="input">
+            <label for="name" class="input__label">Телефон</label>
+            <input type="text" name="name">
+          </div>
+          <div class="input"><span class="input__label">Загрузить фотографию</span>
+            <label for="file" class="file-upload">
+              <input type="file" name="file">
+              <button class="file-upload__btn">Выбрать файл</button>
+            </label><small class="input__info-text">Не более 50Мб. Формат файла - любой</small>
+          </div>
+          <div class="input input_btn"><span class="input__label">Мои новости</span><small class="input__info-text">У вас пока нет загруженных новостей</small>
+            <button class="btn">Добавить новость</button>
+            <button class="btn">Добавить народную новость</button><a href="#">Посмотреть статус материалов</a><br><a href="#">Подписаться на материалы</a>
+          </div>
+          <div class="input input_btn"><span class="input__label">Мои новости</span><small class="input__info-text">У вас пока нет загруженных достопримечательностей</small>
+            <button class="btn">Добавить достопримечательность</button><a href="#">Посмотреть статус материалов</a>
+          </div>
+        </div>
+        <div class="cabinet__right"></div>
+      </div>
+      <!--end cabinet-->
       <!--begin carousel-->
       <div class="carousel">
         <ul class="carousel__slides">

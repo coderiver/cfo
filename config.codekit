@@ -84,13 +84,57 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-retina-s08a4236167.png": {
+	"\/img\/icons-retina-sa7b7d52736.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10887,
-		"inputAbbreviatedPath": "\/img\/icons-retina-s08a4236167.png",
-		"outputAbbreviatedPath": "\/img\/icons-retina-s08a4236167.png",
+		"initialSize": 12288,
+		"inputAbbreviatedPath": "\/img\/icons-retina-sa7b7d52736.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina-sa7b7d52736.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-b-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 309,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-b-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-b-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-b-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-b-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-b-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-b-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 314,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-b-red.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-b-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-b-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 300,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-b-white.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-b-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -216,6 +260,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons-retina\/arr-t-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 309,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-t-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-t-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-t-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 296,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-t-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-t-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-t-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 315,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-t-red.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-t-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-t-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 293,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-t-white.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-t-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons-retina\/arr-t.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -256,6 +344,17 @@
 		"initialSize": 323,
 		"inputAbbreviatedPath": "\/img\/icons-retina\/calendar.png",
 		"outputAbbreviatedPath": "\/img\/icons-retina\/calendar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/checkmark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1324,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/checkmark.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/checkmark.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -414,24 +513,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-retina\/Слой-0.png": {
+	"\/img\/icons-retina\/Слой-0.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 322,
-		"inputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
-		"outputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
+		"inputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-s6ee174a58e.png": {
+	"\/img\/icons-sb4e45cc6d2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/img\/icons-s6ee174a58e.png",
-		"outputAbbreviatedPath": "\/img\/icons-s6ee174a58e.png",
+		"initialSize": 9503,
+		"inputAbbreviatedPath": "\/img\/icons-sb4e45cc6d2.png",
+		"outputAbbreviatedPath": "\/img\/icons-sb4e45cc6d2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -443,6 +542,50 @@
 		"initialSize": 10669,
 		"inputAbbreviatedPath": "\/img\/icons.png",
 		"outputAbbreviatedPath": "\/img\/icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-b-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-b-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-b-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-b-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 281,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-b-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-b-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-b-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 281,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-b-red.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-b-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-b-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 278,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-b-white.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-b-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -568,6 +711,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/arr-t-blue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-t-blue.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-t-blue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-t-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-t-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-t-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-t-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-t-red.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-t-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-t-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-t-white.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-t-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/arr-t.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -608,6 +795,17 @@
 		"initialSize": 252,
 		"inputAbbreviatedPath": "\/img\/icons\/calendar.png",
 		"outputAbbreviatedPath": "\/img\/icons\/calendar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/checkmark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1069,
+		"inputAbbreviatedPath": "\/img\/icons\/checkmark.png",
+		"outputAbbreviatedPath": "\/img\/icons\/checkmark.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -810,11 +1008,31 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/person.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1274,
+		"inputAbbreviatedPath": "\/img\/person.png",
+		"outputAbbreviatedPath": "\/img\/person.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/inner-page.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inner-page.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -934,6 +1152,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/main.jade",
 		"outputAbbreviatedPath": "\/main.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/private-cabinet.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/private-cabinet.jade",
+		"outputAbbreviatedPath": "\/private-cabinet.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -1069,15 +1298,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/main-or.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/main-or.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/main.html": {
 		"fileType": 8192,

@@ -60,4 +60,8 @@ head.ready(function() {
     //   ]
   });
 
+  $('.select select').on('change', function(event) {
+    $(this).siblings('.select__value').text(this.value);
+  });
+
 });

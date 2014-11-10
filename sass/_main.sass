@@ -604,16 +604,84 @@
 
 
 .toparea
-  padding: 25px
+  padding: percentage(30/953)
+  margin-bottom: 30px
   +clr
   border: 1px solid $border
   .entry
     float: left
-    width: 33%
-    max-width: 260px
+    width: percentage(278/895)
     box-sizing: border-box
-    .entry__title
-      margin-top: 15px
+    padding: 0
+    margin: 0 0 0 percentage(30/893)
+    border: none
+    &:first-child
+      margin-left: 0
     .meta
       display: block
       margin: 10px 0
+
+
+.checkbox-list
+  padding: 0 15px
+  li
+    margin-top: 15px
+
+
+.cabinet
+  padding-bottom: 35px
+  border-bottom: 1px solid $border
+  +clr
+  .input
+    max-width: 350px
+  hr
+    margin: 30px 0
+
+.cabinet__header
+  line-height: 60px
+  +clr
+  .title
+    display: inline-block
+    vertical-align: middle
+
+.cabinet__header-links
+  float: right
+  margin-right: 30px
+  li
+    display: inline-block
+    vertical-align: middle
+    margin-left: 10px
+
+.cabinet__left
+  float: left
+  width: percentage(175/955)
+
+.cabinet__center
+  float: left
+  width: percentage(560/955)
+  // margin-left: percentage(175/955)
+  // margin-right: percentage(220/955)
+  padding: 0 percentage(30/955)
+  box-sizing: border-box
+
+.cabinet__right
+  float: right
+  width: percentage(220/955)
+  // margin-left: percentage(-220/955)
+
+
+.cabinet__user-photo
+  max-width: 175px
+  height: 210px
+  margin: auto
+  box-sizing: border-box
+  border: 1px solid $border
+  overflow: hidden
+  white-space: nowrap
+  +vertical
+  img
+    display: inline-block
+    vertical-align: middle
+    max-width: 100%
+
+

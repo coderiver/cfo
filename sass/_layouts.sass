@@ -10,23 +10,32 @@
 
 .l-three-col
   +clr
-  .col-one,
-  .col-two
+  > .col-one,
+  > .col-two
     float: left
     width: percentage(305/955)
     padding-right: percentage(50/955)
     box-sizing: border-box
-  .col-three
+  > .col-three
     float: right
     width: percentage(345/955)
     box-sizing: border-box
   +r(600)
-    .col-one,
-    .col-two,
-    .col-three
+    > .col-one,
+    > .col-two,
+    > .col-three
       width: 100%
       padding: 0
-    .col-two,
-    .col-three
+    > .col-two,
+    > .col-three
       margin-top: 25px
+
+.l-two-col
+  +clr
+  > .col-one
+    width: percentage(670/955)
+    float: left
+  > .col-two
+    width: percentage(250/955)
+    float: right
 

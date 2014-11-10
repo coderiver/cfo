@@ -1,0 +1,116 @@
+extends layouts/_layout
+
+block title
+  title Private Cabinet
+
+block main
+  include includes/_header
+
+  //begin cabinet
+  .cabinet
+    header.cabinet__header
+      h2.title
+        | Личный кабинет
+      ul.cabinet__header-links
+        li
+          a(href="#").link-dotted
+            | Переписка с администратором
+        li
+          a(href="#").link-dotted
+            | Правила пользователя
+
+    .cabinet__left
+      .cabinet__user-photo
+        img(src="img/person.png")
+
+    .cabinet__center
+      .input.is-required.is-error
+        label(for="name").input__label
+          | Имя
+        input(type="text", name="name")
+        small.input__error-msg
+          | Извините, но поле обязательно для заполнения
+
+      .input
+        label(for="name").input__label
+          | Отчество
+        input(type="text", name="name")
+
+      .input
+        label(for="name").input__label
+          | Фамилия
+        input(type="text", name="name", value="Андреевич")
+
+      hr
+
+      .input
+        label(for="name").input__label
+          | Субъект РФ
+        .select
+          span.select__value
+            | Первый по алфавиту
+          .select__arrow
+          select(name="name")
+            option(value="значение 1") значение 1
+            option(value="значение 2") значение 2
+            option(value="значение 3") значение 3
+            option(value="значение 4") значение 4
+            option(value="значение 5") значение 5
+            option(value="значение 6") значение 6
+            option(value="значение 7") значение 7
+        small.input__info-text
+          | Заполнение данного поля позволит пользователю получать информацию по всему региону
+
+      hr
+
+      .input.is-required
+        label(for="name").input__label
+          | E-mail
+        input(type="text", name="name")
+
+      .input
+        label(for="name").input__label
+          | Телефон
+        input(type="text", name="name")
+
+      .input
+        span.input__label
+          | Загрузить фотографию
+        label(for="file").file-upload
+          input(type="file", name="file")
+          button.file-upload__btn
+            | Выбрать файл
+        small.input__info-text
+          | Не более 50Мб. Формат файла - любой
+
+      .input.input_btn
+        span.input__label
+          | Мои новости
+        small.input__info-text
+          | У вас пока нет загруженных новостей
+
+        button.btn
+          | Добавить новость
+        button.btn
+          | Добавить народную новость
+
+        a(href="#")
+          | Посмотреть статус материалов
+        br
+        a(href="#")
+          | Подписаться на материалы
+
+      .input.input_btn
+        span.input__label
+          | Мои новости
+        small.input__info-text
+          | У вас пока нет загруженных достопримечательностей
+
+        button.btn
+          | Добавить достопримечательность
+
+        a(href="#")
+          | Посмотреть статус материалов
+
+    .cabinet__right
+  //end cabinet
