@@ -54,6 +54,7 @@ $body: #F5F2F0
 $border: #cdcdcd
 $link: #2a5d8c
 $meta: #7c7c7c
+$aside: #EBEFF2
 
 $lightblue: #EBEFF2
 
@@ -100,7 +101,7 @@ body
   background: $body
 
 a
-  color: inherit
+  color: $link
   text-decoration: none
   &:hover
     text-decoration: underline
@@ -111,15 +112,20 @@ hr
   background: $border
   border: none
   margin: 0
+  &.has-margin
+    margin: 25px 0
 
 input[type="text"],
 input[type="password"],
+input[type="search"],
 textarea
   padding: 6px 9px
   font: 14px Arial, Helvetica, sans-serif
   color: $text
   background: #fff
   border: 1px solid $border
+  box-shadow: none
+  outline: none
 
 .float-left
   float: left

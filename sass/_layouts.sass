@@ -33,9 +33,23 @@
 .l-two-col
   +clr
   > .col-one
-    width: percentage(670/955)
+    // width: percentage(670/955)
     float: left
+    padding-right: percentage(35/955)
+    margin-right: 250px
   > .col-two
-    width: percentage(250/955)
     float: right
+    // width: percentage(250/955)
+    width: 250px
+    margin-left: -250px
+  +r(600)
+    > .col-one
+      float: none
+      margin: 0
+      padding: 0
+    > .col-two
+      float: none
+      width: auto
+      margin: 25px 0 0 0
+      padding: 0
 

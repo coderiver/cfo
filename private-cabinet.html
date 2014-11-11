@@ -15,10 +15,10 @@
           <div class="nav__slide">
             <!--begin nav__search-->
             <div class="nav__search"><span class="nav__search-close">Закрыть поиск</span>
-              <fieldset class="nav__search-field">
-                <input type="text" placeholder="Поиск по сайту">
-                <button class="nav__search-icon"></button>
-              </fieldset>
+              <div class="search-field">
+                <input type="search" placeholder="Поиск по сайту">
+                <button></button>
+              </div>
             </div>
             <!--end nav__search-->
             <div class="nav__icons"><a href="#" class="icon icon_search"></a><a href="#" class="icon icon_mail"></a></div>
@@ -43,10 +43,10 @@
     </div>
     <div class="l main-wrap">
       <!--begin header-->
-      <header class="header">
+      <header class="header header_border header_user">
         <div class="header__flag"></div>
         <h1 class="title">Центральный федеральный округ</h1>
-        <div class="header__links"><a href="#"><i class="icon icon_mail-red"></i>Отправить обращение</a></div><a href="#" class="header__calendar"><i class="icon icon_calendar-blue"></i><span>Дата</span></a>
+        <div class="header__links"><a href="#"><i class="icon icon_mail-red"></i>Отправить обращение</a></div><a href="#" class="header__calendar"><i class="icon icon_calendar-blue"></i><span>Дата</span></a><a href="#" class="header__user-pic"><img src="http://placehold.it/60x60/f7f7f7&amp;text=userpic"></a>
       </header>
       <!--end header-->
       <!--begin cabinet-->
@@ -59,61 +59,75 @@
           </ul>
         </header>
         <div class="cabinet__left">
-          <div class="cabinet__user-photo"><img src="img/person.png"></div>
+          <div class="cabinet__user-photo">
+            <div class="cabinet__user-photo-in"><img src="http://placehold.it/175x210/ffffff">
+            </div>
+          </div>
         </div>
         <div class="cabinet__center">
-          <div class="input is-required is-error">
-            <label for="name" class="input__label">Имя</label>
-            <input type="text" name="name"><small class="input__error-msg">Извините, но поле обязательно для заполнения</small>
-          </div>
-          <div class="input">
-            <label for="name" class="input__label">Отчество</label>
-            <input type="text" name="name">
-          </div>
-          <div class="input">
-            <label for="name" class="input__label">Фамилия</label>
-            <input type="text" name="name" value="Андреевич">
-          </div>
-          <hr>
-          <div class="input">
-            <label for="name" class="input__label">Субъект РФ</label>
-            <div class="select"><span class="select__value">Первый по алфавиту</span>
-              <div class="select__arrow"></div>
-              <select name="name">
-                <option value="значение 1">значение 1</option>
-                <option value="значение 2">значение 2</option>
-                <option value="значение 3">значение 3</option>
-                <option value="значение 4">значение 4</option>
-                <option value="значение 5">значение 5</option>
-                <option value="значение 6">значение 6</option>
-                <option value="значение 7">значение 7</option>
-              </select>
-            </div><small class="input__info-text">Заполнение данного поля позволит пользователю получать информацию по всему региону</small>
-          </div>
-          <hr>
-          <div class="input is-required">
-            <label for="name" class="input__label">E-mail</label>
-            <input type="text" name="name">
-          </div>
-          <div class="input">
-            <label for="name" class="input__label">Телефон</label>
-            <input type="text" name="name">
-          </div>
-          <div class="input"><span class="input__label">Загрузить фотографию</span>
-            <label for="file" class="file-upload">
-              <input type="file" name="file">
-              <button class="file-upload__btn">Выбрать файл</button>
-            </label><small class="input__info-text">Не более 50Мб. Формат файла - любой</small>
-          </div>
-          <div class="input input_btn"><span class="input__label">Мои новости</span><small class="input__info-text">У вас пока нет загруженных новостей</small>
-            <button class="btn">Добавить новость</button>
-            <button class="btn">Добавить народную новость</button><a href="#">Посмотреть статус материалов</a><br><a href="#">Подписаться на материалы</a>
-          </div>
-          <div class="input input_btn"><span class="input__label">Мои новости</span><small class="input__info-text">У вас пока нет загруженных достопримечательностей</small>
-            <button class="btn">Добавить достопримечательность</button><a href="#">Посмотреть статус материалов</a>
+          <div class="cabinet__center-in">
+            <div class="input is-required is-error">
+              <label for="name" class="input__label">Имя</label>
+              <input type="text" name="name"><small class="input__error-msg">Извините, но поле обязательно для заполнения</small>
+            </div>
+            <div class="input">
+              <label for="name" class="input__label">Отчество</label>
+              <input type="text" name="name">
+            </div>
+            <div class="input">
+              <label for="name" class="input__label">Фамилия</label>
+              <input type="text" name="name" value="Андреевич">
+            </div>
+            <hr>
+            <div class="input">
+              <label for="name" class="input__label">Субъект РФ</label>
+              <div class="select"><span class="select__value">Первый по алфавиту</span>
+                <select name="name">
+                  <option value="значение 1">значение 1</option>
+                  <option value="значение 2">значение 2</option>
+                  <option value="значение 3">значение 3</option>
+                  <option value="значение 4">значение 4</option>
+                  <option value="значение 5">значение 5</option>
+                  <option value="значение 6">значение 6</option>
+                  <option value="значение 7">значение 7</option>
+                </select>
+              </div><small class="input__info-text">Заполнение данного поля позволит пользователю получать информацию по всему региону</small>
+            </div>
+            <hr>
+            <div class="input is-required">
+              <label for="name" class="input__label">E-mail</label>
+              <input type="text" name="name">
+            </div>
+            <div class="input">
+              <label for="name" class="input__label">Телефон</label>
+              <input type="text" name="name">
+            </div>
+            <div class="input"><span class="input__label">Загрузить фотографию</span>
+              <label for="file" class="file-upload">
+                <button class="file-upload__btn">Выбрать файл</button><span class="file-upload__file-name">Файл не выбран</span>
+                <input type="file" name="file">
+              </label><small class="input__info-text">Не более 50Мб. Формат файла - любой</small>
+            </div>
+            <div class="input input_btn"><span class="input__label">Мои новости</span><small class="input__info-text">У вас пока нет загруженных новостей</small>
+              <button class="btn">Добавить новость</button>
+              <button class="btn">Добавить народную новость</button><a href="#">Посмотреть статус материалов</a><br><a href="#">Подписаться на материалы</a>
+            </div>
+            <div class="input input_btn"><span class="input__label">Мои новости</span><small class="input__info-text">У вас пока нет загруженных достопримечательностей</small>
+              <button class="btn">Добавить достопримечательность</button><a href="#">Посмотреть статус материалов</a>
+            </div>
           </div>
         </div>
-        <div class="cabinet__right"></div>
+        <div class="cabinet__right">
+          <ul style="margin-top:28px" class="aside-links">
+            <li><a href="#">Избранное</a><span class="counter"> (346)</span></li>
+            <li><a href="#">Мои лайки</a><span class="counter"> (8)</span></li>
+            <li><a href="#">Подписка</a></li>
+            <li>
+              <hr>
+            </li>
+            <li><a href="#">Редактировать профиль</a></li>
+          </ul>
+        </div>
       </div>
       <!--end cabinet-->
       <!--begin carousel-->
@@ -141,10 +155,10 @@
         <div class="nav__slide">
           <!--begin nav__search-->
           <div class="nav__search"><span class="nav__search-close">Закрыть поиск</span>
-            <fieldset class="nav__search-field">
-              <input type="text" placeholder="Поиск по сайту">
-              <button class="nav__search-icon"></button>
-            </fieldset>
+            <div class="search-field">
+              <input type="search" placeholder="Поиск по сайту">
+              <button></button>
+            </div>
           </div>
           <!--end nav__search-->
           <div class="nav__icons"><a href="#">Карта сайта</a></div>

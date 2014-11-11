@@ -65,6 +65,8 @@
   &_head
     display: block
     margin-bottom: 15px
+    .header + &
+      margin-top: 25px
   +r(600)
     font-size: 20px
 
@@ -73,8 +75,43 @@
   +head-c
   font-size: 26px
   line-height: 1.1
+  a
+    color: $link
   +r(600)
     font-size: 18px
+
+
+.search-field
+  position: relative
+  input
+    display: block
+    width: 100%
+    box-sizing: border-box
+    padding: 9px 40px 9px 15px
+    font-size: 14px
+    +head-r
+    border: 1px solid $border
+    border-radius: 3px
+    +placeholder
+      color: $border
+  button
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: 40px
+    background: none
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 0
+      right: 0
+      margin: -8px auto 0
+      +icon(search-input)
+    &:hover
+      &:before
+        +icon(search-input-h)
 
 
 .link-more
@@ -98,6 +135,19 @@
   a
     padding-top: 3px
 
+
+.large-list
+  li
+    padding: 25px 0
+    border-top: 1px solid $border
+    &:first-child
+      border-top: none
+  a
+    color: $link
+  .title-small
+    display: block
+
+
 .meta
   display: block
   margin-top: 5px
@@ -108,6 +158,13 @@
   color: $meta
   a
     color: $link
+  &_file
+    +head-r
+    em
+      color: $text
+      font-style: normal
+      font-size: 13px
+      margin-right: 5px
 
 .btn
   padding: 19px 30px 21px
@@ -127,6 +184,7 @@
     border: 1px solid $border
     &:hover
       color: $red
+      background: none
 
 .radio-btn
   display: inline-block
@@ -285,6 +343,8 @@
   font-size: 20px
   line-height: 1.2
   color: $link
+  a
+    padding-top: 3px
 
 .entry__text
   margin: 10px 0
@@ -351,7 +411,9 @@
     margin-top: 20px
   &_background
     padding: 20px 15px
-    background: #EBEFF2
+    background: $aside
+    .search-field + &
+      margin-top: 10px
   &_btn
     .input__label
       font-size: 18px
@@ -417,12 +479,59 @@
 .file-upload
   display: block
   position: relative
+  +clr
   input[type="file"]
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
     width: 100%
+    height: 100%
+    opacity: 0
+  &.focus
+    .file-upload__file-name
+      box-shadow: 0 0 1px 0 $border
 
 .file-upload__btn
+  position: relative
+  z-index: 2
+  float: right
+  width: 120px
+  height: 30px
+  box-sizing: border-box
+  background: #2C78BE
+  font-size: 14px
+  +head-r
+  line-height: 30px
+  color: #fff
+  cursor: pointer
+  +tr-all
+  &:hover
+    background: $red
 
+.file-upload__file-name
+  position: relative
+  z-index: 2
+  display: block
+  box-sizing: border-box
+  padding: 0 10px
+  height: 30px
+  border: 1px solid $border
+  background: #F1EFF0
+  margin-right: 125px
+  +head-r
+  font-size: 14px
+  line-height: 28px
+  +text-overflow
 
+.eq-ie8 .file-upload
+  input[type="file"]
+    display: block
+    position: static
+    opacity: 1
+  .file-upload__file-name,
+  .file-upload__btn
+    display: none
 
 
 .select
@@ -435,6 +544,13 @@
   border: 1px solid $border
   +g(#FDFDFD, #E9E9E9)
   box-shadow: 1px 1px 2px 0 $border
+  &:after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 15px
+    margin-top: -4px
+    +icon(arr-b-blue)
   select
     position: absolute
     top: 0
@@ -449,10 +565,84 @@
   +text-overflow
   font-size: 14px
 
-.select__arrow
-  display: block
-  position: absolute
-  top: 50%
-  right: 15px
-  margin-top: -4px
-  +icon(arr-b-blue)
+// .select__arrow
+//   display: block
+//   position: absolute
+//   top: 50%
+//   right: 15px
+//   margin-top: -4px
+//   +icon(arr-b-blue)
+
+
+.aside-links
+  background: $aside
+  padding: 25px
+  li
+    margin-top: 10px
+    &:first-child
+      margin-top: 0
+    a
+      color: $link
+    hr
+      margin: 0
+    .counter
+      color: $meta
+
+
+.pagi
+  margin-top: 50px
+  padding: 12px 0
+  border: 1px solid $border
+  border-width: 1px 0 1px
+  font-size: 0
+  a
+    display: inline-block
+    vertical-align: middle
+    padding: 5px 10px
+    +head-b
+    font-size: 16px
+    text-decoration: none
+    &:hover
+      color: $red
+
+.pagi__arrow-prev,
+.pagi__arrow-next
+  display: inline-block
+  vertical-align: middle
+  &:before
+    content: ""
+    display: block
+
+.pagi__arrow-prev
+  margin-left: -10px
+  &:before
+    +icon(arr-sm-l-dark)
+  &:hover
+    &:before
+      +icon(arr-sm-l-red)
+  &.is-inactive
+    cursor: default
+    &:before
+      +icon(arr-sm-l-gray)
+.pagi__arrow-next
+  &:before
+    +icon(arr-sm-r-dark)
+  &:hover
+    &:before
+      +icon(arr-sm-r-red)
+  &.is-inactive
+    cursor: default
+    &:before
+      +icon(arr-sm-r-gray)
+
+.pagi__list
+  display: inline-block
+  vertical-align: middle
+  li
+    display: inline-block
+    vertical-align: middle
+    &.is-active
+      a
+        color: $border
+        text-decoration: none
+        cursor: default

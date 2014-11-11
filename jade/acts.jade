@@ -1,0 +1,126 @@
+extends layouts/_layout
+
+block title
+  title Acts
+
+block main
+  include includes/_header-border
+
+  h2.title.title_head
+    | Актуально
+
+  //begin toparea
+  .toparea.toparea_simple
+    .entry
+      h3.entry__title
+        a(href="#")
+          | Учрежденны президенские гранты в области культуры и искуства
+      span.meta.meta_file
+        em 345Мб.DOC
+        |  22 января 2014
+    .entry
+      h3.entry__title
+        a(href="#")
+          | Александр светличный освобожден от должности начальника
+          | Управления Госнаркоконтроля по Ульяновской области
+      span.meta.meta_file
+        em 345Мб.DOC
+        |  22 января 2014
+    .entry
+      h3.entry__title
+        a(href="#")
+          | Кадровые изменения в структуре Следсвенного комитета
+      span.meta.meta_file
+        em 345Мб.DOC
+        |  22 января 2014
+  //end toparea
+
+  a(href="#").link-more
+      | Все актуальные документы
+
+  hr.has-margin
+
+  .l-two-col
+    .col-one
+      //begin large-list
+      ul.large-list
+        li
+          h3.title-small
+            a(href="#")
+              | Стратегия социально-экономического развития
+              | Центрального федерального округа на период до 2020 года
+        li
+          h3.title-small
+            | Показатели развития Центрального Федерального округа
+          a(href="#")
+            | Основные социально-экономические показатели регионов
+        li
+          h3.title-small
+            | Малый и средний бизнес
+          a(href="#")
+            | Развитие малого и среднего бизнеса в регионах, входящих в состав
+        li
+          h3.title-small
+            a(href="#")
+              | Стратегия социально-экономического развития
+              | Центрального федерального округа на период до 2020 года
+        li
+          h3.title-small
+            | Показатели развития Центрального Федерального округа
+          a(href="#")
+            | Основные социально-экономические показатели регионов
+        li
+          h3.title-small
+            | Малый и средний бизнес
+          a(href="#")
+            | Развитие малого и среднего бизнеса в регионах, входящих в состав
+        li
+          h3.title-small
+            a(href="#")
+              | Стратегия социально-экономического развития
+              | Центрального федерального округа на период до 2020 года
+        li
+          h3.title-small
+            | Показатели развития Центрального Федерального округа
+          a(href="#")
+            | Основные социально-экономические показатели регионов
+        li
+          h3.title-small
+            | Малый и средний бизнес
+          a(href="#")
+            | Развитие малого и среднего бизнеса в регионах, входящих в состав
+      //end large-list
+
+    .col-two
+      .search-field
+        input(type="text", placeholder="Поиск по аналитике")
+        button
+
+      .input.input_background
+        label(for="name").input__label
+          | Показывать:
+        .select
+          span.select__value
+            | За последний год
+          select(name="name")
+            option(value="За последний год") За последний год
+            option(value="За последние 2 года") За последние 2 года
+            option(value="За последние 3 года") За последние 3 года
+            option(value="За последние 4 года") За последние 4 года
+
+  //begin pagi
+  .pagi
+    a(href="#").pagi__arrow-prev.is-inactive
+
+    ul.pagi__list
+      li.is-active
+        a(href="#") 1
+      li
+        a(href="#") 2
+      li
+        a(href="#") 3
+      li
+        a(href="#") 4
+
+    a(href="#").pagi__arrow-next
+  //end pagi

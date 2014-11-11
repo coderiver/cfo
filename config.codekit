@@ -84,13 +84,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-retina-sa7b7d52736.png": {
+	"\/img\/icons-retina-sda3022672f.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12288,
-		"inputAbbreviatedPath": "\/img\/icons-retina-sa7b7d52736.png",
-		"outputAbbreviatedPath": "\/img\/icons-retina-sa7b7d52736.png",
+		"initialSize": 13737,
+		"inputAbbreviatedPath": "\/img\/icons-retina-sda3022672f.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina-sda3022672f.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -256,6 +256,72 @@
 		"initialSize": 282,
 		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-r.png",
 		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-r.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-sm-l-dark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 442,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-l-dark.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-l-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-sm-l-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 414,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-l-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-l-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-sm-l-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 442,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-l-red.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-l-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-sm-r-dark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 439,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-r-dark.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-r-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-sm-r-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 413,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-r-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-r-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons-retina\/arr-sm-r-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 439,
+		"inputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-r-red.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/arr-sm-r-red.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -513,24 +579,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-retina\/Слой-0.png": {
+	"\/img\/icons-retina\/Слой-0.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 322,
-		"inputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
-		"outputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
+		"inputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
+		"outputAbbreviatedPath": "\/img\/icons-retina\/Слой-0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons-sb4e45cc6d2.png": {
+	"\/img\/icons-sbb1816e9fd.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9503,
-		"inputAbbreviatedPath": "\/img\/icons-sb4e45cc6d2.png",
-		"outputAbbreviatedPath": "\/img\/icons-sb4e45cc6d2.png",
+		"initialSize": 10478,
+		"inputAbbreviatedPath": "\/img\/icons-sbb1816e9fd.png",
+		"outputAbbreviatedPath": "\/img\/icons-sbb1816e9fd.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -707,6 +773,72 @@
 		"initialSize": 270,
 		"inputAbbreviatedPath": "\/img\/icons\/arr-r.png",
 		"outputAbbreviatedPath": "\/img\/icons\/arr-r.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-sm-l-dark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 394,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-sm-l-dark.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-sm-l-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-sm-l-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 372,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-sm-l-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-sm-l-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-sm-l-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 394,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-sm-l-red.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-sm-l-red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-sm-r-dark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 390,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-sm-r-dark.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-sm-r-dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-sm-r-gray.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 367,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-sm-r-gray.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-sm-r-gray.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/arr-sm-r-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 390,
+		"inputAbbreviatedPath": "\/img\/icons\/arr-sm-r-red.png",
+		"outputAbbreviatedPath": "\/img\/icons\/arr-sm-r-red.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1037,6 +1169,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/jade\/acts.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/acts.jade",
+		"outputAbbreviatedPath": "\/acts.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/jade\/includes\/_carousel.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -1077,6 +1220,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/includes\/_head.jade",
 		"outputAbbreviatedPath": "\/_head.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/includes\/_header-border.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/includes\/_header-border.jade",
+		"outputAbbreviatedPath": "\/_header-border.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/includes\/_header-user.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/includes\/_header-user.jade",
+		"outputAbbreviatedPath": "\/_header-user.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -1304,6 +1469,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/main.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/private-cabinet.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/private-cabinet.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

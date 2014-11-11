@@ -64,5 +64,35 @@ head.ready(function() {
     $(this).siblings('.select__value').text(this.value);
   });
 
+  //file upload
+  if ( $('.file-upload').length != 0 ) {
+    var wrapper = $('.file-upload'),
+        input   = wrapper.find('input'),
+        button  = wrapper.find('.file-upload__btn'),
+        label   = wrapper.find('.file-upload__file-name');
+
+    button.on('click', function(event) {
+      input.click();
+    });
+
+    input.on('focus', function() {
+        wrapper.addClass('focus');
+    }).blur(function() {
+        wrapper.removeClass('focus');
+    });
+
+    var fileAPI = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    input.on('change', function() {
+      var fileName;
+      if ( fileAPI && input[ 0 ].files[ 0 ] ) {
+          fileName = input[ 0 ].files[ 0 ].name;
+          label.text( fileName );
+      } else {
+        fileName = input.val().replace( "C:\\fakepath\\", '' );
+      };
+    });
+  };
+
 });
 

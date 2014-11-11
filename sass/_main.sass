@@ -9,7 +9,7 @@
     line-height: inherit
   +r(1100)
     padding-right: 80px
-  +r(800)
+  +r(850)
     height: auto
     line-height: 1.35
     margin-bottom: 20px
@@ -21,6 +21,31 @@
     padding-right: 0
     .title
       font-size: 30px
+
+.header_border
+  &:before
+    content: ""
+    position: absolute
+    bottom: -1px
+    left: 0
+    right: 0
+    height: 1px
+    background: $border
+    margin: 0 -60px
+  +r(1100)
+    &:before
+      margin: 0 -20px
+  +r(850)
+    padding-bottom: 10px
+
+.header_user
+  padding-right: 20px
+  +r(1100)
+    padding-right: 120px
+    .header__calendar
+      right: 40px
+  +r(600)
+    padding-right: 0
 
 .header__flag
   position: absolute
@@ -48,19 +73,23 @@
   +r(1100)
     left: -20px
 
-
 .header__links
   display: inline-block
   float: right
   height: 60px
+  font-size: 0
   +head-r
   a
     display: inline-block
     vertical-align: middle
     color: $link
+    font-size: 16px
+  a + a
+    margin-left: 10px
   .icon_mail-red
     margin-right: 15px
-  +r(800)
+    line-height: 1
+  +r(850)
     float: none
     height: auto
 
@@ -95,6 +124,22 @@
   +r(600)
     display: none
 
+.header__user-pic
+  display: block
+  position: absolute
+  top: -1px
+  right: -61px
+  width: 60px
+  height: 60px
+  border: 1px solid $border
+  overflow: hidden
+  img
+    display: block
+  +r(1100)
+    right: -20px
+  +r(600)
+    display: none
+
 .footer
   padding: 21px 0
   font-size: 14px
@@ -104,6 +149,7 @@
       float: none
     .float-right
       float: none
+
 
 .slider
   width: percentage(610/955)
@@ -303,6 +349,7 @@
           margin-top: 20px
     .title-small
       display: block
+      margin-top: 20px
 
 
 .map
@@ -538,8 +585,10 @@
     vertical-align: middle
     width: 25%
     box-sizing: border-box
-    font-size: 0.1px
+    font-size: 16px
     line-height: 66px
+    a
+      color: $text
     img
       display: inline-block
       vertical-align: middle
@@ -551,6 +600,7 @@
       width: percentage(155/238)
       display: inline-block
       vertical-align: middle
+      margin-left: -4px
       font-size: 16px
       line-height: 1.2
       &:hover
@@ -620,6 +670,19 @@
     .meta
       display: block
       margin: 10px 0
+  +r(600)
+    .entry
+      float: none
+      width: auto
+      margin: 30px 0 0 0
+      &:first-child
+        margin-top: 0
+  &_simple
+    padding: 0
+    border: none
+    & + .link-more
+      display: inline-block
+      font-size: 14px
 
 
 .checkbox-list
@@ -643,6 +706,10 @@
   .title
     display: inline-block
     vertical-align: middle
+    line-height: inherit
+  +r(800)
+    line-height: 1.1
+    margin-bottom: 30px
 
 .cabinet__header-links
   float: right
@@ -651,37 +718,81 @@
     display: inline-block
     vertical-align: middle
     margin-left: 10px
+  +r(800)
+    float: none
+    margin: 0
+    li
+      display: block
+      margin: 5px 0 0
 
 .cabinet__left
   float: left
-  width: percentage(175/955)
+  // width: percentage(175/955)
+  width: 175px
+  +r(800)
+    width: 220px
+  +r(550)
+    float: none
+    width: auto
 
 .cabinet__center
   float: left
-  width: percentage(560/955)
-  // margin-left: percentage(175/955)
-  // margin-right: percentage(220/955)
-  padding: 0 percentage(30/955)
+  width: 100%
+  margin-left: -175px
+  // width: percentage(560/955)
+  // padding: 0 percentage(30/955)
   box-sizing: border-box
+  +r(800)
+    float: right
+    margin-left: -220px
+  +r(550)
+    float: none
+    width: auto
+    margin: 25px 0 0 0
+
+.cabinet__center-in
+  box-sizing: border-box
+  // margin-left: percentage(175/955)
+  margin-left: 175px
+  // margin-right: percentage(220/955)
+  margin-right: 220px
+  padding: 0 percentage(30/955)
+  +r(800)
+    margin-left: 220px
+    margin-right: 0
+  +r(550)
+    margin: 0
+    padding: 0
 
 .cabinet__right
   float: right
-  width: percentage(220/955)
-  // margin-left: percentage(-220/955)
-
+  // width: percentage(220/955)
+  width: 220px
+  margin-left: -220px
+  +r(800)
+    float: left
+    clear: left
+    margin-left: 0
+  +r(550)
+    float: none
+    width: auto
+    margin: 25px 0 0
 
 .cabinet__user-photo
   max-width: 175px
-  height: 210px
   margin: auto
+
+.cabinet__user-photo-in
+  position: relative
+  padding-bottom: 119%
   box-sizing: border-box
   border: 1px solid $border
   overflow: hidden
-  white-space: nowrap
-  +vertical
   img
-    display: inline-block
-    vertical-align: middle
+    position: absolute
+    top: 0
+    left: 0
     max-width: 100%
+
 
 
