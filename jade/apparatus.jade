@@ -1,0 +1,319 @@
+extends layouts/_layout
+
+block title
+  title Apparatus
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Авторитетное <br> мнение
+      li
+        a(href="#")
+          | Основные <br> сведения
+      li
+        a(href="#")
+          | Социально-<br>экономическая <br> деятельность
+      li
+        a(href="#")
+          | Демографическая <br> политка
+      li
+        a(href="#")
+          | Регионы <br> ЦФО
+      li.is-active
+        a(href="#")
+          | Структура и <br> аппарат
+      li
+        a(href="#")
+          | Инвестиционный <br> уполномоченный
+      li
+        a(href="#")
+          | Совет Федерации <br> и Государственная <br> Дума
+  //end nav-inner
+
+  //begin apparatus
+  .apparatus
+    h1.title
+      | Полномочный представитель Президента Российской Федерации <br> в Центральном федеральном округе
+
+    hr
+
+    .person.person_lead
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Александр Дмитриевич Беглов
+        dd.person__about
+          | Назначен на должность 23 мая 2012 года указом Президента России
+
+    .apparatus__divider
+      h2.title-small
+        | Первые заместители
+
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Громов Александр Георгиевич
+        dd.person__about
+          | Первый заместитель полномочного представителя
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Громов Александр Георгиевич
+        dd.person__about
+          | Первый заместитель полномочного представителя
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Громов Александр Георгиевич
+        dd.person__about
+          | Первый заместитель полномочного представителя
+
+    .apparatus__divider
+      h2.title-small
+        | Заместители полномочного представителя
+
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Волков Владимир Федорович
+        dd.person__about
+          | Заместитель полномочного представителя по координации
+          | работы правохранительных органов и силовых ведомств
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Волков Владимир Федорович
+        dd.person__about
+          | Заместитель полномочного представителя по координации
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Волков Владимир Федорович
+        dd.person__about
+          | Заместитель полномочного представителя по координации
+          | работы правохранительных органов и силовых ведомств
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Волков Владимир Федорович
+        dd.person__about
+          | Заместитель полномочного представителя
+
+    .apparatus__divider
+      h2.title-small
+        | Помощники полномочного представителя Президента РФ
+
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Бурцев Георгий Анатольевич
+        dd.person__about
+          | Заместитель полномочного представителя по координации
+          | работы правохранительных органов и силовых ведомств
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Бурцев Георгий Анатольевич
+        dd.person__about
+          | Заместитель полномочного представителя по координации
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Бурцев Георгий Анатольевич
+        dd.person__about
+          | Заместитель полномочного представителя по координации
+          | работы правохранительных органов и силовых ведомств
+    .person
+      .person__pic
+        img(src="http://placehold.it/175x210")
+      dl.person__container
+        dt.person__name
+          | Бурцев Георгий Анатольевич
+        dd.person__about
+          | Заместитель полномочного представителя
+  //end apparatus
+
+  //begin accordion
+  ul.accordion
+    li.accordion__section
+      .accordion__header
+        strong
+          | Главные федеральные инспекторы
+      .accordion__content
+        table.table-phones
+          thead
+            tr
+              td
+              td ФИО и Должность
+              td Телефон
+          tbody
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+
+    li.accordion__section
+      .accordion__header
+        strong
+          | Начальники департаментов аппарата полномочного представителя Президента РФ
+      .accordion__content
+        table.table-phones
+          thead
+            tr
+              td
+              td ФИО и Должность
+              td Телефон
+          tbody
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+
+    li.accordion__section
+      .accordion__header
+        strong
+          | Представители Президента РФ в квалификационных коллегия суддей
+      .accordion__content
+        table.table-phones
+          thead
+            tr
+              td
+              td ФИО и Должность
+              td Телефон
+          tbody
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+            tr
+              td
+                img(src="img/flags/bel.png")
+              td
+                | Закоржевский Александр Андреевич
+                span.meta
+                  | Главный федеральный инспектор по Белгородской области
+              td
+                | (4722) 32-33-02 (приемная)
+  //end accordion

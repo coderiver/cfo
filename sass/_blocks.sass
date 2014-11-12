@@ -78,7 +78,7 @@
   a
     color: $link
   +r(600)
-    font-size: 18px
+    font-size: 20px
 
 
 .search-field
@@ -92,6 +92,7 @@
     +head-r
     border: 1px solid $border
     border-radius: 3px
+    -webkit-appearance: none
     +placeholder
       color: $border
   button
@@ -646,3 +647,151 @@
         color: $border
         text-decoration: none
         cursor: default
+
+.person
+  box-sizing: border-box
+
+.person__container
+  display: block
+  margin-top: 10px
+
+.person__pic
+  width: 117px
+  height: 140px
+  margin: auto
+  overflow: hidden
+  img
+    display: block
+    max-width: 100%
+
+.person__name
+  display: block
+  font-size: 16px
+
+.person__about
+  display: block
+  margin-top: 10px
+  +head-i
+  font-size: 14px
+  color: $meta
+
+.person_lead
+  display: table
+  .person__pic
+    display: table-cell
+    width: 175px
+    height: 210px
+    vertical-align: top
+  .person__container
+    display: table-cell
+    vertical-align: middle
+    padding-left: 35px
+    margin: 0
+  .person__name
+    font-size: 18px
+  .person__about
+    font-size: 16px
+
+.person_small
+  display: table
+  .person__pic
+    display: table-cell
+    width: 58px
+    height: 70px
+  .person__container
+    display: table-cell
+    padding-left: 15px
+    vertical-align: middle
+  .person__name
+    margin: 0
+  .person__about
+    margin: 0
+
+
+.accordion
+
+.accordion__section
+  margin-top: 15px
+  &:first-child
+    margin-top: 0
+  &.is-active
+    .accordion__header
+      color: $meta
+      &:after
+        +icon(arr-t-gray)
+
+.accordion__header
+  position: relative
+  padding: 19px 60px 19px 30px
+  border: 1px solid $border
+  color: $link
+  cursor: pointer
+  +tr-color
+  +tap
+  strong
+    display: inline-block
+    font-weight: normal
+  &:after
+    content: ""
+    position: absolute
+    top: 50%
+    right: 30px
+    +icon(arr-b-blue)
+    margin-top: -4px
+  &:hover
+    box-shadow: 0 0 1px 0 $border
+    &:after
+      +icon(arr-b-red)
+
+.accordion__content
+  display: none
+
+.accordion_opinion
+  .accordion__section
+    padding: 0 30px
+    margin: 35px -30px 0
+    border-top: 1px solid $border
+    +transition(all 0.2s linear)
+    &:first-child
+      margin-top: 0
+      border-top: none
+    &.is-active
+      background-color: #FDFAF3
+      border-color: #FDFAF3
+      box-shadow: 0 0 10px 0 $border
+      .accordion__header
+        color: $text
+    +r(1100)
+      padding: 0 10px
+      margin: 15px -10px 0
+  .accordion__header
+    padding-left: 0
+    padding-right: 30px
+    border: none
+    &:after
+      top: 30px
+      right: 0
+      margin: 0
+    &:hover
+      box-shadow: none
+    .title-small
+      & > *:hover
+        border-bottom: 1px dotted
+    .meta
+      margin-top: 10px
+
+
+.table-phones
+  margin-bottom: 30px
+  thead
+    td
+      padding: 19px 5px
+      border-bottom: 1px solid $border
+      color: $meta
+  td
+    padding: 20px 5px 0
+    &:first-child
+      vertical-align: middle
+  .meta
+    font-size: 14px
+    margin-top: 0

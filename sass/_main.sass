@@ -4,7 +4,8 @@
   line-height: 60px
   +clr
   .title
-    display: inline-block
+    float: left
+    display: block
     font-size: 40px
     line-height: inherit
   +r(1100)
@@ -14,7 +15,7 @@
     line-height: 1.35
     margin-bottom: 20px
     .title
-      display: block
+      float: none
       line-height: 1
       padding: 5px 0
   +r(600)
@@ -793,6 +794,121 @@
     top: 0
     left: 0
     max-width: 100%
+
+
+.apparatus
+  margin: 40px 0
+  text-align: center
+  hr
+    margin: 40px 0
+  .title-small
+    display: block
+  .person
+    display: inline-block
+    vertical-align: top
+    width: 25%
+    padding: 0 5px
+    & + .person
+      margin-left: -4px
+  .person_lead
+    width: auto
+    max-width: 500px
+    display: table
+    margin: auto
+    padding: 0
+    text-align: left
+  +r(800)
+    .person
+      width: 33.3%
+      margin-top: 20px
+    .person_lead
+      width: auto
+    .apparatus__divider
+      margin-bottom: 20px
+  +r(600)
+    .person
+      width: 50%
+    .person_lead
+      width: auto
+  +r(450)
+    .person
+      width: 100%
+    .person_lead
+      display: block
+      text-align: center
+      .person__pic
+        display: block
+        margin: auto
+      .person__container
+        display: block
+        margin-top: 10px
+        padding: 0
+
+.apparatus__divider
+  position: relative
+  margin: 40px 0
+  padding-top: 45px
+  border-top: 1px solid $border
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 50%
+    width: 1px
+    height: 45px
+    background: $border
+
+
+.opinion
+  padding: 25px 0
+  .accordion__section > &
+    padding: 0
+  p
+    margin: 25px 0
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+  strong
+    // +head-b
+  em
+    +head-i
+    color: #777
+  ul
+    margin: 10px 0
+    padding-left: 25px
+    list-style-type: disc
+  ol
+    margin: 10px 0
+    padding-left: 25px
+    list-style-type: decimal
+
+.opinion__footer
+  position: relative
+  padding-right: 30px
+  margin-top: 25px
+  .person__name
+    +head-i
+    color: $red
+    a
+      color: inherit
+
+.opinion__close
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 30px
+  height: 30px
+  line-height: 30px
+  text-align: center
+  cursor: pointer
+  &:before
+    content: ""
+    display: inline-block
+    +icon(arr-t-gray)
+  &:hover
+    &:before
+      +icon(arr-t-red)
 
 
 

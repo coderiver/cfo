@@ -94,5 +94,30 @@ head.ready(function() {
     });
   };
 
+  //accordion
+  $('.accordion__header').on('click', function(event) {
+    event.preventDefault();
+    var section = $(this).parents('.accordion__section');
+    var content = $(this).siblings('.accordion__content');
+    if ( !section.hasClass('is-active') ) {
+      $('.accordion__section').removeClass('is-active');
+      $('.accordion__content').slideUp();
+      section.addClass('is-active');
+      content.slideDown();
+    } else {
+      section.removeClass('is-active');
+      content.slideUp();
+    };
+
+    var closeBtn = content.find('.opinion__close');
+    if ( closeBtn.length != 0 ) {
+      closeBtn.on('click', function(event) {
+        event.preventDefault();
+        section.removeClass('is-active');
+        content.slideUp();
+      });
+    };
+  });
+
 });
 
