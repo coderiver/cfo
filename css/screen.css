@@ -361,11 +361,14 @@ input[type="text"], input[type="password"], input[type="search"], textarea { pad
 .accordion_opinion .accordion__header .title-small > *:hover { border-bottom: 1px dotted; }
 .accordion_opinion .accordion__header .meta { margin-top: 10px; }
 
-.table thead td { padding: 19px 5px; border-bottom: 1px solid #cdcdcd; color: #7c7c7c; }
-.table td { padding: 20px 5px 0; }
+.table caption { text-align: left; font-size: 18px; padding-bottom: 20px; }
+.table thead td { padding: 19px 5px; border: 1px solid #cdcdcd; border-width: 1px 0; color: #7c7c7c; }
+.table tbody td, .table tbody th { padding: 20px 5px 0; }
+.table tbody th { text-align: left; font-weight: normal; font-style: normal; color: #ff4a39; }
 .table.table_phones { margin-bottom: 30px; }
-.table.table_phones .meta { font-size: 14px; margin-top: 0; }
+.table.table_phones thead td { border-width: 0 0 1px 0; }
 .table.table_phones td:first-child { vertical-align: middle; }
+.table.table_phones .meta { font-size: 14px; margin-top: 0; }
 
 .file { display: table; }
 .file:before { content: ""; display: table-cell; width: 29px; height: 38px; background-position: 50% 0; background-repeat: no-repeat; background-image: url("../img/filetypes/rtf-txt.png"); }

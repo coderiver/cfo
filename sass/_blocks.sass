@@ -792,22 +792,36 @@
 
 
 .table
+  caption
+    text-align: left
+    font-size: 18px
+    padding-bottom: 20px
   thead
     td
       padding: 19px 5px
-      border-bottom: 1px solid $border
+      border: 1px solid $border
+      border-width: 1px 0
       color: $meta
-  td
-    padding: 20px 5px 0
+  tbody
+    td, th
+      padding: 20px 5px 0
+    th
+      text-align: left
+      font-weight: normal
+      font-style: normal
+      color: $red
 
   &.table_phones
     margin-bottom: 30px
-    .meta
-      font-size: 14px
-      margin-top: 0
+    thead
+      td
+        border-width: 0 0 1px 0
     td
       &:first-child
         vertical-align: middle
+    .meta
+      font-size: 14px
+      margin-top: 0
 
 
 .file
