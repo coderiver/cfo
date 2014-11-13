@@ -1,0 +1,55 @@
+extends layouts/_layout
+
+block title
+  title Social Economy
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Авторитетное <br> мнение
+      li
+        a(href="#")
+          | Основные <br> сведения
+      li.is-active
+        a(href="#")
+          | Социально-<br>экономическая <br> деятельность
+      li
+        a(href="#")
+          | Демографическая <br> политка
+      li
+        a(href="#")
+          | Регионы <br> ЦФО
+      li
+        a(href="#")
+          | Структура и <br> аппарат
+      li
+        a(href="#")
+          | Инвестиционный <br> уполномоченный
+      li
+        a(href="#")
+          | Совет Федерации <br> и Государственная <br> Дума
+  //end nav-inner
+
+  h1.title.title_head
+    | Социально-экономическая деятельность
+
+  //begin table
+  .table
+    thead
+      tr
+        td
+          | Деятельность
+        td
+          | Регион
+        td
+          | Январь-октябрь 2011 г.
+        td
+          | Доля в РФ, %
+        td
+          | Январь-октябрь 2011 г.в % к январю-октябрю 2010 г.
+  //end table

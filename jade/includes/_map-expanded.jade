@@ -1,0 +1,123 @@
+//begin map
+.map.map_mod
+  header.map__header
+    h4.title
+      | На карте
+    ul.map__tabs
+      li
+        a(href="#")
+          | Информация
+      li.is-active
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | События
+      li
+        a(href="#")
+          | Достопримечательности
+
+  .map__container
+    .map__container-left
+      .map__object
+        include _map-svg.html
+      .map__info-popup
+        .icon.icon_close
+        p
+          strong
+            | Интернет-ресурсы органов власти
+        ul
+          li
+            a(href="http://www.ivanovoobl.ru/")
+              | http://www.ivanovoobl.ru/
+            |  Правительство Ивановской области
+          li
+            a(href="http://ivoblduma.ru/home/")
+              | http://ivoblduma.ru/home/
+            |  Ивановская областная Дума
+          li
+            a(href="http://www.ivgorduma.ru/")
+              | http://www.ivgorduma.ru/
+            |  Ивановская городская Дума
+        p
+          strong
+            | Информационные интернет-ресурсы
+        ul
+          li
+            a(href="http://www.ivanovoobl.ru/")
+              | http://www.ivanovoobl.ru/
+            |  Правительство Ивановской области
+          li
+            a(href="http://ivoblduma.ru/home/")
+              | http://ivoblduma.ru/home/
+            |  Ивановская областная Дума
+          li
+            a(href="http://www.ivgorduma.ru/")
+              | http://www.ivgorduma.ru/
+            |  Ивановская городская Дума
+        a(href="#").link-more
+         | Далее
+
+    .map__container-right
+      .map__region-about
+        h3.title-small
+          a(href="#").icon.icon_back
+          a(href="#")
+            | Белгородская область
+        .map__region-about-logos
+          img(src="img/flags/BEL-1.png")
+          img(src="img/flags/BEL-2.png")
+        dl
+          dt
+            | Административный центр:
+          dd
+            | Белгород
+          dt
+            | Площадь:
+          dd
+            | 27.1 тыс. км²
+          dt
+            | Население:
+          dd
+            | 1 536 100 (2012)
+        .map__region-about-facts
+          p
+            | Доля городского населения – 66,43%.
+          p
+            | Плотность населения – 56,6 чел./кв. км.
+
+          table
+            caption
+              | Национальная структура населения:
+            tr
+              td русские
+              td 91,66%
+            tr
+              td украинцы
+              td 2,73%
+            tr
+              td другие национальности
+              td 2,74%
+            tr
+              td не указали национальную принадлежность
+              td 2,87%
+
+          table
+            caption
+              | Число муниципальных образований – 309, в т.ч.:
+            tr
+              td муниципальные районы
+              td 19
+            tr
+              td городские округа
+              td 3
+            tr
+              td городские поселения
+              td 25
+            tr
+              td сельские поселения
+              td 262
+        p
+          a(href="#").link-more
+            | Далее
+//end map

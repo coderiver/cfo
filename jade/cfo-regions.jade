@@ -1,0 +1,109 @@
+extends layouts/_layout
+
+block title
+  title CFO Regions
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Авторитетное <br> мнение
+      li
+        a(href="#")
+          | Основные <br> сведения
+      li
+        a(href="#")
+          | Социально-<br>экономическая <br> деятельность
+      li
+        a(href="#")
+          | Демографическая <br> политка
+      li
+        a(href="#")
+          | Регионы <br> ЦФО
+      li
+        a(href="#")
+          | Структура и <br> аппарат
+      li.is-active
+        a(href="#")
+          | Инвестиционный <br> уполномоченный
+      li
+        a(href="#")
+          | Совет Федерации <br> и Государственная <br> Дума
+  //end nav-inner
+
+  include includes/_map-more
+
+  //begin regions-list
+  .regions-list
+    ul
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region.is-active
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+
+    ul
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+
+    ul
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+      li
+        a(href="#").map__region
+          .map__region-flag(style="background-image: url(img/flags/BEL.png)")
+          | Белгородская область
+  //end regions-list
+
+  hr

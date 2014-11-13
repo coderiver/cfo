@@ -1,0 +1,197 @@
+extends layouts/_layout
+
+block title
+  title Invest Form
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Авторитетное <br> мнение
+      li
+        a(href="#")
+          | Основные <br> сведения
+      li
+        a(href="#")
+          | Социально-<br>экономическая <br> деятельность
+      li
+        a(href="#")
+          | Демографическая <br> политка
+      li
+        a(href="#")
+          | Регионы <br> ЦФО
+      li
+        a(href="#")
+          | Структура и <br> аппарат
+      li.is-active
+        a(href="#")
+          | Инвестиционный <br> уполномоченный
+      li
+        a(href="#")
+          | Совет Федерации <br> и Государственная <br> Дума
+  //end nav-inner
+
+  h1.title.title_head
+    | Отправить обращение инвестиционному уполномоченному в Центральном федеральном округе
+
+  .l-two-col
+    .col-one
+      //begin article
+      article.article
+        p.lead
+          | Пожалуйста, прежде чем отправить обращение в адрес инвестиционного
+          | уполномоченного в Центральном федеральном округе в электронном виде,
+          | внимательно ознакомьтесь со следующей информацией.
+
+        p
+          | Чтобы отправить электронное обращение инвестиционному уполномоченному
+          | в Центральном федеральном округе, пожалуйста, заполните приведенную далее форму.
+
+        p
+          em
+            | К инвестиционному уполномоченному может обратиться каждый заинтересованный
+            | представитель хозяйствующего субъекта с информацией о нарушении его прав органами
+            | государственной власти при реализации инвестиционного проекта, а также с предложениями
+            | об улучшении инвестиционного климата в субъектах Российской Федерации, входящих в состав
+            | Центрального федерального округа. Размер электронного обращения не может
+            | превышать 2 тысячи знаков.
+
+        p
+          em
+            | Обращение может содержать вложенные документы и материалы в электронной форме
+            | в виде одного файла без архивирования. Размер файла вложения не может превышать 5 Мб.
+            | Для вложений допустимы следующие форматы файлов: txt, doc, docx, rtf, xls, pdf, jpg, tif.
+
+        p
+          em
+            | Основанием для отказа в рассмотрении Интернет-обращения может являться: указание
+            | недействительных сведений о себе или адреса для ответа; поступление дубликата уже
+            | принятого обращения; некорректность содержания обращения (ненормативная лексика,
+            | высказывания экстремистского характера, угрозы и т.д.); невозможность рассмотрения
+            | обращения без необходимых документов и личной подписи (в отношении обращений,
+            | для которых установлен специальный порядок рассмотрения). После ввода текста
+            | Вашего обращения нажмите кнопку Отправить.
+
+        p
+          em
+            | Поля, обозначенные знаком <mark>*</mark>, обязательны для заполнения.
+
+        form(action="", name="")
+
+          .input.is-required
+            label(for="name").input__label
+              | Фамилия
+            input(type="text", name="name", value="Андреевич")
+
+          .input.is-required.is-error
+            label(for="name").input__label
+              | Имя
+            input(type="text", name="name")
+            small.input__error-msg
+              | Извините, но поле обязательно для заполнения
+
+          .input.is-required
+            label(for="name").input__label
+              | Отчество
+            input(type="text", name="name")
+
+          hr
+
+          .input
+            label(for="name").input__label
+              | Выбрать субъект ЦФО
+            .select
+              span.select__value
+                | Первый по алфавиту
+              select(name="name")
+                option(value="значение 1") значение 1
+                option(value="значение 2") значение 2
+                option(value="значение 3") значение 3
+                option(value="значение 4") значение 4
+                option(value="значение 5") значение 5
+                option(value="значение 6") значение 6
+                option(value="значение 7") значение 7
+
+          .input.is-required
+            label(for="name").input__label
+              | Почтовый индекс
+            input(type="text", name="name", value="Андреевич")
+
+          .input.is-required
+            label(for="name").input__label
+              | Почтовый адрес
+            input(type="text", name="name")
+
+          .input.is-required
+            label(for="name").input__label
+              | Электронная почта
+            input(type="text", name="name")
+
+           .input
+            label(for="name").input__label
+              | Телефон
+            input(type="text", name="name")
+
+          hr
+
+          .input.is-required
+            label(for="name").input__label
+              | Тематика обращения
+            .select
+              span.select__value
+                | Административные барьеры
+              select(name="name")
+                option(value="значение 1") тема 1
+                option(value="значение 2") тема 2
+                option(value="значение 3") тема 3
+                option(value="значение 4") тема 4
+                option(value="значение 5") тема 5
+                option(value="значение 6") тема 6
+                option(value="значение 7") тема 7
+
+          .input.is-required
+            label(for="name").input__label
+              | Текст обращения
+            textarea(name="name", rows="10")
+            small.input__info-text
+              | Не более 2000 знаков
+
+          .input
+            span.input__label
+              | Прикрепить файл
+
+            label(for="file").file-upload
+              button.file-upload__btn
+                | Выбрать файл
+              span.file-upload__file-name
+                | Файл не выбран
+              input(type="file", name="file")
+
+          button.btn(type="submit")
+            | Отправить обращение
+
+      //end article
+
+    .col-two
+      //begin aside-links
+      ul.aside-links
+        li.is-active
+          a(href="#")
+            | Общая информация и документы
+        li
+          a(href="#")
+            | Инвестиционные проекты
+        li
+          a(href="#")
+            | Приемная инвестиционного уполномоченного
+        li
+          a(href="#")
+            | Реестр обращений
+        li
+          a(href="#")
+            | Контакты
+      //end aside-links

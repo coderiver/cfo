@@ -39,29 +39,12 @@ head.ready(function() {
     slidesToScroll: 1,
     infinite: false,
     autoplay: true,
-    autoplaySpeed: 10000,
-    // responsive: [
-    //     {
-    //       breakpoint: 900,
-    //       settings: {
-    //         slidesToShow: 3,
-    //         prevArrow: '.carousel__prev',
-    //         nextArrow: '.carousel__next'
-    //       }
-    //     },
-    //     {
-    //       breakpoint: 600,
-    //       settings: {
-    //         slidesToShow: 2,
-    //         prevArrow: '.carousel__prev',
-    //         nextArrow: '.carousel__next'
-    //       }
-    //     },
-    //   ]
+    autoplaySpeed: 10000
   });
 
   $('.select select').on('change', function(event) {
-    $(this).siblings('.select__value').text(this.value);
+    var selectedOptionText = $(this).find('option:checked').text();
+    $(this).siblings('.select__value').text(selectedOptionText);
   });
 
   //file upload

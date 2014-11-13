@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/authority-opinion.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/authority-opinion.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/config.rb": {
 		"fileType": 131072,
 		"ignore": 0,
@@ -65,6 +74,94 @@
 		"initialSize": 25478,
 		"inputAbbreviatedPath": "\/img\/face.jpg",
 		"outputAbbreviatedPath": "\/img\/face.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/doc-docx.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19059,
+		"inputAbbreviatedPath": "\/img\/filetypes\/doc-docx.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/doc-docx.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/jpg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18779,
+		"inputAbbreviatedPath": "\/img\/filetypes\/jpg.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/jpg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/pdf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18991,
+		"inputAbbreviatedPath": "\/img\/filetypes\/pdf.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/pdf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/png.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19066,
+		"inputAbbreviatedPath": "\/img\/filetypes\/png.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/png.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/ppt-pptx.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18683,
+		"inputAbbreviatedPath": "\/img\/filetypes\/ppt-pptx.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/ppt-pptx.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/rtf-txt.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18533,
+		"inputAbbreviatedPath": "\/img\/filetypes\/rtf-txt.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/rtf-txt.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/xls-xlsx.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18932,
+		"inputAbbreviatedPath": "\/img\/filetypes\/xls-xlsx.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/xls-xlsx.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/filetypes\/zip.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18682,
+		"inputAbbreviatedPath": "\/img\/filetypes\/zip.png",
+		"outputAbbreviatedPath": "\/img\/filetypes\/zip.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1335,6 +1432,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/inner-page.jade",
 		"outputAbbreviatedPath": "\/inner-page.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade\/invest.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/invest.jade",
+		"outputAbbreviatedPath": "\/invest.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
