@@ -392,6 +392,11 @@ p.lead { font-size: 18px; }
 .table.table_phones thead tr { border-width: 0 0 1px 0; }
 .table.table_phones tbody td { padding-top: 20px; padding-bottom: 0; }
 .table.table_phones tbody td:first-child { vertical-align: middle; text-align: center; }
+.table.table_contacts { border: none; }
+.table.table_contacts tr { border-bottom: 1px solid #cdcdcd; }
+.table.table_contacts td, .table.table_contacts th { text-align: left; }
+.table.table_contacts tbody td { padding-top: 25px; padding-bottom: 25px; vertical-align: top; }
+.table.table_contacts .person__container { vertical-align: top; }
 .table.table_notation tbody td { padding-right: 10px; }
 .table.table_notation tbody td.notation { width: 35%; text-align: left; padding-left: 10px; }
 
