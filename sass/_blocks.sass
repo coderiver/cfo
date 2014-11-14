@@ -792,36 +792,105 @@
 
 
 .table
+  border-bottom: 1px solid $border
+  margin-bottom: 25px
   caption
     text-align: left
     font-size: 18px
-    padding-bottom: 20px
+    padding: 20px 0
+  td, th
+    padding-right: 10px
+    text-align: right
+    &:first-child
+      text-align: left
+    &:last-child
+      padding-right: 0
   thead
-    td
-      padding: 19px 5px
+    tr
       border: 1px solid $border
       border-width: 1px 0
+    td, th
+      padding-top: 19px
+      padding-bottom: 19px
       color: $meta
+      &:first-child
+        padding-left: 0
   tbody
     td, th
-      padding: 20px 5px 0
+      padding-top: 10px
+      padding-bottom: 0
+      // text-align: right
+      // &:first-child
+      //   text-align: left
+      &:last-child
+        padding-right: 0
     th
-      text-align: left
+      width: 35%
+      padding-top: 25px
       font-weight: normal
       font-style: normal
       color: $red
-
-  &.table_phones
-    margin-bottom: 30px
-    thead
+    tr:first-child
       td
-        border-width: 0 0 1px 0
-    td
-      &:first-child
-        vertical-align: middle
+        padding-top: 25px
+    tr:last-child
+      td
+        padding-bottom: 25px
     .meta
       font-size: 14px
       margin-top: 0
+    em
+      font-style: normal
+      color: $red
+
+  +r(500)
+    font-size: 14px
+    caption
+      font-size: 16px
+    td
+      padding-right: 5px
+      &:last-child
+        padding-right: 0
+
+  &.table_mod
+    thead
+      th
+        text-align: left
+        font-weight: normal
+        font-style: normal
+        + td
+          text-align: left
+    tbody
+      th
+        text-align: left
+        & + td
+          width: 25%
+          text-align: left
+
+  &.table_phones
+    border: none
+    margin: 0
+    td, th
+      text-align: left
+    thead
+      tr
+        border-width: 0 0 1px 0
+    tbody
+      td
+        padding-top: 20px
+        padding-bottom: 0
+        &:first-child
+          vertical-align: middle
+          text-align: center
+
+  &.table_notation
+    tbody
+      td
+        padding-right: 10px
+      td.notation
+        width: 35%
+        text-align: left
+        padding-left: 10px
 
 
 .file

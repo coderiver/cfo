@@ -1,0 +1,374 @@
+extends layouts/_layout
+
+block title
+  title Social Economy
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Авторитетное <br> мнение
+      li.is-active
+        a(href="#")
+          | Основные <br> сведения
+      li
+        a(href="#")
+          | Социально-<br>экономическая <br> деятельность
+      li
+        a(href="#")
+          | Демографическая <br> политка
+      li
+        a(href="#")
+          | Регионы <br> ЦФО
+      li
+        a(href="#")
+          | Структура и <br> аппарат
+      li
+        a(href="#")
+          | Инвестиционный <br> уполномоченный
+      li
+        a(href="#")
+          | Совет Федерации <br> и Государственная <br> Дума
+  //end nav-inner
+
+  include includes/_map-more
+
+  hr.has-margin
+
+  //begin two-col
+  .l-two-col
+    .col-one
+      h2.title.has-border
+        | Административно-георгафическое положение
+
+      //begin region-about
+      .region-about
+        dl
+          dt Центр федерального округа
+          dd г. Москва
+        dl
+          dt Площадь территории на 1 января 2011 г. составляет
+          dd 650,2 тыс.км² (3,8% от территории РФ)
+        dl
+          dt Население федерального округа на 1 января 2011 г. составляет
+          dd
+            | 38456,9 тыс.чел.*
+            br
+            | (26,91 от численности населения РФ)
+        dl
+          dt Доля городского населения на 1 января 2011 г.
+          dd 81,5%
+        dl
+          dt Плотность населения на 1 января 2011 г. составляет
+          dd 59,1 чел/км<sup><small>2</small></sup>
+
+        table
+          caption
+            | Национальный состав населения
+            br
+            | (по данным Всероссийской переписи населения 2002 г.), %:
+          tr
+            td русские
+            td 93,4;
+          tr
+            td украинцы
+            td 1,7;
+          tr
+            td белорусы
+            td 1,5;
+          tr
+            td другие национальности
+            td 3,4;
+      //end region-about
+
+    .col-two
+      ul.aside-links
+        li
+          a(href="#")
+            | Народные новости
+        li
+          a(href="#")
+            | Пресс-центр
+        li
+          a(href="#")
+            | Контакты
+  //end two-col
+
+  hr.has-margin
+
+  h2.title.title_head
+    | Административно-территориальное устройство округа
+
+  p.lead.has-margin
+    | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    | Pariatur maxime perferendis molestiae autem laboriosam animi iusto
+    | nostrum aperiam voluptatibus, magnam praesentium officia! Nobis, molestiae,
+    | commodi. Ipsa alias consequuntur, minus ipsum!
+
+  //begin table
+  table.table.table_notation
+    thead
+      tr
+        td Наименование
+        td Площадь, занимаемая <br> территорией субъекта, <br> тыс. кв. километров*
+        td Численность населения, <br> тыс. человек**
+        td Административный <br> центр*
+        td
+    tbody
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Белгород
+        td(rowspan="18").notation
+          p.meta
+            | * По данным Росреестра на 1 января 2011 г.
+          p.meta
+            | ** Оценка численности постоянного населения на 1 января 2011 г.
+            | (с учетом предварительных итогов Всероссийской переписи населения 2010 г.).
+
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Калужская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Курская область
+        td 27,1
+        td 1532,5
+        td Иваново
+      tr
+        td Смоленская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Калуга
+      tr
+        td Калужская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Курская область
+        td 27,1
+        td 1532,5
+        td Курск
+      tr
+        td Смоленская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Калужская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Курская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Смоленская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Белгородская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Калужская область
+        td 27,1
+        td 1532,5
+        td Белгород
+      tr
+        td Курская область
+        td 27,1
+        td 1532,5
+        td Белгород
+  //end table
+
+  h2.title.title_head
+    | Характеристика природных ресурсов Центрального федерального округа
+
+  //begin two-col
+  .l-two-equal-col
+    .col-one
+      //begin table
+      table.table
+        thead
+          tr
+            td Показатель
+            td Площадь
+            td Запасы древсины,<br>млн. куб. м
+        tbody
+          tr
+            td Площадь территории, тыс. кв. м.
+            td 650,2
+            td
+          tr
+            td Под лесами, тыс. га.
+            td 22954,99
+            td 3554,19
+          tr
+            td Под водными объектами, тыс. га.
+            td 1212,5
+            td
+          tr
+            td Заболоченные земли, тыс. га.
+            td 650,2
+            td
+      //end table
+    .col-two
+      .text
+        h3
+          | Минеральные ресурсы
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+          | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+          | facere quidem illum. Odit tenetur dolores velit autem quos.
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+          | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+          | facere quidem illum. Odit tenetur dolores velit autem quos.
+
+         p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+          | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+          | facere quidem illum. Odit tenetur dolores velit autem quos.
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+  //end two-col
+
+  hr.has-margin
+
+  //begin three-col
+  .l-three-equal-col.text
+    h3 Биологические ресурсы
+    .col-one
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+    .col-two
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+    .col-three
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste natus quasi
+        | aut officiis architecto delectus optio minus, facilis porro aspernatur maxime
+        | facere quidem illum. Odit tenetur dolores velit autem quos.
+  //end three-col
+
+  hr.has-margin
+
+  h2.title.title_head
+    | Экономическое развитие
+
+  //begin table
+  table.table.table_mod
+    caption
+      | Макроэкономические показатели
+      br
+      | Основные макроэкономические показатели, млн. руб.
+    thead
+      tr
+        th Деятельность
+        td Регион
+        td Январь-октябрь 2011 г.
+        td Доля в РФ, %
+        td Январь-октябрь 2011 г. <br> в % к январю-октябрю 2010 г.
+    tbody
+      tr
+        th(rowspan="2")
+          | Объем отгруженных товаров собственного производства, выполненных работ
+          | и услуг собственными силами в промышленности*
+        td В целом
+        td 273330000,0
+        td -
+        td 105,1
+      tr
+        td Центральный федеральный округ
+        td 6655577,0
+        td 24,6
+        td 107,3
+
+      tr
+        th(rowspan="2") Объем работ, выполненных по виду деятельности "СТРОИТЕЛЬСТВО"
+        td В целом
+        td 273330000,0
+        td -
+        td 105,1
+      tr
+        td Центральный федеральный округ
+        td 6655577,0
+        td 24,6
+        td 107,3
+
+      tr
+        th(rowspan="2") Оборот розничной торговли
+        td В целом
+        td 273330000,0
+        td -
+        td 105,1
+      tr
+        td Центральный федеральный округ
+        td 6655577,0
+        td 24,6
+        td 107,3
+  //end table
+
+  p.meta
+    | *Объем проышленного производства исчисляется по видам деятельности "Добыча полезных ископаемых",
+    | "Обрабатывающие производства", "Производство и распределение электроэнергии, газа и воды"
+
+  hr.has-margin
+
+
+
