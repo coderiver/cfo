@@ -1016,3 +1016,42 @@
 .text
   @extend .article
   text-align: left
+
+
+.contacts
+  .person__container
+    vertical-align: top
+  .person__pic
+  .meta
+    font-size: 14px
+    margin-top: 0
+
+.contacts__header
+  padding: 19px 0
+  color: $meta
+
+.contacts__row
+  display: table
+  width: 100%
+  +r(550)
+    display: block
+    .meta
+      display: inline-block
+      margin-left: 10px
+    .person
+      margin-bottom: 10px
+
+.contacts__cell
+  display: table-cell
+  vertical-align: top
+  padding-right: 10px
+  &:last-child
+    padding-right: 0
+  +r(550)
+    display: block
+    padding: 0
+    margin-left: 40px
+    &:first-child
+      float: left
+      max-width: 25px
+      margin-left: 0

@@ -397,6 +397,8 @@ p.lead { font-size: 18px; }
 .table.table_contacts td, .table.table_contacts th { text-align: left; }
 .table.table_contacts tbody td { padding-top: 25px; padding-bottom: 25px; vertical-align: top; }
 .table.table_contacts .person__container { vertical-align: top; }
+@media only screen and (max-width: 600px) { .table.table_contacts .person__container { display: block; padding: 0; } }
+@media only screen and (max-width: 600px) { .table.table_contacts .person__pic { display: block; margin: 0; } }
 .table.table_notation tbody td { padding-right: 10px; }
 .table.table_notation tbody td.notation { width: 35%; text-align: left; padding-left: 10px; }
 
@@ -823,3 +825,18 @@ p.lead { font-size: 18px; }
 .region-about table td { font-size: smaller; }
 
 .text { text-align: left; }
+
+.contacts .person__container { vertical-align: top; }
+.contacts .meta { font-size: 14px; margin-top: 0; }
+
+.contacts__header { padding: 19px 0; color: #7c7c7c; }
+
+.contacts__row { display: table; width: 100%; }
+@media only screen and (max-width: 550px) { .contacts__row { display: block; }
+  .contacts__row .meta { display: inline-block; margin-left: 10px; }
+  .contacts__row .person { margin-bottom: 10px; } }
+
+.contacts__cell { display: table-cell; vertical-align: top; padding-right: 10px; }
+.contacts__cell:last-child { padding-right: 0; }
+@media only screen and (max-width: 550px) { .contacts__cell { display: block; padding: 0; margin-left: 40px; }
+  .contacts__cell:first-child { float: left; max-width: 25px; margin-left: 0; } }
