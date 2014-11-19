@@ -37,12 +37,17 @@
   +clr
   .col-one
     float: left
-    padding-right: percentage(35/955)
-    margin-right: 250px
+    // padding-right: percentage(35/955)
+    // margin-right: 250px
+    width: 100%
+    padding-right: 285px
   .col-two
     float: right
     width: 250px
     margin-left: -250px
+  +r(800)
+    .col-one
+      padding-right: 270px
   +r(600)
     .col-one
       float: none

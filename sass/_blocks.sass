@@ -295,6 +295,7 @@
         +icon(arr-l-red)
   a
     text-decoration: none
+    color: inherit
   +r(1100)
     margin-left: 30px
   +r(800)
@@ -599,6 +600,15 @@
     .counter
       color: $meta
 
+.aside-links-blocks
+  padding: 10px 0
+  a
+    display: block
+    padding: 10px 30px
+    +tr-back
+    &:hover
+      background: #FDFAF3
+
 
 .pagi
   margin-top: 50px
@@ -717,6 +727,22 @@
   .person__about
     margin: 0
 
+.person_bio
+  .person__pic
+    width: 175px
+    margin: 0 0 15px
+  .person__name
+    font-size: 24px
+  .person__about
+    font-size: 16px
+    +head-r
+    color: $text
+    .meta
+      font-size: 14px
+      margin-top: 15px
+  +r(550)
+    .person__name
+      font-size: 20px
 
 .accordion
 
@@ -729,8 +755,12 @@
       color: $meta
       &:after
         +icon(arr-t-gray)
+      &:hover
+        &:after
+          +icon(arr-t-red)
 
 .accordion__header
+  display: block
   position: relative
   padding: 19px 60px 19px 30px
   border: 1px solid $border
@@ -752,6 +782,9 @@
     box-shadow: 0 0 1px 0 $border
     &:after
       +icon(arr-b-red)
+  &.is-link
+    &:after
+      display: none
 
 .accordion__content
   display: none
@@ -789,6 +822,45 @@
         border-bottom: 1px dotted
     .meta
       margin-top: 10px
+
+.accordion_aside
+  .accordion__header
+    background: $blue
+    border: 1px solid $blue
+    border-top: none
+    border-bottom-color: #44617b
+    text-transform: uppercase
+    color: #fff
+    +head-c
+    +tr-all
+    &:after
+      +icon(arr-b-white)
+    &:hover
+      text-decoration: underline
+      box-shadow: none
+      strong
+        text-decoration: underline
+      &:after
+        +icon(arr-b-red)
+  .accordion__section
+    margin-top: 0
+    &:first-child
+      .accordion__header
+        border-top: 1px solid $blue
+    &.is-active
+      .accordion__header
+        background: none
+        border-color: $border
+        color: $red
+        border-bottom-style: dotted
+        &.is-link
+          background: $blue
+          border-style: solid
+          border-color: $blue
+          border-bottom-color: #44617b
+  .accordion__content
+    border: 1px solid $border
+    border-top: none
 
 
 .table
@@ -896,13 +968,13 @@
         vertical-align: top
     .person__container
       vertical-align: top
-      +r(600)
-        display: block
-        padding: 0
+      // +r(600)
+      //   display: block
+      //   padding: 0
     .person__pic
-      +r(600)
-        display: block
-        margin: 0
+      // +r(600)
+      //   display: block
+      //   margin: 0
 
 
   &.table_notation
@@ -913,6 +985,31 @@
         width: 35%
         text-align: left
         padding-left: 10px
+
+
+.table-wrap
+  -ms-overflow-x: scroll
+  overflow-x: scroll
+  -webkit-overflow-scrolling: touch
+  .table
+    min-width: 500px
+
+.table-wrap-shadow
+  position: relative
+  overflow: hidden
+  .left-shadow, .right-shadow
+    display: none
+    content: ""
+    position: absolute
+    top: 0
+    height: 100%
+    width: 1px
+    box-shadow: 0 0 10px 0 $border
+  .left-shadow
+    left: -1px
+  .right-shadow
+    right: -1px
+
 
 
 .file

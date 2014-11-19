@@ -79,27 +79,57 @@ head.ready(function() {
 
   //accordion
   $('.accordion__header').on('click', function(event) {
-    event.preventDefault();
-    var section = $(this).parents('.accordion__section');
-    var content = $(this).siblings('.accordion__content');
-    if ( !section.hasClass('is-active') ) {
-      $('.accordion__section').removeClass('is-active');
-      $('.accordion__content').slideUp();
-      section.addClass('is-active');
-      content.slideDown();
-    } else {
-      section.removeClass('is-active');
-      content.slideUp();
-    };
-
-    var closeBtn = content.find('.opinion__close');
-    if ( closeBtn.length != 0 ) {
-      closeBtn.on('click', function(event) {
-        event.preventDefault();
+    if ( !$(this).hasClass('is-link') ) {
+      event.preventDefault();
+      var section = $(this).parents('.accordion__section');
+      var content = $(this).siblings('.accordion__content');
+      if ( !section.hasClass('is-active') ) {
+        $('.accordion__section').removeClass('is-active');
+        $('.accordion__content').slideUp();
+        section.addClass('is-active');
+        content.slideDown();
+      } else {
         section.removeClass('is-active');
         content.slideUp();
+      };
+
+      var closeBtn = content.find('.opinion__close');
+      if ( closeBtn.length != 0 ) {
+        closeBtn.on('click', function(event) {
+          event.preventDefault();
+          section.removeClass('is-active');
+          content.slideUp();
+        });
+      };
+    };
+  });
+
+  $('.table-wrap').each(function(index, el) {
+    var inner = $(this);
+    inner.wrap('<div class="table-wrap-shadow"></div>')
+    var wrapper = $(this).parent();
+    wrapper.append('<div class="left-shadow"></div><div class="right-shadow"></div>')
+    var leftShadow = wrapper.find('.left-shadow');
+    var rightShadow = wrapper.find('.right-shadow');
+    var table = $(this).find('.table');
+    var showShadow = function() {
+      inner.on('scroll', function(event) {
+        $(this).scrollLeft() > 0 ? leftShadow.show() : leftShadow.hide();
+        $(this).scrollLeft() + wrapper.width() >= table.width() ? rightShadow.hide() : rightShadow.show();
       });
     };
+    if (table.width() > wrapper.width()) {
+      rightShadow.show();
+    };
+    $(window).on('resize', function(event) {
+      if (table.width() > wrapper.width()) {
+        rightShadow.show();
+        showShadow();
+      } else {
+        rightShadow.hide();
+        leftShadow.hide();
+      }
+    });
   });
 
 });

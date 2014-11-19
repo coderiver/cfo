@@ -1012,46 +1012,90 @@
   table
     td
       font-size: smaller
+      text-align: left
+      &:first-child
+        width: 250px
 
 .text
   @extend .article
   text-align: left
 
 
-.contacts
-  .person__container
-    vertical-align: top
-  .person__pic
-  .meta
-    font-size: 14px
-    margin-top: 0
+// .contacts
+//   display: table
+//   width: 100%
+//   border-top: 1px solid $border
+//   .person__container
+//     vertical-align: top
+//   .person__pic
+//   .meta
+//     font-size: 14px
+//     margin-top: 0
 
-.contacts__header
-  padding: 19px 0
-  color: $meta
+// .contacts__header
+//   color: $meta
+//   .contacts__cell
+//     padding-top: 19px
+//     padding-bottom: 19px
+//     border-bottom: 1px solid $border
 
-.contacts__row
-  display: table
+// .contacts__row
+//   display: table-row
+//   +r(550)
+//     display: block
+//     .meta
+//       display: inline-block
+//       margin-left: 10px
+//     .person
+//       margin-bottom: 10px
+
+// .contacts__cell
+//   display: table-cell
+//   vertical-align: top
+//   padding: 25px 20px 25px 0
+//   &:last-child
+//     padding-right: 0
+//   +r(550)
+//     width: 100%
+//     display: block
+//     padding: 0
+//     margin-left: 40px
+//     &:nth-child
+//     &:first-child
+//       float: left
+//       max-width: 25px
+//       margin-left: 0
+
+
+.bio
+  +clr
+  .title + &
+    margin-top: 40px
+  p
+    margin: 20px 0
+
+.bio__left
+  float: left
+  width: percentage(270/955)
+  max-width: 270px
+  min-width: 175px
+  +r(550)
+    float: none
+    width: 100%
+    min-width: auto
+    max-width: none
+
+.bio__right
+  margin-left: percentage(380/955)
+  +r(550)
+    margin-left: 0
+    margin-top: 25px
+
+table.bio__dates
   width: 100%
-  +r(550)
-    display: block
-    .meta
-      display: inline-block
-      margin-left: 10px
-    .person
-      margin-bottom: 10px
-
-.contacts__cell
-  display: table-cell
-  vertical-align: top
-  padding-right: 10px
-  &:last-child
-    padding-right: 0
-  +r(550)
-    display: block
-    padding: 0
-    margin-left: 40px
+  td
+    padding: 10px 0 10px 10px
     &:first-child
-      float: left
-      max-width: 25px
-      margin-left: 0
+      width: percentage(170/600)
+      padding-left: 0
+      color: $meta
