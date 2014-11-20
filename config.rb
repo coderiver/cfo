@@ -48,6 +48,6 @@ preferred_syntax = :sass
 #     assert_type string, :String
 #     Sass::Script::String.new("../img/#{string.value}")
 #   end
-#   alias_method :"image-path",:image_path 
+#   alias_method :"image-path",:image_path
 #   declare :"image-path", :args => [:string]
 # end

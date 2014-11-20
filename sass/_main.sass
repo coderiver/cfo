@@ -495,7 +495,6 @@
     cursor: pointer
   p
     margin-bottom: 10px
-    strong, b
     +sans-b
   ul
     list-style-type: disc
@@ -1099,3 +1098,116 @@ table.bio__dates
       width: percentage(170/600)
       padding-left: 0
       color: $meta
+
+
+.reception
+  max-width: 200px
+  p
+    margin: 15px 0
+
+.reception__flag
+  img
+    display: inline-block
+    vertical-align: middle
+    margin-right: 10px
+
+.reception__time
+  display: block
+  font-size: 30px
+
+.reception__dl
+  margin: 15px 0
+  dt
+    padding-bottom: 10px
+    border-bottom: 1px solid $border
+    margin-bottom: 10px
+    +sans-b
+
+
+.results
+  +clr
+  .pagi
+    margin-top: 20px
+
+
+.results__right
+  padding-top: 30px
+  float: right
+  width: 120px
+  margin-left: -120px
+  li
+    margin-top: 5px
+  +r(500)
+    float: none
+    width: auto
+    margin: 0
+    li
+      display: inline-block
+      margin: 0 5px 0
+
+
+.results__main
+  float: left
+  margin: 0 160px
+  +r(650)
+    margin-left: 0
+  +r(500)
+    float: none
+    margin-right: 0
+
+.results__item
+  position: relative
+  padding: 30px 0
+  & + &
+    border-top: 1px solid $border
+  .title-small a
+    color: $blue
+  mark
+    background: none
+    color: $red
+  .meta
+    margin-top: 10px
+
+.results__item-figure
+  position: absolute
+  top: 30px
+  left: -160px
+  width: 125px
+  height: 75px
+  overflow: hidden
+  a
+    text-decoration: none
+  img
+    display: block
+  +r(650)
+    position: static
+    margin-bottom: 10px
+
+
+.article-figure
+  display: table
+  width: 100%
+
+.article-figure__left
+  display: table-cell
+  // width: percentage(610/955)
+  width: 63.87%
+  height: 360px
+  vertical-align: top
+  img
+    display: block
+    margin: auto
+    min-height: 100%
+
+.article-figure__right
+  display: table-cell
+  // width: percentage(345/955)
+  width: 36.13%
+  padding-left: 30px
+  vertical-align: top
+  text-align: left
+
+.article-figure__caption
+  +head-i
+  .meta
+    margin-top: 10px

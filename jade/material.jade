@@ -1,0 +1,76 @@
+extends layouts/_layout
+
+block title
+  title Material
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | Народные новости
+      li
+        a(href="#")
+          | Онлайн-конференции
+      li.is-active
+        a(href="#")
+          | Публикации в сми
+      li
+        a(href="#")
+          | Видео
+      li
+        a(href="#")
+          | Доклады
+      li
+        a(href="#")
+          | Стенограммы
+      li
+        a(href="#")
+          | Конкурсы
+      li
+        a(href="#")
+          | Для сми
+  //end nav-inner
+
+  .meta.has-margin
+    | 22 января 2013 года, 15:32
+    span.meta__more
+      | Источник: кправление пресс-службы и информации администрации
+      | Тамбовской области
+
+  h1.title.title_head
+    | Тамбовская область продемонстрировала работу по защите
+    | интересов детей
+
+  .meta.has-margin
+    | Ключевые слова: <a href="#">Тамбовская область,</a> <a href="#">государственная политика,</a> <a href="#">защита детей</a>
+
+  article.article
+    .article-figure
+      .article-figure__left
+        img(src="http://placehold.it/610x360")
+      .article-figure__right
+        .title-small
+          | Тамбовкая область
+        .flags
+          img(src="img/flags/BEL-1.png")
+          img(src="img/flags/BEL-2.png")
+        .article-figure__caption
+          | Администрация Тамбовская область продемонстрировала
+          | работу по защите интересов детей
+          span.meta
+            | Фото: Александра Мудрац / ИТАР-ТАСС
+    p.lead
+       | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       | Adipisci, possimus eligendi eaque, consequatur animi voluptatum
+       | iusto accusantium. Nisi maxime iure vitae fuga sint quidem quis
+       | optio odit atque, consequuntur voluptate.
+       | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       | Adipisci, possimus eligendi eaque, consequatur animi voluptatum
+

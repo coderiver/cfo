@@ -1,0 +1,193 @@
+extends layouts/_layout
+
+block title
+  title GFI News
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Главный федеральный инспектор
+      li
+        a(href="#")
+          | Округ
+      li.is-active
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | Контакты
+  //end nav-inner
+
+  h1.title.title_head
+    | Главные Федеральные Инспекторы
+
+  .l-three-col-mod
+    //begin col-one
+    .col-one
+      h2.title.title_head
+        | Фотолента
+
+      .entry.entry_small
+        a(href="#").entry__pic
+          img(src="http://placehold.it/200x120")
+        strong.entry__text
+          a(href="#")
+            | В работе приняли участие первые заместители председателя
+            | правительства Рязанской области
+        span.meta
+          | 22 января 2013 года, 15:32
+
+      .entry.entry_small
+        a(href="#").entry__pic
+          img(src="http://placehold.it/200x120")
+        strong.entry__text
+          a(href="#")
+            | В работе приняли участие первые заместители председателя
+            | правительства Рязанской области
+        span.meta
+          | 22 января 2013 года, 15:32
+    //end col-one
+
+    //begin col-two
+    .col-two
+      h2.title
+        | Новости ГФИ
+      hr.has-margin
+
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | рабочую встречу с руководителями станкостроительных организаций
+            | по вопросам восстановления деятельности Рязанского
+            | станкостроительного завода.
+        span.meta
+          | 22 января 2013 года, 15:32
+
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | рабочую встречу с руководителями станкостроительных организаций
+        span.meta
+          | 22 января 2013 года, 15:32
+
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | рабочую встречу с руководителями станкостроительных организаций
+            | по вопросам восстановления деятельности Рязанского
+            | станкостроительного завода.
+        span.meta
+          | 22 января 2013 года, 15:32
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | рабочую встречу с руководителями станкостроительных организаций
+        span.meta
+          | 22 января 2013 года, 15:32
+    //end col-two
+
+    //begin col-three
+    .col-three
+      h2.title
+        | Актуальные темы
+      hr.has-margin
+
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | рабочую встречу с руководителями станкостроительных организаций
+            | станкостроительного завода.
+        span.meta
+          | 22 января 2013 года, 15:32
+
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | рабочую встречу с руководителями станкостроительных организаций
+        span.meta
+          | 22 января 2013 года, 15:32
+
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+            | по вопросам восстановления деятельности Рязанского
+            | станкостроительного завода.
+        span.meta
+          | 22 января 2013 года, 15:32
+      .entry.entry_small
+        strong.entry__text
+          a(href="#")
+            | 18 ноября губернатор Рязанской области Олег Ковалев провел
+        span.meta
+          | 22 января 2013 года, 15:32
+    //end col-three
+
+  .l-three-col-mod
+    //begin col-one
+    .col-one
+      h2.title.title_head
+        | График приема
+      hr.has-margin
+
+      //begin reception
+      .reception
+        .reception__flag
+          img(src="img/flags/BEL-1.png")
+          img(src="img/flags/BEL-2.png")
+        p
+          | Прием граждан в приемной Президента РФ в Калужской области
+        p
+          span.reception__time
+            | с 9 до 18:00
+          | Ежедневно
+
+        dl.reception__dl
+          dt
+            | Выходной день
+          dd
+            | Суботта
+            br
+            | Воскресенье
+        dl.reception__dl
+          dt
+            | Телефон
+          dd
+            | (4733) 32-33-02 (приемная)
+      //end reception
+    //end col-one
+
+    //begin col-two
+    .col-two
+      h2.title
+        | Центральный Федеральный округ
+      hr.has-margin
+
+      .map-container
+        style
+          | .map-container svg {transform:scale(0.75)};
+        include includes/_map-svg.html
+    //end col-two
+
+    //begin col-three
+    .col-three
+      ul.aside-links(style="margin-top:55px")
+        li
+          img(src="img/figure.jpg")
+        li
+          a(href="#")
+            | Отправить письмо главному федеральному инспектору
+
+    //end col-three
+

@@ -1,0 +1,93 @@
+extends layouts/_layout
+
+block title
+  title Letter
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li.is-active
+        a(href="#")
+          | Отправить письмо
+      li
+        a(href="#")
+          | Правила
+      li
+        a(href="#")
+          | Ваши предложения
+      li
+        a(href="#")
+          | Личный прием
+      li
+        a(href="#")
+          | Приемная инвестиционного уполномоченного
+  //end nav-inner
+
+  h1.title.title_head
+    | Отправить обращение полномочному представителю
+
+  .text
+    p.lead
+       | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       | Adipisci, possimus eligendi eaque, consequatur animi voluptatum
+       | iusto accusantium. Nisi maxime iure vitae fuga sint quidem quis
+       | optio odit atque, consequuntur voluptate.
+       | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       | Adipisci, possimus eligendi eaque, consequatur animi voluptatum
+
+    .input
+      label(for="name").input__label
+        | Отчество
+      input(type="text", name="name")
+
+    .input.is-required.is-error
+      label(for="name").input__label
+        | Имя
+      input(type="text", name="name")
+      small.input__error-msg
+        | Извините, но поле обязательно для заполнения
+
+    .input
+      label(for="name").input__label
+        | Фамилия
+      input(type="text", name="name")
+
+    hr
+
+    .input.is-required
+      label(for="name").input__label
+        | Почтовый индекс
+      input(type="text", name="name")
+
+    .input.is-required
+      label(for="name").input__label
+        | Почтовый адрес
+      input(type="text", name="name")
+
+    .input.is-required
+      label(for="name").input__label
+        | Электронная почта
+      input(type="email", name="name")
+
+    .input
+      label(for="name").input__label
+        | Телефон
+      input(type="tel", name="name")
+
+    hr
+
+    .input.is-required
+      label(for="name").input__label
+        | Тема обращения
+      input(type="text", name="name")
+
+    .input.is-required
+      label(for="name").input__label
+        | Текст обращения
+      textarea(name="name", rows="10")
+
+    button.btn(type="submit")
+      | Отправить обращение

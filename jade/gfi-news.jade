@@ -147,11 +147,18 @@ block main
       //end entry
 
     .col-two
+      //begin aside-blue-links
+      ul.aside-blue-links
+        li.is-active
+          a(href="#")
+            | Все новости
+        li
+          a(href="#")
+            | Федеральные
+      //end aside-blue-links
+
       //begin accordion
       ul.accordion.accordion_aside
-        li.accordion__section
-          a(href="#").accordion__header.is-link
-              | Все новости
         li.accordion__section
           .accordion__header
             strong

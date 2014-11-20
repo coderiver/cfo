@@ -111,3 +111,30 @@
       margin-top: 25px
 
 
+.l-three-col-mod
+  +clr
+  .col-one
+    float: left
+    width: percentage(265/955)
+  .col-two
+    float: left
+    width: percentage(425/955)
+    padding: 0 percentage(35/955)
+  .col-three
+    float: right
+    width: percentage(265/955)
+  & + &
+    margin-top: 60px
+  +r(600)
+    .col-one
+      float: none
+      width: 100%
+    .col-two
+      float: none
+      width: 100%
+      padding: 0
+      margin-top: 25px
+    .col-three
+      float: none
+      width: 100%
+      margin-top: 25px
