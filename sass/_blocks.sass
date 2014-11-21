@@ -168,6 +168,9 @@
   color: $meta
   a
     color: $link
+  mark
+    background: none
+    color: $red
   &_file
     +head-r
     em
@@ -203,6 +206,22 @@
     &:hover
       color: $red
       background: none
+  &_form
+    width: 100%
+    margin-top: 30px
+    max-width: 350px
+  &_small
+    display: inline-block
+    padding: 4px 15px
+    font-size: 18px
+    text-transform: uppercase
+    +head-c
+  &_float-right
+    float: right
+    margin-bottom: 15px
+    +r(600)
+      float: none
+
 
 .radio-btn
   display: inline-block
@@ -462,6 +481,10 @@
       color: $link
       font-size: 14px
       margin-top: 15px
+  &_middle
+    max-width: 570px
+  &_narrow
+    max-width: 350px
   &.is-required
     .input__label
       position: relative
@@ -511,6 +534,66 @@
   @extend .input__info-text
   color: $red
   display: none
+
+
+.keywords
+  input
+    display: inline-block
+    vertical-align: top
+    width: auto
+    height: 22px
+    padding: 5px
+    margin-bottom: 3px
+    box-sizing: border-box
+    border: none
+    background: none
+    &:focus
+      outline: none
+      box-shadow: none
+
+
+.keywords__field
+  display: block
+  +clr
+  padding: 3px 3px 0 3px
+  border: 1px solid $border
+  &:hover
+    box-shadow: 0 0 1px 0 $border
+
+
+.keywords__word
+  display: inline-block
+  vertical-align: top
+  position: relative
+  height: 22px
+  box-sizing: border-box
+  padding: 4px 25px 4px 10px
+  margin-bottom: 3px
+  background: #F0F0F0
+  font-size: 14px
+  line-height: 1
+  &:hover
+    background: $lightblue
+
+.keywords__word-delete
+  position: absolute
+  top: 50%
+  right: 7px
+  margin-top: -5px
+  cursor: pointer
+  +icon(close)
+  &:hover
+    +icon(close-h)
+
+.keywords__actual
+  margin-top: 7px
+  +head-r
+  font-size: 0
+  li
+    display: inline-block
+    vertical-align: top
+    margin-right: 15px
+    font-size: 14px
 
 
 .file-upload
@@ -689,7 +772,7 @@
   right: 0
   display: block
   max-width: 50%
-  color: #D6D6D6
+  color: $info
   font-size: 14px
   line-height: 55px
   text-align: right
@@ -1161,3 +1244,18 @@
     margin-right: 15px
     &:last-child
       margin-right: 0
+
+
+.label
+  display: inline-block
+  padding: 6px 10px
+  background: $red
+  color: #FFF
+  +head-c
+  font-size: 18px
+  line-height: 1
+  text-transform: uppercase
+  .title &
+    position: relative
+    top: -2px
+    margin-left: 10px

@@ -82,19 +82,19 @@ block main
 
         form(action="", name="")
 
-          .input.is-required
+          .input.is-required.input_narrow
             label(for="name").input__label
               | Фамилия
             input(type="text", name="name", value="Андреевич")
 
-          .input.is-required.is-error
+          .input.is-required.is-error.input_narrow
             label(for="name").input__label
               | Имя
             input(type="text", name="name")
             small.input__error-msg
               | Извините, но поле обязательно для заполнения
 
-          .input.is-required
+          .input.is-required.input_narrow
             label(for="name").input__label
               | Отчество
             input(type="text", name="name")
@@ -116,22 +116,22 @@ block main
                 option(value="значение 6") значение 6
                 option(value="значение 7") значение 7
 
-          .input.is-required
+          .input.is-required.input_narrow
             label(for="name").input__label
               | Почтовый индекс
             input(type="text", name="name", value="Андреевич")
 
-          .input.is-required
+          .input.is-required.input_narrow
             label(for="name").input__label
               | Почтовый адрес
             input(type="text", name="name")
 
-          .input.is-required
+          .input.is-required.input_narrow
             label(for="name").input__label
               | Электронная почта
             input(type="text", name="name")
 
-           .input
+           .input.input_narrow
             label(for="name").input__label
               | Телефон
             input(type="text", name="name")
@@ -160,7 +160,7 @@ block main
             small.input__info-text
               | Не более 2000 знаков
 
-          .input
+          .input.input_narrow
             span.input__label
               | Прикрепить файл
 
@@ -171,7 +171,7 @@ block main
                 | Файл не выбран
               input(type="file", name="file")
 
-          button.btn(type="submit")
+          button.btn.btn_form(type="submit")
             | Отправить обращение
 
       //end article

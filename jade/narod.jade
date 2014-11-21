@@ -1,41 +1,50 @@
 extends layouts/_layout
 
 block title
-  title Inner Page
+  title Narod
 
 block main
-  include includes/_header
+  include includes/_header-user
 
   //begin nav-inner
   .nav-inner
     ul.nav-inner__links
       li
         a(href="#")
-          | субъекты рф в <br> цфо
-      li
-        a(href="#")
-          | авторитетное <br> мнение
+          | Новости
       li.is-active
         a(href="#")
-          | основные <br> сведения
+          | Народные новости
       li
         a(href="#")
-          | социально-экономическая <br> деятельность
+          | Онлайн-конференции
       li
         a(href="#")
-          | инвестиционный <br> уполномоченный
+          | Публикации в сми
       li
         a(href="#")
-          | совет федерации <br> и государственная дума фс рф
+          | Видео
+      li
+        a(href="#")
+          | Доклады
+      li
+        a(href="#")
+          | Стенограммы
+      li
+        a(href="#")
+          | Конкурсы
+      li
+        a(href="#")
+          | Для сми
   //end nav-inner
 
-  ul.breadcrumbs
-    li
-      a(href="#")
-        | К области
-    li
-      a(href="#")
-        | Достопримечательности
+  a(href="#").btn.btn_small.btn_float-right
+    | Добавить новость
+
+  h1.title.title_head
+    | Народные новости
+    .label
+      | топ 5
 
   //begin toparea
   .toparea

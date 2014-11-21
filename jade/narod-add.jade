@@ -1,0 +1,115 @@
+extends layouts/_layout
+
+block title
+  title Narod Add
+
+block main
+  include includes/_header-user
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Новости
+      li.is-active
+        a(href="#")
+          | Народные новости
+      li
+        a(href="#")
+          | Онлайн-конференции
+      li
+        a(href="#")
+          | Публикации в сми
+      li
+        a(href="#")
+          | Видео
+      li
+        a(href="#")
+          | Доклады
+      li
+        a(href="#")
+          | Стенограммы
+      li
+        a(href="#")
+          | Конкурсы
+      li
+        a(href="#")
+          | Для сми
+  //end nav-inner
+
+  a(href="#").btn.btn_small.btn_float-right
+    | Закрыть и вернуться к новостям
+
+  h1.title.title_head
+    | Добавить новость
+
+  .input.input_middle
+    label(for="name").input__label
+      | Выбрать субъект ЦФО
+    .select
+      span.select__value
+        | Первый по алфавиту
+      select(name="name")
+        option(value="значение 1") значение 1
+        option(value="значение 2") значение 2
+        option(value="значение 3") значение 3
+        option(value="значение 4") значение 4
+        option(value="значение 5") значение 5
+        option(value="значение 6") значение 6
+        option(value="значение 7") значение 7
+
+  .input.is-required.input_middle
+    label(for="name").input__label
+      | Заголовок
+    input(type="text", name="name")
+
+  .input.is-required.input_middle
+    label(for="name").input__label
+      | Подзаголовок
+    input(type="text", name="name")
+
+  .input.is-required.input_middle
+    label(for="name").input__label
+      | Текст новости
+    textarea(name="name", rows="10")
+
+  .input.keywords.input_middle
+    span(for="name").input__label
+      | Ключевые слова
+    label.keywords__field
+      .keywords__word
+        span Здравохранение
+        .keywords__word-delete
+      .keywords__word
+        span Культура
+        .keywords__word-delete
+      .keywords__word
+        span ЖКХ
+        .keywords__word-delete
+      input(type="text", autocomplite="off")
+    span.input__info-text
+      | Добавляйте ключевые слова через запятую.
+    ul.keywords__actual
+      li
+        a(href="#") Здравохранение
+      li
+        a(href="#") Культура
+      li
+        a(href="#") ЖКХ
+
+  .input.input_narrow
+    span.input__label
+      | Загрузить файл
+    label(for="file").file-upload
+      button.file-upload__btn
+        | Выбрать файл
+      span.file-upload__file-name
+        | Файл не выбран
+      input(type="file", name="file")
+
+  button.btn.btn_form(type="submit")
+    | Отправить новость
+
+  p.meta
+    | Поля, отмеченные <mark>*</mark>, обязательны для заполнения
