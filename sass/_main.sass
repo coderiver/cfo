@@ -724,35 +724,71 @@
 
 
 .toparea
-  padding: percentage(30/953)
+  padding: percentage(15/953)
   margin-bottom: 30px
   +clr
   border: 1px solid $border
-  .entry
-    float: left
-    width: percentage(278/895)
-    box-sizing: border-box
-    padding: 0
-    margin: 0 0 0 percentage(30/893)
-    border: none
-    &:first-child
-      margin-left: 0
-    .meta
-      display: block
-      margin: 10px 0
   +r(600)
-    .entry
-      float: none
-      width: auto
-      margin: 30px 0 0 0
+    margin-left: -7px
+    margin-right: -7px
+
+.toparea__cell
+  width: 33.33%
+  float: left
+  box-sizing: border-box
+  padding: percentage(15/953)
+  +r(600)
+    float: none
+    width: 100%
+    margin-top: 25px
+    &:first-child
+      margin-top: 0
+
+
+.toparea__lead
+  position: relative
+  padding-bottom: percentage(30/953)
+  +clr
+  &:before
+    content: ""
+    position: absolute
+    bottom: percentage(30/953)
+    left: percentage(15/953)
+    right: percentage(15/953)
+    height: 1px
+    background: $border
+  .toparea__cell
+    width: 50%
+  +r(600)
+    padding-bottom: 0
+    &:before
+      display: none
+    .toparea__cell
+      width: 100%
+
+.toparea_simple
+  padding: 0
+  border: none
+  & + .link-more
+    display: inline-block
+    font-size: 14px
+  .toparea__cell
+    padding: 0 percentage(10/955)
+    &:first-child
+      padding-left: 0
+      padding-right: percentage(20/955)
+    &:last-child
+      padding-right: 0
+      padding-left: percentage(20/955)
+  +r(600)
+    .toparea__cell
+      padding: 0
+      margin-top: 25px
       &:first-child
+        padding: 0
         margin-top: 0
-  &_simple
-    padding: 0
-    border: none
-    & + .link-more
-      display: inline-block
-      font-size: 14px
+      &:last-child
+        padding: 0
 
 
 .checkbox-list

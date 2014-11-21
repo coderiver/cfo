@@ -1,0 +1,188 @@
+extends layouts/_layout
+
+block title
+  title Public
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Общественная палата ЦФО
+      li
+        a(href="#")
+          | Общественные проеткы
+      li.is-active
+        a(href="#")
+          | Аналитика
+      li
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | Мероприятия
+      li
+        a(href="#")
+          | Молодежь
+      li
+        a(href="#")
+          | Контакты
+  //end nav-inner
+
+  //begin toparea
+  .toparea
+    .toparea__cell
+      .entry
+        a(href="#").entry__pic
+          img(src="http://placehold.it/670x395")
+        h2.entry__title
+          a(href="#")
+            | Свято-Усенский Кафедральный Собор
+        p.entry__text
+          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
+          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
+        span.meta
+          | 22 января 2014 года, 09:41
+        a(href="#").author
+          .author__pic
+            img(src="http://placehold.it/30x30")
+          span.author__name
+            | Анатолий Петров
+        .rating
+          .rating__star
+          span
+            | 23
+
+    .toparea__cell
+      .entry
+        a(href="#").entry__pic
+          img(src="http://placehold.it/670x395")
+        h2.entry__title
+          a(href="#")
+            | Свято-Усенский Кафедральный Собор
+        p.entry__text
+          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
+          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
+        span.meta
+          | 22 января 2014 года, 09:41
+        a(href="#").author
+          .author__pic
+            img(src="http://placehold.it/30x30")
+          span.author__name
+            | Анатолий Петров
+        .rating
+          .rating__star
+          span
+            | 23
+
+    .toparea__cell
+      .entry
+        a(href="#").entry__pic
+          img(src="http://placehold.it/670x395")
+        h2.entry__title
+          a(href="#")
+            | Свято-Усенский Кафедральный Собор
+        p.entry__text
+          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
+          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
+        span.meta
+          | 22 января 2014 года, 09:41
+        a(href="#").author
+          .author__pic
+            img(src="http://placehold.it/30x30")
+          span.author__name
+            | Анатолий Петров
+        .rating
+          .rating__star
+          span
+            | 23
+  //end toparea
+
+  //begin entries
+  h1.title.title_head
+    | Актуальные темы
+
+  hr.has-margin
+
+  //begin teasers
+  .l-three-col
+    .col-one
+      .teaser
+        ul.list
+          li
+            a(href="#")
+              | Всё в кластерах
+            span.meta
+              | 28 октября 2014 года, 18:22
+          li
+            a(href="#")
+              | В управлении труда и занятости населения Тамбовской области подвели итоги за 9 месяцев работы
+              | В управлении труда и занятости населения Тамбовской области подвели итоги за 9 месяцев работы
+            span.meta
+              | 28 октября 2014 года, 18:17
+          li
+            a(href="#")
+              | Хозяйства Тамбовской области засеяли озимыми рекордные 500 тыс га
+              | Хозяйства Тамбовской области засеяли озимыми рекордные 500 тыс га
+            span.meta
+              | 28 октября 2014 года, 18:16
+    .col-two
+      .teaser
+        ul.list
+          li
+            a(href="#")
+              | Всё в кластерах
+            span.meta
+              | 28 октября 2014 года, 18:22
+          li
+            a(href="#")
+              | В управлении труда и занятости населения Тамбовской области подвели итоги за 9 месяцев работы
+              | В управлении труда и занятости населения Тамбовской области подвели итоги за 9 месяцев работы
+            span.meta
+              | 28 октября 2014 года, 18:17
+          li
+            a(href="#")
+              | Хозяйства Тамбовской области засеяли озимыми рекордные 500 тыс га
+              | Хозяйства Тамбовской области засеяли озимыми рекордные 500 тыс га
+            span.meta
+              | 28 октября 2014 года, 18:16
+    .col-three
+      .poll
+        h3.title.has-border
+          | Опрос
+        a(href="#").poll__archive
+          | Архив опросов
+        p.poll__question
+          | Какой тз социальных проектов в сфере
+          | образования Вам больше понравился?
+        ul.poll__answers
+          li
+            label.radio-btn
+              input(type="radio", name="poll")
+              span
+                | Образлвательные кредиты
+          li
+            label.radio-btn
+              input(type="radio", name="poll")
+              span
+                | Талантливая молодежь
+          li
+            label.radio-btn
+              input(type="radio", name="poll")
+              span
+                | Классное руководство
+          li
+            label.radio-btn
+              input(type="radio", name="poll")
+              span
+                | Школьное питание
+        button.btn.btn_light
+          | Голосовать
+  //end teasers
+
+  hr.has-margin
+
+  include includes/_map-more

@@ -341,9 +341,11 @@
     display: inline-block
     vertical-align: middle
     margin: 0 15px 0 0
+    line-height: 2
     &:last-child
       display: block
       margin: 20px 0 0
+      line-height: 1.25
   & + &
     margin-top: 30px
     border-top: 1px solid $border
@@ -717,12 +719,17 @@
 
 .aside-links-blocks
   padding: 10px 0
+  li.is-active
+    a
+      color: $red
   a
     display: block
     padding: 10px 30px
     +tr-back
     &:hover
       background: #FDFAF3
+    &.is-active
+      color: $red
 
 
 .aside-blue-links
@@ -1255,6 +1262,8 @@
   font-size: 18px
   line-height: 1
   text-transform: uppercase
+  +r(600)
+    font-size: 14px
   .title &
     position: relative
     top: -2px
