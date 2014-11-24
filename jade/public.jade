@@ -9,13 +9,13 @@ block main
   //begin nav-inner
   .nav-inner
     ul.nav-inner__links
-      li
+      li.is-active
         a(href="#")
           | Общественная палата ЦФО
       li
         a(href="#")
           | Общественные проеткы
-      li.is-active
+      li
         a(href="#")
           | Аналитика
       li
@@ -32,76 +32,85 @@ block main
           | Контакты
   //end nav-inner
 
-  //begin toparea
-  .toparea
-    .toparea__cell
-      .entry
-        a(href="#").entry__pic
-          img(src="http://placehold.it/670x395")
-        h2.entry__title
-          a(href="#")
-            | Свято-Усенский Кафедральный Собор
-        p.entry__text
-          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
-          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
-        span.meta
-          | 22 января 2014 года, 09:41
-        a(href="#").author
-          .author__pic
-            img(src="http://placehold.it/30x30")
-          span.author__name
-            | Анатолий Петров
-        .rating
-          .rating__star
-          span
-            | 23
+  //begin wrap-three-border
+  .wrap-three-border
+    .l-two-col
+      .col-one
+        //begin toparea
+        .toparea.toparea_two-el
+          .toparea__cell
+            .entry
+              a(href="#").entry__pic
+                img(src="http://placehold.it/670x395")
+              p.entry__text
+                a(href="#")
+                  | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
+                  | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
+              span.meta
+                | 22 января 2014 года, 09:41
+          .toparea__cell
+            .entry
+              a(href="#").entry__pic
+                img(src="http://placehold.it/670x395")
+              .label
+                | Важно
+              p.entry__text
+                a(href="#")
+                  | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
+                  | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
+              span.meta
+                | 22 января 2014 года, 09:41
+        //begin entries
+      .col-two
+        ul.aside-blue-links
+          li
+            a(href="#")
+              | Состав и структура
+          li
+            a(href="#")
+              | Документы
+          li
+            a(href="#")
+              | Региональные общественные палаты
+          li
+            a(href="#")
+              | Медиа
+          li
+            a(href="#")
+              | Контакты
+  //end wrap-three-border
 
-    .toparea__cell
-      .entry
-        a(href="#").entry__pic
-          img(src="http://placehold.it/670x395")
-        h2.entry__title
-          a(href="#")
-            | Свято-Усенский Кафедральный Собор
-        p.entry__text
-          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
-          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
-        span.meta
-          | 22 января 2014 года, 09:41
-        a(href="#").author
-          .author__pic
-            img(src="http://placehold.it/30x30")
-          span.author__name
-            | Анатолий Петров
-        .rating
-          .rating__star
-          span
-            | 23
+  //begin slider
+  .slider.slider_speech
+    .slider__list
+      .slider__slide
+        .speech.speech_slide
+          .speech__pic
+            img(src="img/face.jpg")
+          blockquote
+            a(href="#")
+              | "Россияне, изменившие мир» — таким будет лейтмотив Форума будущих
+              | интеллектуальных лидеров России. Верю, что его участники, одаренные
+              | школьники,создадут новые импульсы для развития всего человечества
+          dl.person
+            dt.person__name
+              | Александр Дмитриевич Беглов
+            dd.person__about
+              | Полномочный представитель Президента Российской Федерации в ЦФО
+      .slider__slide
+        .speech.speech_slide
+          .speech__pic
+            img(src="img/face.jpg")
+          blockquote
+            a(href="#")
+              | "Россияне, изменившие мир» — таким будет лейтмотив Форума будущих
+              | интеллектуальных лидеров России. Верю, что его участники, одаренные
+              | школьники,создадут новые импульсы для развития всего человечества
+      .slider__nav
+        .slider__prev
+        .slider__next
+  //end slider
 
-    .toparea__cell
-      .entry
-        a(href="#").entry__pic
-          img(src="http://placehold.it/670x395")
-        h2.entry__title
-          a(href="#")
-            | Свято-Усенский Кафедральный Собор
-        p.entry__text
-          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского.
-          | Более 70 тысяч человек побывали на праздновании юбилея Сергия Радонежского
-        span.meta
-          | 22 января 2014 года, 09:41
-        a(href="#").author
-          .author__pic
-            img(src="http://placehold.it/30x30")
-          span.author__name
-            | Анатолий Петров
-        .rating
-          .rating__star
-          span
-            | 23
-  //end toparea
-
-  //begin entries
   h1.title.title_head
     | Актуальные темы
 

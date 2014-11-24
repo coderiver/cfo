@@ -162,9 +162,7 @@
 
 .slider
   width: 100%
-  max-width: 610px
   height: 360px
-  margin: auto
   overflow: hidden
   position: relative
 
@@ -246,6 +244,37 @@
   .icon
     vertical-align: middle
 
+.slider_autoheight
+  height: auto
+  .slider__slide
+    height: auto
+
+.slider_speech
+  height: auto
+  .slider__slide
+    height: auto
+  .slider__prev,
+  .slider__next
+    background: #fff
+    border: 1px solid $border
+    &:before
+      content: ""
+      display: inline-block
+      vertical-align: middle
+  .slider__prev
+    &:before
+      +icon(arr-l-gray)
+    &:hover
+      &:before
+        +icon(arr-l-red)
+  .slider__next
+    border-left: none
+    &:before
+      +icon(arr-r-gray)
+    &:hover
+      &:before
+        +icon(arr-r-red)
+
 
 .speech
   position: absolute
@@ -309,6 +338,15 @@
     background: url('../img/face-overlay.png')
     width: 210px
     height: 265px
+
+.speech_slide
+  position: relative
+  border: none
+  width: auto
+  margin-right: 123px
+  .speech__pic
+    top: 0
+
 
 
 .links
@@ -744,7 +782,6 @@
     &:first-child
       margin-top: 0
 
-
 .toparea__lead
   position: relative
   padding-bottom: percentage(30/953)
@@ -789,6 +826,19 @@
         margin-top: 0
       &:last-child
         padding: 0
+
+.toparea_two-el
+  border: none
+  margin: 0
+  .toparea__cell
+    width: 50%
+  +r(700)
+    .toparea__cell
+      float: none
+      width: 100%
+      margin-top: 25px
+      &:first-child
+        margin-top: 0
 
 
 .checkbox-list
@@ -1253,6 +1303,9 @@ table.bio__dates
   +clr
   margin: 25px 0
   position: relative
+  .slider
+    max-width: 610px
+    margin: auto
 
 .article-figure__left
   float: left
@@ -1295,3 +1348,23 @@ table.bio__dates
     margin-top: 10px
   +r(800)
     position: static
+
+
+.wrap
+  position: relative
+  +clr
+
+.wrap-three-border
+  border: 1px solid $border
+  border-width: 1px 0 1px 1px
+  .l-two-col
+    .col-one
+      padding-right: 270px
+  +r(600)
+    border-width: 1px 1px 0
+    .l-two-col
+      .col-one
+        padding-right: 0
+  .aside-blue-links
+    position: relative
+    top: -1px

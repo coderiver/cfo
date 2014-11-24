@@ -44,10 +44,6 @@
     +icon(arr-l-red)
 
 
-.wrap
-  position: relative
-  +clr
-
 .title
   display: block
   +head-b
@@ -337,6 +333,7 @@
 
 
 .entry
+  position: relative
   .meta
     display: inline-block
     vertical-align: middle
@@ -1261,10 +1258,15 @@
   +head-c
   font-size: 18px
   line-height: 1
-  text-transform: uppercase
+  // text-transform: uppercase
   +r(600)
     font-size: 14px
   .title &
     position: relative
     top: -2px
     margin-left: 10px
+  .entry &
+    position: absolute
+    z-index: 2
+    top: 0
+    left: 0
