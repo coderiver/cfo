@@ -1,0 +1,208 @@
+extends layouts/_layout
+
+block title
+  title Parlament
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Авторитетное <br> мнение
+      li
+        a(href="#")
+          | Основные <br> сведения
+      li
+        a(href="#")
+          | Социально-<br>экономическая <br> деятельность
+      li
+        a(href="#")
+          | Демографическая <br> политка
+      li
+        a(href="#")
+          | Регионы <br> ЦФО
+      li
+        a(href="#")
+          | Структура и <br> аппарат
+      li
+        a(href="#")
+          | Инвестиционный <br> уполномоченный
+      li.is-active
+        a(href="#")
+          | Совет Федерации <br> и Государственная <br> Дума
+  //end nav-inner
+
+  //begin l-two-equal-col
+  .l-two-equal-col
+    .col-one
+      h2.title.title_head
+        | Совет Федерации Федерального Собрания Российской Федерации
+        .red-link
+          a(href="#")
+            | council.gov.ru
+      .text
+        p
+          | Соевет Федерации является "верхней" палатой Федерального Собрания
+          | - Парламента Российской Федерации.
+        p
+          | В Совет Федерации в соответствии с частью 2 статьи 295 Конституции
+          | Российской Федерации входят по два представителя от каждого
+          | субъекта Российской Федерации: по одному от представительного
+          | и испольнительного органов государственной власти.
+
+        strong
+          | Адрес:
+
+        p
+          small
+            | 103426, г. Москва, ул. Большая Дмитровка, д. 26
+            br
+            | 121295, г. Москва, ул. Моховая, д. 7
+            br
+            | (Приемная Совета Федерации)
+
+        p
+          small
+            | Факс:
+            br
+            | +7 (495) 629-67-43
+            br
+            | +7 (495) 629-41-67
+
+        p
+          small
+            | Справки по телефону:
+            br
+            | +7 (495) 629-67-43
+            br
+            | +7 (495) 629-41-67
+
+    .col-two
+      h2.title.title_head.title_with-link
+        | Государственная Дума Российской Федерации
+        .red-link
+          a(href="#")
+            | council.gov.ru
+
+      .text
+        p
+          | Соевет Федерации является "верхней" палатой Федерального Собрания
+          | - Парламента Российской Федерации.
+        p
+          | В Совет Федерации в соответствии с частью 2 статьи 295 Конституции
+          | Российской Федерации входят по два представителя от каждого
+
+        strong
+          | Адрес:
+
+        p
+          small
+            | 103426, г. Москва, ул. Большая Дмитровка, д. 26
+            br
+            | 121295, г. Москва, ул. Моховая, д. 7
+            br
+            | 103426, г. Москва, ул. Большая Дмитровка, д. 26
+            br
+            | 121295, г. Москва, ул. Моховая, д. 7
+            br
+            | (Приемная Совета Федерации)
+
+        p
+          small
+            | Факс:
+            br
+            | +7 (495) 629-67-43
+            br
+            | +7 (495) 629-41-67
+
+        p
+          small
+            | Справки по телефону:
+            br
+            | +7 (495) 629-67-43
+            br
+            | +7 (495) 629-41-67
+
+        p
+          small
+            | Факс для письменных сообщений
+            br
+            | +7 (495) 629-67-43
+  //end l-two-equal-col
+  hr.has-margin
+
+  //begin accordion
+  ul.accordion
+    li.accordion__section
+      .accordion__header
+        strong.name-with-flag
+          img(src="img/flags/bel.png")
+          span Москва
+      .accordion__content
+        .l-two-equal-col
+          .col-one
+            p.lead.has-margin
+              | Представители ЦФО в Совете Федерации
+              | Федерального Собрания Российской Федерации
+            .person.person_small.has-margin
+              .person__pic
+                img(src="http://placehold.it/175x210")
+              dl.person__container
+                dt.person__name
+                  a(href="#")
+                    | Закоржевский <br> Александр Андреевич
+                dd.person__about
+                  | Главный Федеральный инспектор по Белгородской области
+            .person.person_small.has-margin
+              .person__pic
+                img(src="http://placehold.it/175x210")
+              dl.person__container
+                dt.person__name
+                  a(href="#")
+                    | Закоржевский <br> Александр Андреевич
+                dd.person__about
+                  | Главный Федеральный инспектор по Белгородской области
+            .person.person_small.has-margin
+              .person__pic
+                img(src="http://placehold.it/175x210")
+              dl.person__container
+                dt.person__name
+                  a(href="#")
+                    | Закоржевский <br> Александр Андреевич
+                dd.person__about
+                  | Главный Федеральный инспектор по Белгородской области
+
+          .col-two
+            p.lead.has-margin
+              | Представители ЦФО в Государственной Думе российской Федерации
+            .person.person_small.has-margin
+              .person__pic
+                img(src="http://placehold.it/175x210")
+              dl.person__container
+                dt.person__name
+                  a(href="#")
+                    | Закоржевский <br> Александр Андреевич
+                dd.person__about
+                  | Главный Федеральный инспектор по Белгородской области
+            .person.person_small.has-margin
+              .person__pic
+                img(src="http://placehold.it/175x210")
+              dl.person__container
+                dt.person__name
+                  a(href="#")
+                    | Закоржевский <br> Александр Андреевич
+                dd.person__about
+                  | Главный Федеральный инспектор по Белгородской области
+            .person.person_small.has-margin
+              .person__pic
+                img(src="http://placehold.it/175x210")
+              dl.person__container
+                dt.person__name
+                  a(href="#")
+                    | Закоржевский <br> Александр Андреевич
+                dd.person__about
+                  | Главный Федеральный инспектор по Белгородской области
+  //end accordion

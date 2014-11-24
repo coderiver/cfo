@@ -372,6 +372,10 @@
     max-width: 100%
     height: auto
     min-height: 100%
+  .accordion__header &
+    margin-right: -30px
+    margin-bottom: 0
+    width: auto
 
 .entry__title
   display: block
@@ -987,6 +991,19 @@
         border-bottom: 1px dotted
     .meta
       margin-top: 10px
+  .entry &
+    .accordion__section
+      margin: 0 -20px
+      padding: 0 20px
+      +r(1100)
+        margin: 0 -10px
+        padding: 0 10px
+      &.is-active
+        padding-bottom: 30px
+    .accordion__header
+      padding-top: 0
+      &:after
+        top: 11px
 
 .accordion_aside
   .accordion__header
@@ -1270,3 +1287,25 @@
     z-index: 2
     top: 0
     left: 0
+
+.red-link
+  +head-r
+  color: $red
+  font-size: 16px
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  a
+    color: inherit
+    text-decoration: inherit
+  .title &
+    margin-top: 7px
+
+.name-with-flag
+  img
+    display: inline-block
+    vertical-align: middle
+    margin-right: 10px
+  span
+    display: inline-block
+    vertical-align: middle

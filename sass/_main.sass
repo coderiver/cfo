@@ -251,11 +251,22 @@
 
 .slider_speech
   height: auto
+  border-bottom: 1px solid $border
+  margin-bottom: 40px
+  // .wrap-tree-border + &
+  //   margin-top: -10px
   .slider__slide
     height: auto
+    display: none
+    &:first-child
+      display: block
+    &.slick-slide
+      display: block
+  .slider__nav
+    bottom: -1px
   .slider__prev,
   .slider__next
-    background: #fff
+    background: rgba(255,255,255,0.8)
     border: 1px solid $border
     &:before
       content: ""
@@ -343,9 +354,40 @@
   position: relative
   border: none
   width: auto
-  margin-right: 123px
+  border-width: 0
+  margin: 0 123px 0 0
+  padding: 30px 160px 30px 0
   .speech__pic
     top: 0
+  blockquote
+    display: inline-block
+    padding: 10px 30px 0 60px
+    &:before
+      top: 0
+      left: 0
+  .person
+    position: relative
+    z-index: 2
+    margin-top: 15px
+    padding-left: 60px
+  .person__name
+    +head-i
+    color: $red
+    margin: 0
+  .person__about
+    color: $meta
+    margin: 0
+  +r(700)
+    margin: 0
+    blockquote
+      padding: 90px 20px 0 0
+      &:before
+        top: 20px
+    .person
+      padding-left: 0
+  +r(600)
+    padding: 30px 30px 70px 0
+
 
 
 
@@ -1019,6 +1061,8 @@
   // text-align: justify
   .accordion__section > &
     padding: 0
+  .entry .accordion__content &
+    padding-bottom: 0
   p
     margin: 25px 0
     &:first-child
@@ -1368,3 +1412,8 @@ table.bio__dates
   .aside-blue-links
     position: relative
     top: -1px
+    li
+      border: none
+      margin-top: 1px
+      &:first-child
+        margin-top: 0
