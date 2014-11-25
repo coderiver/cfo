@@ -20,19 +20,18 @@ gulp.task('browser-sync', function() {
         },
         files: ["css/*.css", "*.html", "js/**/*.js"],
         port: 8080,
-        open: false
+        open: false,
         // proxy: 'yourlocal.dev',
         // host: '192.168.1.1',
         // injectChanges: true,
         // notify: false,
         // browser: ['google chrome', 'firefox'],
-        // open: false,
-        // ghostMode: {
-        //     clicks: true,
-        //     location: true,
-        //     forms: true,
-        //     scroll: false
-        // }
+        ghostMode: {
+            clicks: false,
+            location: false,
+            forms: false,
+            scroll: false
+        }
     });
 });
 

@@ -1,0 +1,107 @@
+extends layouts/_layout
+
+block title
+  title Press Center
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | Народные новости
+      li
+        a(href="#")
+          | Онлайн-конференции
+      li
+        a(href="#")
+          | Публикации в сми
+      li
+        a(href="#")
+          | Видео
+      li
+        a(href="#")
+          | Доклады
+      li
+        a(href="#")
+          | Стенограммы
+      li
+        a(href="#")
+          | Конкурсы
+      li.is-active
+        a(href="#")
+          | Для сми
+  //end nav-inner
+
+  h1.title.title_head
+    | Для СМИ
+
+  //begin person
+  .person.person_lead
+    .person__pic
+      img(src="http://placehold.it/175x210")
+    .person__container
+      .person__name
+        a(href="#")
+          | Александр Дмитриевич Беглов
+      .person__about
+        | Полномочный Представитель Президента Российской Федерации
+        br
+        |в Центральном федеральном округе
+
+      a(href="#").btn.btn_small
+        | Скачать фото в высоком разрешении
+  //end person
+
+  //begin text
+  .text.has-margin
+    h3
+      | Контакты
+
+    strong
+      | Адрес
+    p
+      dl
+        dt
+          | Отдел по работе с обращениями граждан (приемная Государственной
+          | Думы Управления <br> по связям с сообщественностью и взамодействию со СМИ):
+        dd
+          | 103265, Москва, улица Моховая, дом 7
+    p
+      dl
+        dt
+          | Справки о телефонах в Государственной Думе:
+        dd
+          | (495) 692-62-66
+    p
+      dl
+        dt
+          | Справки по письменным обращениям:
+        dd
+          | (495) 692-62-66 и 495) 692-62-66
+    p
+      dl
+        dt
+          | Справки по приему граждан:
+        dd
+          | (495) 692-62-66
+    p
+      dl
+        dt
+          | Часы приема:
+        dd
+          | с 9:00 до 17:00
+    p
+      dl
+        dt
+          | Факс для письменных обращения
+        dd
+          | (495) 692-62-66
+
+  hr.has-margin
+  //end text

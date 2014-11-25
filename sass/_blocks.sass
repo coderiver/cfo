@@ -65,7 +65,7 @@
     .header + &
       margin-top: 25px
   +r(600)
-    font-size: 20px
+    font-size: 24px
 
 .title-small
   display: inline-block
@@ -181,7 +181,7 @@
   margin-left: 7px
 
 .btn
-  display: block
+  display: inline-block
   padding: 19px 30px 21px
   +head-r
   font-size: 16px
@@ -196,6 +196,9 @@
     background: $red
     text-decoration: none
   &_light
+    display: block
+    width: 100%
+    margin-top: 30px
     background: none
     color: $link
     border: 1px solid $border
@@ -203,6 +206,7 @@
       color: $red
       background: none
   &_form
+    display: block
     width: 100%
     margin-top: 30px
     max-width: 350px
@@ -212,6 +216,8 @@
     font-size: 18px
     text-transform: uppercase
     +head-c
+    .person &
+      margin-top: 20px
   &_float-right
     float: right
     margin-bottom: 15px
@@ -299,7 +305,7 @@
 
 
 .breadcrumbs
-  margin: 30px 0 20px
+  margin: 30px 0 20px -10px
   +head-b
   font-size: 30px
   line-height: 1
@@ -310,8 +316,6 @@
     position: relative
     color: $text
     +tr-color
-    &:first-child
-      margin-left: 0
     &:before
       content: ""
       position: absolute
@@ -326,8 +330,6 @@
   a
     text-decoration: none
     color: inherit
-  +r(1100)
-    margin-left: 30px
   +r(800)
     font-size: 20px
 
@@ -347,11 +349,6 @@
     margin-top: 30px
     border-top: 1px solid $border
     padding-top: 25px
-  & + .btn
-    display: block
-    width: 100%
-    margin-top: 30px
-
 
 .entry__pic
   display: block
@@ -363,8 +360,9 @@
   overflow: hidden
   &:first-child
     margin-top: 0
-  img
+  > img, > div
     position: absolute
+    z-index: 1
     top: 0
     left: 0
     display: block
@@ -376,16 +374,19 @@
     margin-right: -30px
     margin-bottom: 0
     width: auto
+    padding-bottom: 61.7%
 
 .entry__title
   display: block
   margin-bottom: 10px
   +head-c
-  font-size: 20px
+  font-size: 26px
   line-height: 1.2
   color: $link
   a
     padding-top: 3px
+  +r(600)
+    font-size: 20px
 
 .entry__text
   display: block
@@ -405,6 +406,10 @@
     margin: 0
   .entry__pic
     margin: 0
+
+.entry_accordion
+  & + &
+    padding-top: 6px
 
 
 .author
@@ -880,6 +885,14 @@
     font-size: 18px
   .person__about
     font-size: 16px
+  +r(450)
+    .person__pic
+      display: block
+      margin: 0
+    .person__container
+      display: block
+      padding: 0
+      margin-top: 15px
 
 .person_small
   display: table
@@ -951,9 +964,6 @@
     box-shadow: 0 0 1px 0 $border
     &:after
       +icon(arr-b-red)
-  &.is-link
-    &:after
-      display: none
 
 .accordion__content
   display: none
@@ -975,7 +985,8 @@
         color: $text
     +r(1100)
       padding: 0 10px
-      margin: 15px -10px 0
+      margin-left: -10px
+      margin-right: -10px
   .accordion__header
     padding-left: 0
     padding-right: 30px
@@ -991,19 +1002,16 @@
         border-bottom: 1px dotted
     .meta
       margin-top: 10px
-  .entry &
-    .accordion__section
-      margin: 0 -20px
-      padding: 0 20px
-      +r(1100)
-        margin: 0 -10px
-        padding: 0 10px
-      &.is-active
-        padding-bottom: 30px
-    .accordion__header
-      padding-top: 0
-      &:after
-        top: 11px
+
+.accordion_entry
+  .accordion__section
+    margin: 0 -20px
+    padding: 0 20px
+    +r(1100)
+      margin: 0 -10px
+      padding: 0 10px
+    &.is-active
+      padding-bottom: 30px
 
 .accordion_aside
   .accordion__header
@@ -1035,11 +1043,6 @@
         border-color: $border
         color: $red
         border-bottom-style: dotted
-        &.is-link
-          background: $blue
-          border-style: solid
-          border-color: $blue
-          border-bottom-color: #44617b
   .accordion__content
     border: 1px solid $border
     border-top: none

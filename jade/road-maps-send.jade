@@ -1,0 +1,183 @@
+extends layouts/_layout
+
+block title
+  title Road Maps Send
+
+block main
+  include includes/_header-border
+
+  h1.title.title_head
+    | На контроле полномочного представителя Президента Российской Федерации
+    | в Центральном федеральном округе
+
+  .l-two-col
+    .col-one
+      //begin article
+      article.article
+        p.lead
+          | Пожалуйста, прежде чем отправить обращение в адрес инвестиционного
+          | уполномоченного в Центральном федеральном округе в электронном виде,
+          | внимательно ознакомьтесь со следующей информацией.
+
+        p.lead
+          | К инвестиционному уполномоченному может обратиться каждый заинтересованный
+          | представитель хозяйствующего субъекта с информацией о нарушении его прав органами
+          | государственной власти при реализации инвестиционного проекта, а также с предложениями
+          | об улучшении инвестиционного климата в субъектах Российской Федерации, входящих в состав
+          | Центрального федерального округа. Размер электронного обращения не может
+          | превышать 2 тысячи знаков.
+          | Обращение может содержать вложенные документы и материалы в электронной форме
+
+        p
+          mark
+            | В том случае, если Вы обнаружили неоправданно резкий рост цен
+            | на лекарственные препараты, сообщите об этом, заполнив форму обращения.
+
+
+        form(action="", name="")
+
+          .input.is-required.input_narrow
+            label(for="name").input__label
+              | Фамилия
+            input(type="text", name="name", value="Андреевич")
+
+          .input.is-required.is-error.input_narrow
+            label(for="name").input__label
+              | Имя
+            input(type="text", name="name")
+            small.input__error-msg
+              | Извините, но поле обязательно для заполнения
+
+          .input.is-required.input_narrow
+            label(for="name").input__label
+              | Отчество
+            input(type="text", name="name")
+
+          hr
+
+          .input
+            label(for="name").input__label
+              | Выбрать субъект ЦФО
+            .select
+              span.select__value
+                | Первый по алфавиту
+              select(name="name")
+                option(value="значение 1") значение 1
+                option(value="значение 2") значение 2
+                option(value="значение 3") значение 3
+                option(value="значение 4") значение 4
+                option(value="значение 5") значение 5
+                option(value="значение 6") значение 6
+                option(value="значение 7") значение 7
+
+          .input.is-required.input_narrow
+            label(for="name").input__label
+              | Почтовый индекс
+            input(type="text", name="name", value="Андреевич")
+
+          .input.is-required.input_narrow
+            label(for="name").input__label
+              | Почтовый адрес
+            input(type="text", name="name")
+
+          .input.is-required.input_narrow
+            label(for="name").input__label
+              | Электронная почта
+            input(type="text", name="name")
+
+           .input.input_narrow
+            label(for="name").input__label
+              | Телефон
+            input(type="text", name="name")
+
+          hr
+
+          .input.is-required
+            label(for="name").input__label
+              | Тематика обращения
+            .select
+              span.select__value
+                | Административные барьеры
+              select(name="name")
+                option(value="значение 1") тема 1
+                option(value="значение 2") тема 2
+                option(value="значение 3") тема 3
+                option(value="значение 4") тема 4
+                option(value="значение 5") тема 5
+                option(value="значение 6") тема 6
+                option(value="значение 7") тема 7
+
+          .input.is-required
+            label(for="name").input__label
+              | Текст обращения
+            textarea(name="name", rows="10")
+            small.input__info-text
+              | Не более 2000 знаков
+
+          .input.input_narrow
+            span.input__label
+              | Прикрепить файл
+
+            label(for="file").file-upload
+              button.file-upload__btn
+                | Выбрать файл
+              span.file-upload__file-name
+                | Файл не выбран
+              input(type="file", name="file")
+
+          button.btn.btn_form(type="submit")
+            | Отправить обращение
+
+          .meta
+            | Поля отмеченные <mark>*</mark>, обязательны для заполнения
+
+      //end article
+
+    .col-two
+      //begin aside-links
+      ul.aside-links
+        li.is-active
+          a(href="#") Горюче-смазочные материалы
+        li
+          a(href="#") Здравохранение
+        li
+          a(href="#") Культура
+        li
+          a(href="#") Пенсии
+        li
+          a(href="#") Образование
+        li
+          a(href="#") Налоги и льготы
+        li
+          a(href="#") Дети
+        li
+          a(href="#") Семья
+        li
+          a(href="#") Здравохранение
+        li
+          a(href="#") Культура
+        li
+          a(href="#") Пенсии
+        li
+          a(href="#") Образование
+        li
+          a(href="#") Налоги и льготы
+        li
+          a(href="#") Дети
+        li
+          a(href="#") Семья
+        li
+          a(href="#") Здравохранение
+        li
+          a(href="#") Культура
+        li
+          a(href="#") Пенсии
+        li
+          a(href="#") Образование
+        li
+          a(href="#") Налоги и льготы
+        li
+          a(href="#") Дети
+        li
+          a(href="#") Семья
+      //end aside-links

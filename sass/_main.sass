@@ -673,12 +673,42 @@
       width: 100%
       padding: 0
 
+.regions-list_mod
+  .map__region
+    +transition(none)
+    position: relative
+    z-index: 1
+    &:after
+      content: ""
+      position: absolute
+      z-index: 3
+      top: 100%
+      left: 0
+      height: 10px
+      width: 300px
+      background: #FFF
+      margin-top: -5px
+    &:hover
+      box-shadow: 0 0 10px rgba(0,0,0,0.3)
+      .map__region-more
+        display: block
+
+  .map__region-more
+    // display: none
+    position: absolute
+    z-index: 2
+    background: #FFF
+    color: $text
+    top: 100%
+    left: 0
+    width: 300px
+    box-sizing: border-box
+    padding: 0 20px 20px 60px
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+
 
 .poll
   padding-top: 25px
-  .btn
-    width: 100%
-    margin-top: 30px
 
 .poll__archive
   display: inline-block
@@ -1417,3 +1447,46 @@ table.bio__dates
       margin-top: 1px
       &:first-child
         margin-top: 0
+
+.entries
+  font-size: 0
+  overflow: hidden
+  .wrap
+    margin: -25px percentage(-25/955) -25px 0
+  .entry
+    width: 50%
+    box-sizing: border-box
+    display: inline-block
+    vertical-align: top
+    font-size: 16px
+    padding: 25px percentage(25/955) 25px 0
+    border-top: 1px solid $border
+  .entry + .entry
+    margin-top: 0
+  +r(600)
+    .entry
+      width: 100%
+
+  .l-two-col .col-one &
+    .wrap
+      margin: -25px percentage(-25/955) -25px 0
+    .entry
+      padding: 25px percentage(25/955) 25px 0
+      +r(800)
+        width: 100%
+
+.entries_mod
+  .entry
+    width: percentage(465/980)
+    margin-right: percentage(25/980)
+    padding-right: 0
+  +r(600)
+    .wrap
+      margin-right: 0
+    .entry
+      width: 100%
+      margin-right: 0
+
+
+
+

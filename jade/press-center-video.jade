@@ -1,0 +1,213 @@
+extends layouts/_layout
+
+block title
+  title Press Center
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | Народные новости
+      li
+        a(href="#")
+          | Онлайн-конференции
+      li
+        a(href="#")
+          | Публикации в сми
+      li
+        a(href="#")
+          | Видео
+      li
+        a(href="#")
+          | Доклады
+      li
+        a(href="#")
+          | Стенограммы
+      li
+        a(href="#")
+          | Конкурсы
+      li.is-active
+        a(href="#")
+          | Для сми
+  //end nav-inner
+
+  h1.title.title_head
+    | Видео
+
+  //begin l-two-col
+  .l-two-col
+    .col-one
+      .entries
+        .wrap
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Об утверждении прилагаемого Совета при полномочном
+                | Президента Российской Федерации в Центральном федеральном округе
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Перечень поручений по реализации
+                | Послания Президента РФ Собранию
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Об утверждении прилагаемого Совета при полномочном
+                | Президента Российской Федерации в Центральном федеральном округе
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+              span.label
+                | Важно
+            .entry__text
+              a(href="#")
+                | Перечень поручений по реализации
+                | Послания Президента РФ Собранию
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Об утверждении прилагаемого Совета при полномочном
+                | Президента Российской Федерации в Центральном федеральном округе
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Перечень поручений по реализации
+                | Послания Президента РФ Собранию
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Об утверждении прилагаемого Совета при полномочном
+                | Президента Российской Федерации в Центральном федеральном округе
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+              span.label
+                | Важно
+            .entry__text
+              a(href="#")
+                | Перечень поручений по реализации
+                | Послания Президента РФ Собранию
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+              span.label
+                | Важно
+            .entry__text
+              a(href="#")
+                | Перечень поручений по реализации
+                | Послания Президента РФ Собранию
+            span.meta
+              | 22 января 2013 года, 15:32
+
+          .entry
+            a(href="#").entry__pic
+              img(src="http://placehold.it/670x395")
+            .entry__text
+              a(href="#")
+                | Об утверждении прилагаемого Совета при полномочном
+                | Президента Российской Федерации в Центральном федеральном округе
+            span.meta
+              | 22 января 2013 года, 15:32
+
+      button.btn.btn_light
+        | Смотреть предыдущие видео
+
+    .col-two
+      //begin accordion
+      ul.accordion.accordion_aside
+        li.accordion__section
+          .accordion__header
+            | Показать видео по дате
+          .accordion__content
+            ul.aside-links-blocks
+              li.is-active
+                a(href="#")
+                  | За сегодня
+              li
+                a(href="#")
+                  | За неделю
+              li
+                a(href="#")
+                  | За месяц
+              li
+                a(href="#")
+                  | За полгода
+              li
+                a(href="#")
+                  | Все
+        li.accordion__section
+          .accordion__header
+            | Показать видео по теме
+          .accordion__content
+            ul.aside-links-blocks
+              li.is-active
+                a(href="#")
+                  | Все темы
+              li
+                a(href="#")
+                  | Новости
+              li
+                a(href="#")
+                  | Народные новости
+              li
+                a(href="#")
+                  | Конференции
+              li
+                a(href="#")
+                  | Выступления
+              li
+                a(href="#")
+                  | Доклады
+              li
+                a(href="#")
+                  | Стенограммы
+              li
+                a(href="#")
+                  | Конкурсы
+      //end accordion
+  //end l-two-col
+
+

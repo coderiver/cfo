@@ -1,0 +1,159 @@
+extends layouts/_layout
+
+block title
+  title Press Center
+
+block main
+  include includes/_header
+
+  //begin nav-inner
+  .nav-inner
+    ul.nav-inner__links
+      li
+        a(href="#")
+          | Новости
+      li
+        a(href="#")
+          | Народные новости
+      li
+        a(href="#")
+          | Онлайн-конференции
+      li
+        a(href="#")
+          | Публикации в сми
+      li
+        a(href="#")
+          | Видео
+      li
+        a(href="#")
+          | Доклады
+      li
+        a(href="#")
+          | Стенограммы
+      li
+        a(href="#")
+          | Конкурсы
+      li.is-active
+        a(href="#")
+          | Для сми
+  //end nav-inner
+
+  h1.title
+    | Для СМИ
+
+  //begin results
+  .results
+    .results__main
+      //begin results__list
+      ul.results__list
+        li.results__item
+          h3.title-small
+            a(href="#")
+             | Инвестиционный уполномоченный Ольга Атюкова провела
+             | заседание Комиссии по улучшению инвестиционного климата
+             | в Центральном федеральном округе
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          h3.title-small
+            a(href="#")
+             | ГФИ по Тверской области Юрий Стрелецкий и уполномоченный
+             | по защите прав предпринимателей в регионе
+             | Антон Стамплевский подписали соглашение о взаимодействии
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          .results__item-figure
+            a(href="#")
+              img(src="http://placehold.it/125x75")
+          h3.title-small
+            a(href="#")
+             | Глава региона провел заседание областного совета
+             | по улучшению инвестиционного климата и взаимодействию
+             | с инвесторами в Курской области
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          h3.title-small
+            a(href="#")
+             | Уполномоченный по правам ребенка в Калужской
+             | области посетила следственный изолятор №1 г.Калуги
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          .results__item-figure
+            a(href="#")
+              img(src="http://placehold.it/125x75")
+          h3.title-small
+            a(href="#")
+             | Инвестиционный уполномоченный Ольга Атюкова провела
+             | заседание Комиссии по улучшению инвестиционного климата
+             | в Центральном федеральном округе
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          h3.title-small
+            a(href="#")
+             | ГФИ по Тверской области Юрий Стрелецкий и уполномоченный
+             | по защите прав предпринимателей в регионе
+             | Антон Стамплевский подписали соглашение о взаимодействии
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          h3.title-small
+            a(href="#")
+             | Глава региона провел заседание областного совета
+             | по улучшению инвестиционного климата и взаимодействию
+             | с инвесторами в Курской области
+          span.meta
+            | 13 апреля 2012 года, 16:40
+
+        li.results__item
+          h3.title-small
+            a(href="#")
+             | Уполномоченный по правам ребенка в Калужской
+             | области посетила следственный изолятор №1 г.Калуги
+          span.meta
+            | 13 апреля 2012 года, 16:40
+      //end results__list
+      //begin pagi
+      .pagi
+        .pagi__text
+          span
+            | Поиск осуществлен с использованием Яndex.Server
+
+        a(href="#").pagi__arrow-prev
+
+        ul.pagi__list
+          li
+            a(href="#") 1
+          li.is-active
+            a(href="#") 2
+          li
+            a(href="#") 3
+          li
+            a(href="#") 4
+
+        a(href="#").pagi__arrow-next
+
+      //end pagi
+
+    .results__right
+      ul
+        li
+          a(href="#") Анонсы
+        li
+          a(href="#") Аккредитация
+        li
+          a(href="#") Контакты
+        li
+          a(href="#") Фотографии в высоком разрешении
+        li
+          a(href="#") Подписка
+  //end results
