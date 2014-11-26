@@ -474,7 +474,10 @@
     border-bottom: 1px dotted
     line-height: 1.1
     a
+      color: inherit
       text-decoration: none
+    &:hover
+      color: $text
     &:first-child
       margin-left: 0
     &.is-active
@@ -1481,6 +1484,7 @@ table.bio__dates
 .entries
   font-size: 0
   overflow: hidden
+  margin-bottom: 30px
   .wrap
     margin: -25px percentage(-25/955) -25px 0
   .entry
@@ -1518,5 +1522,163 @@ table.bio__dates
       margin-right: 0
 
 
+.calendar
+  background: #FFF
+  padding: 20px
+
+.calendar__header
+  margin-bottom: 15px
+  line-height: 1
+
+.calendar__filter
+  position: relative
+  display: inline-block
+  color: $red
+  border-bottom: 1px dotted
+
+.calendar__filter-drop
+  display: none
+  position: absolute
+  z-index: 10
+  top: -7px
+  left: -10px
+  background: #FFF
+  padding: 7px 10px
+  box-shadow: 0 0 10px rgba(0,0,0,0.3)
+  li
+    color: $link
+    +text-overflow
+    +tr-color
+    cursor: pointer
+    a
+      color: inherit
+      text-decoration: none
+    &:hover
+      color: $red
+  .calendar__filter:hover &
+    display: block
+
+.calendar__body
+  background: $border
+  table
+    font-size: 14px
+    table-layout: fixed
+    border-spacing: 1px
+    border-collapse: separate
+    width: 100%
+
+// .calendar__week
+
+.calendar__day
+  vertical-align: top
+  position: relative
+  z-index: 1
+  height: 75px
+  overflow: hidden
+  background: #FFF
+  box-sizing: border-box
+  padding: 6px 9px
+  line-height: 1.1
+  &:hover
+    outline: 1px solid $red
+  &.is-past
+    background: #E1E1E1
+  &.is-today
+    z-index: 2
+    background: #FCFAF2
+    box-shadow: 0 0 9px #aeaeae
+  +r(700)
+    height: 50px
+    padding: 3px
+
+.calendar__day-head
+  +clr
+  +head-i
+  color: $red
+  +r(700)
+    font-size: 0
+
+.calendar__date
+  float: right
+  margin-left: 3px
+  color: $text
+  font-size: 14px
+  +r(400)
+    font-size: 12px
+
+.calendar__weekday
+  float: right
+  margin-left: 3px
+  color: $meta
+  font-size: 14px
+  +r(400)
+    font-size: 12px
+
+.calendar__day-events
+  li
+    +text-overflow
+  +r(700)
+    display: none
+
+.calendar__day-more
+  +head-i
+  color: $meta
+
+.calendar__move-back
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  text-decoration: none
+  color: $red
+  border-bottom: 1px dotted
+  cursor: pointer
+  &:hover
+    text-decoration: none
+    border: none
+  .title &
+    text-decoration: none
+
+.calendar__events-list
+  height: 370px
+  overflow: auto
+  -webkit-overflow-scrolling: touch
+  li
+    position: relative
+    padding: 21px 150px 21px 0
+    border-top: 1px solid $border
+    line-height: 1
+  .meta
+    position: absolute
+    top: 20px
+    right: 0
+    width: 140px
+    font-size: 14px
+    margin: 0
+    line-height: 1.1
+    text-align: right
+  +r(500)
+    li
+      padding: 10px 0
+    .meta
+      position: static
+      width: auto
+      margin-top: 7px
+      text-align: left
 
 
+.calendar_events
+  .calendar__header
+    position: relative
+    text-align: center
+    min-height: 30px
+    +r(800)
+      padding-top: 45px
+
+.login-form
+  padding: 20px
+  background: #F9F9F9
+
+.login-form__center
+  margin-top: 25px
+  text-align: center

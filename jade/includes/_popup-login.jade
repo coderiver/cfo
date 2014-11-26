@@ -1,0 +1,89 @@
+//begin popup
+.popup.popup_login
+  .popup__inner
+    .popup__close
+
+    //begin login-form
+    form.login-form
+      strong.title.title_head
+        | Вход в личный кабинет
+
+      .input
+        label(for="name").input__label
+          | Электронная почта
+        input(type="email", name="name")
+
+      .input
+        label(for="name").input__label
+          | Пароль
+        input(type="password", name="name")
+
+      .two-col-as-table
+        .col-one
+          button(type="submit").btn.btn_login
+            | Войти
+        .col-two
+          a(href="#")
+            | Забыли пароль?
+
+      hr.has-margin
+
+      .social
+        strong.social__title
+          | Войти с помощью
+        ul.social__items
+          li
+            a(href="#")
+              img(src="http://placehold.it/30x30")
+          li
+            a(href="#")
+              img(src="http://placehold.it/30x30")
+          li
+            a(href="#")
+              img(src="http://placehold.it/30x30")
+    //end login-form
+
+    //begin login-form
+    form.login-form
+      strong.title.title_head
+        | Зарегистрироваться
+
+      .input.is-required
+        label(for="name").input__label
+          | Фамилия
+        input(type="text", name="name")
+
+      .input.is-required
+        label(for="name").input__label
+          | Имя
+        input(type="text", name="name")
+
+      .input.is-required
+        label(for="name").input__label
+          | Отчество
+        input(type="text", name="name")
+
+      .input.is-required
+        label(for="email").input__label
+          | Электронная почта
+        input(type="text", name="name")
+
+      .input.is-required
+        label(for="name").input__label
+          | Пароль
+        input(type="password", name="name")
+
+      .input.is-required
+        label(for="name").input__label
+          | Подтверждение пароля
+        input(type="password", name="name")
+
+        button(type="submit").btn.btn_login
+          | Зарегистрироваться
+
+      .login-form__center
+        label.checkbox
+          input(type="checkbox")
+          span Я согласен с правилами
+    //end login-form
+//end popup

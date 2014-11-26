@@ -1,0 +1,381 @@
+//begin popup
+.popup.popup_calendar#calendar
+  .popup__inner
+    .popup__close
+    //begin calendar
+    .calendar
+      header.calendar__header
+        .title
+          | Календарь
+          .calendar__filter
+            span.calendar__filter-selected
+              | мероприятий
+            ul.calendar__filter-drop
+              li
+                | событий
+              li
+                | всех событий
+              li
+                | анонсов
+              li
+                | дат
+          |  на
+          .calendar__filter
+            span.calendar__filter-selected
+              | апрель
+            |  2013
+            ul.calendar__filter-drop
+              li
+                | январь
+              li
+                | февраль
+              li
+                | март
+              li
+                | апрель
+              li
+                | май
+              li
+                | июнь
+              li
+                | июль
+              li
+                | август
+              li
+                | сентябрь
+              li
+                | октябрь
+              li
+                | ноябрь
+              li
+                | декабрь
+          |  года
+
+      .calendar__body
+        table
+          tr.calendar__week
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 1
+                span.calendar__weekday
+                  | Пн,
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 2
+                span.calendar__weekday
+                  | Вт,
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 3
+                span.calendar__weekday
+                  | Ср,
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 4
+                span.calendar__weekday
+                  | Чт,
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 5
+                span.calendar__weekday
+                  | Пт,
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 6
+                span.calendar__weekday
+                  | Сб,
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 7
+                span.calendar__weekday
+                  | Вс,
+
+          tr.calendar__week
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 8
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 9
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#").calendar__day-more
+                    | Еще 6...
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 10
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 11
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 12
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 13
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 14
+
+          tr.calendar__week
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 15
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 16
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#").calendar__day-more
+                    | Еще 6...
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 17
+            td.calendar__day.is-past
+              .calendar__day-head
+                span.calendar__date
+                  | 18
+            td.calendar__day.is-today
+              .calendar__day-head
+                | Сегодня
+                span.calendar__date
+                  | 19
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#").calendar__day-more
+                    | Еще 6...
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 20
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 21
+
+          tr.calendar__week
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 22
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 23
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#").calendar__day-more
+                    | Еще 6...
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 24
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 25
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 26
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#").calendar__day-more
+                    | Еще 6...
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 27
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 28
+
+          tr.calendar__week
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 29
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 30
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 31
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 1
+              ul.calendar__day-events
+                li
+                  a(href="#")
+                    | Обсуждение чего-то с кем-то
+                li
+                  a(href="#")
+                    | Встреча с выполняющим обязанности кого-то, кто не может выполнить обязанности сам
+                li
+                  a(href="#").calendar__day-more
+                    | Еще 6...
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 2
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 3
+            td.calendar__day
+              .calendar__day-head
+                span.calendar__date
+                  | 4
+    //end calendar
+
+    //begin calendar
+    .calendar.calendar_events(style="margin-top:30px")
+      header.calendar__header
+        .title
+          a(href="#").calendar__move-back
+           | Вернуться назад
+          | 25 апреля 2013 года, четверг
+      ul.calendar__events-list
+        li
+          a(href="#").title-small
+            | Открытие Дней исторического и культурного наследия в Тюмении
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Весення «Музыкальеая капель»
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | День воинской славы России
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Открытие выставки тюменского художника Юрия Рыбякова
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Среди студентов продолжается упорная борьба за призовые места
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Открытие Дней исторического и культурного наследия в Тюмении
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Весення «Музыкальеая капель»
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | День воинской славы России
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Открытие выставки тюменского художника Юрия Рыбякова
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+        li
+          a(href="#").title-small
+            | Среди студентов продолжается упорная борьба за призовые места
+          .meta
+            | Добавить в:
+            br
+            a(href="#") iCal,
+            a(href="#")  Google Календарь
+    //end calendar
+//end popup

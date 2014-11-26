@@ -60,10 +60,25 @@
     border-bottom: 1px solid $border
   &_head
     display: block
-    margin-bottom: 20px
+    margin-bottom: 25px
     max-width: 670px
     .header + &
       margin-top: 25px
+  &_with-link
+    h1, h2, h3, h4
+      font-size: inherit
+      font-family: inherit
+      font-weight: normal
+      display: inline-block
+      margin-right: 20px
+    a
+      display: inline-block
+      margin-right: 10px
+      +head-r
+      font-size: 16px
+      text-decoration: none
+      &:hover
+        text-decoration: underline
   +r(600)
     font-size: 24px
 
@@ -226,6 +241,12 @@
     margin-bottom: 15px
     +r(600)
       float: none
+  &_login
+    padding-top: 13px
+    padding-bottom: 13px
+    display: block
+    width: 100%
+    margin-top: 25px
 
 
 .radio-btn
@@ -273,6 +294,7 @@
   display: inline-block
   position: relative
   padding-left: 25px
+  +user-select(none)
   input[type="checkbox"]
     position: absolute
     top: 4px
@@ -386,7 +408,7 @@
   font-size: 26px
   line-height: 1.2
   color: $link
-  a
+  > a
     padding-top: 3px
   +r(600)
     font-size: 20px
@@ -521,6 +543,8 @@
     display: block
     box-sizing: border-box
     width: 100%
+    &:focus
+      box-shadow: 0 0 1px 0 $border
   &.is-error
     input
       border-color: $red
@@ -1325,3 +1349,35 @@
   span
     display: inline-block
     vertical-align: middle
+
+
+.social
+
+.social__title
+  display: block
+  margin-bottom: 10px
+  font-weight: normal
+
+.social__items
+  li
+    display: inline-block
+    vertical-align: middle
+    margin-right: 10px
+
+
+.two-col-as-table
+  display: table
+  width: 100%
+  table-layout: fixed
+  .col-one,
+  .col-two
+    width: 50%
+    display: table-cell
+    vertical-align: middle
+  .login-form &
+    margin-top: 25px
+    .btn
+      margin-top: 0
+    .col-two
+      text-align: right
+      font-size: 14px
