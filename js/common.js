@@ -123,4 +123,9 @@ head.ready(function() {
         });
     });
 
+    // $('.regions-list_tooltip > ul > li').on('click', function(event) {
+    //     event.preventDefault();
+    //     $(this).toggleClass('is-active');
+    // });
+
 });

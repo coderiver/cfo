@@ -44,6 +44,13 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('./'));
 });
 
+gulp.task('jade-all', function() {
+    return gulp.src('jade/*.jade')
+        .pipe(plumber({errorHandler: notify.onError(function(error){return error.message;})}))
+        .pipe(jade({pretty: true}))
+        .pipe(gulp.dest('./'));
+});
+
 
 //compass
 gulp.task('compass', function() {

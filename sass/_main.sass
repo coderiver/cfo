@@ -515,7 +515,7 @@
   vertical-align: middle
   font-size: 16px
 
-.map__region
+.region
   display: block
   position: relative
   padding: 6px 6px 6px 60px
@@ -543,7 +543,7 @@
     path:hover
       fill: #A29795
 
-.map__region-flag
+.region__flag
   position: absolute
   top: 50%
   left: 25px
@@ -591,7 +591,7 @@
     &:last-child
       margin-bottom: 0
 
-.map__region-about
+.region-about
   +head-i
   dl
     margin: 20px 0
@@ -625,7 +625,7 @@
   .link-more
     font-style: normal
 
-.map__region-about-logos
+.region-about-logos
   margin: 30px
   img
     display: inline-block
@@ -634,7 +634,7 @@
     &:last-child
       margin-right: 0
 
-.map__region-about-facts
+.region-about-facts
   font-size: 11px
   line-height: 1.35
 
@@ -661,7 +661,7 @@
     box-sizing: border-box
     width: 33.33%
     padding-right: 50px
-    .map__region
+    .region
       padding-top: 15px
       padding-bottom: 15px
   +r(900)
@@ -673,38 +673,68 @@
       width: 100%
       padding: 0
 
-.regions-list_mod
-  .map__region
-    +transition(none)
+.regions-list_tooltip
+  > ul > li
     position: relative
     z-index: 1
-    &:after
+    &:before
+      display: none
       content: ""
       position: absolute
-      z-index: 3
-      top: 100%
+      z-index: 2
+      top: 0
       left: 0
-      height: 10px
-      width: 300px
+      bottom: 0
+      width: 350px
+      box-sizing: border-box
       background: #FFF
-      margin-top: -5px
-    &:hover
       box-shadow: 0 0 10px rgba(0,0,0,0.3)
-      .map__region-more
+      +r(1100)
+        width: 100%
+    &:hover, &.is-active
+      z-index: 2
+      .region
+        z-index: 3
+      &:before
+        display: block
+      .region-tooltip
         display: block
 
-  .map__region-more
-    // display: none
+  .region
+    +transition(none)
+    position: relative
+    border: none
+
+  .region-tooltip
+    display: none
     position: absolute
-    z-index: 2
+    z-index: 10
     background: #FFF
     color: $text
     top: 100%
     left: 0
-    width: 300px
+    width: 350px
     box-sizing: border-box
     padding: 0 20px 20px 60px
     box-shadow: 0 0 10px rgba(0,0,0,0.3)
+    &:before
+      content: ""
+      position: absolute
+      z-index: 11
+      top: -9px
+      left: 0
+      right: 0
+      height: 11px
+      background: #FFF
+    p
+      margin: 25px 0
+      &:first-child
+        margin-top: 0
+      &:last-child
+        margin-bottom: 0
+    +r(1100)
+      width: 100%
+      padding-left: 20px
 
 
 .poll
@@ -1196,7 +1226,7 @@
 
 
 .region-about
-  @extend .map__region-about
+  @extend .region-about
   table
     td
       font-size: smaller
