@@ -35,21 +35,22 @@
       };
 
       function removeFromPopup() {
-        (menuPopup.length != 0) ? true : false;
-        menuItemsInPopup = menuPopup.find('> li');
-        btnWidth = menu.find('.menuFlexBtn').width();
-        for ( i = 0; i <= menuItemsInPopup.length-1; i++ ) {
-          //check if item is last in popup
-          if ( itemsWidths.length == 1 && counItemsWidth() - btnWidth + itemsWidths[0] < menuWidth ) {
+        if (menuPopup.length) {
+          menuItemsInPopup = menuPopup.find('> li');
+          btnWidth = menu.find('.menuFlexBtn').width();
+          for ( i = 0; i <= menuItemsInPopup.length-1; i++ ) {
+            //check if item is last in popup
+            if ( itemsWidths.length == 1 && counItemsWidth() - btnWidth + itemsWidths[0] < menuWidth ) {
+                $(menuItemsInPopup[i]).insertBefore(menuMoreBtn);
+                itemsWidths.shift(0);
+                menuMoreBtn.remove();
+                menu.removeClass('menuFlex');
+            };
+            //if not last
+            if ( counItemsWidth() + itemsWidths[0] < menuWidth ) {
               $(menuItemsInPopup[i]).insertBefore(menuMoreBtn);
               itemsWidths.shift(0);
-              menuMoreBtn.remove();
-              menu.removeClass('menuFlex');
-          };
-          //if not last
-          if ( counItemsWidth() + itemsWidths[0] < menuWidth ) {
-            $(menuItemsInPopup[i]).insertBefore(menuMoreBtn);
-            itemsWidths.shift(0);
+            };
           };
         };
       };

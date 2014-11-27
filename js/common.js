@@ -127,5 +127,19 @@ head.ready(function() {
     //     event.preventDefault();
     //     $(this).toggleClass('is-active');
     // });
+    //custom scroll
+    $('.js-scroll').each(function() {
+        $(this).jScrollPane();
+        var api = $(this).data('jsp');
+        var throttleTimeout;
 
+        $(window).resize(function() {
+            if (!throttleTimeout) {
+                throttleTimeout = setTimeout( function() {
+                    api.reinitialise();
+                    throttleTimeout = null;
+                }, 50);
+            }
+        });
+    });
 });
