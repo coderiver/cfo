@@ -127,6 +127,7 @@ head.ready(function() {
     //     event.preventDefault();
     //     $(this).toggleClass('is-active');
     // });
+
     //custom scroll
     $('.js-scroll').each(function() {
         $(this).jScrollPane();
@@ -142,4 +143,52 @@ head.ready(function() {
             }
         });
     });
+
+    //create mobile version of navigation
+    //wrapperSelector - wrapper for primary and mobile navigation
+    //menuSelector    - selector of primary navigation
+    //title           - title for mobile navigation block
+    //firstOptionText - text for first option in mobile-navigations selecting list
+    var createNavForMobile = function(wrapperSelector, menuSelector, title, firstOptionText) {
+
+       $(wrapperSelector).each(function() {
+
+            $(this).append('<div class="nav-mobile"><span></span><select></select></div>');
+
+            var navMobile       = $(this).find('.nav-mobile'),
+                navMobileSelect = navMobile.find('select'),
+                navMobileTitle  = navMobile.find('span'),
+                navItem         = $(this).find(menuSelector).find('li a');
+
+            if (title !== undefined) {
+                navMobileTitle.text(title);
+            };
+
+            if (firstOptionText !== undefined) {
+                $('<option />', {
+                        'value'    : ' ',
+                        'selected' : 'selected',
+                        'disabled' : 'disabled',
+                        'text'     : firstOptionText
+                    }).appendTo(navMobileSelect);
+            };
+
+            navItem.each(function() {
+                var el = $(this);
+                $('<option />', {
+                    'value' : el.attr('href'),
+                    'text'  : el.text()
+                }).appendTo(navMobileSelect);
+            });
+
+            navMobileSelect.on('change', function(event) {
+                window.location = $(this).find('option:selected').val();
+            });
+        });
+    };
+
+    if ( $(window).width() < 650 ) {
+        createNavForMobile('.nav__slide', '.nav__links', 'Меню', 'Выберите страницу...');
+        createNavForMobile('.nav-inner', '.nav-inner__links', 'Подменю', 'Выберите...');
+    };
 });

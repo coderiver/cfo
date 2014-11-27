@@ -68,6 +68,8 @@ gulp.task('compass', function() {
 gulp.task('watch', function() {
     gulp.watch('sass/**/*.sass', ['compass']);
     gulp.watch('jade/**/*.jade', ['jade']);
+    gulp.watch('jade/includes/*.jade', ['jade-all']);
+    gulp.watch('jade/layouts/*.jade', ['jade-all']);
 });
 
 gulp.task('default',['browser-sync','watch'], function() {});

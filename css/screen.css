@@ -643,16 +643,17 @@ p.lead { font-size: 18px; }
 .l-article:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .l-article { margin: 0; } }
 
-.nav { position: fixed; z-index: 200; top: 0; left: 0; right: 0; background: #15395A; color: #fff; height: 60px; overflow: hidden; *zoom: 1; }
+.nav { position: fixed; z-index: 200; top: 0; left: 0; right: 0; background: #15395A; overflow: hidden; color: #fff; height: 60px; *zoom: 1; }
 .nav:after { content: " "; display: table; clear: both; }
 .nav .l { position: relative; background: none; }
-.nav_footer { position: static; }
+.nav_footer { position: static; overflow: visible; }
+.nav_footer .nav__slide { overflow: visible; }
 .nav_footer .nav__icons { margin-right: 0; }
 .nav_footer .nav__icons a { font-family: "GHeadlineC", Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-transform: uppercase; color: #ff4a39; }
 @media only screen and (max-width: 1100px) { .nav .nav__slide { margin-left: 40px; }
   .nav .nav__logo { margin-left: -20px; } }
 
-.nav__slide { overflow: hidden; position: relative; }
+.nav__slide { position: relative; overflow: hidden; }
 
 .nav__search { width: 100%; height: 60px; margin-top: -60px; -moz-transition: margin-top 0.2s linear; -o-transition: margin-top 0.2s linear; -webkit-transition: margin-top 0.2s linear; transition: margin-top 0.2s linear; *zoom: 1; }
 .nav__search:after { content: " "; display: table; clear: both; }
@@ -678,14 +679,16 @@ p.lead { font-size: 18px; }
 .nav__links li.is-active a { color: #ff4a39; text-decoration: none; }
 .nav__links a { display: block; padding: 0 10px; text-decoration: none; color: #E7ECF1; text-shadow: 0 -1px 0 #0a233a; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
 .nav__links a:hover { color: #fff; text-decoration: underline; }
+@media only screen and (max-width: 600px) { .nav__links { display: none; } }
 
 .nav__icons { float: right; margin-right: -10px; height: 60px; line-height: 60px; text-align: right; }
-.nav__icons .icon { vertical-align: middle; padding: 0 10px; }
+.nav__icons .icon { vertical-align: middle; padding: 0 10px; -webkit-tap-highlight-color: transparent; }
 
 .menuFlexBtn { position: relative; }
 
 .menuFlexPopup { display: none; position: absolute; z-index: 201; top: 100%; right: 0; background: #ff4a39; width: 200px; }
 .menuFlexPopup li { display: block; line-height: 30px; }
+.nav_footer .menuFlexPopup { bottom: 100%; top: auto; }
 
 .nav-inner { background: #F5F2F0; margin-left: -60px; padding-left: 60px; margin-bottom: 30px; }
 @media only screen and (max-width: 1100px) { .nav-inner { margin-left: -20px; margin-right: -20px; padding: 0 20px; } }
@@ -695,6 +698,15 @@ p.lead { font-size: 18px; }
 .nav-inner__links li.is-active a { color: #ff4a39; background: #fff; }
 .nav-inner__links li a { display: block; padding: 14px 10px; min-height: 62px; box-sizing: border-box; font-family: "GHeadlineC", Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; font-size: 16px; line-height: 1.1; text-transform: uppercase; color: #15395A; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
 .nav-inner__links li a:hover { color: #ff4a39; }
+@media only screen and (max-width: 600px) { .nav-inner__links { display: none; } }
+
+.nav-mobile { position: relative; height: 60px; margin-right: 80px; display: none; }
+.nav-mobile:hover { background: #ff4a39; }
+.nav-mobile span { display: block; font-size: 20px; line-height: 60px; font-family: "GHeadlineB", Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-align: center; text-transform: uppercase; -webkit-tap-highlight-color: transparent; }
+.nav-mobile select { position: absolute; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; -webkit-appearance: none; font-size: 16px; }
+@media only screen and (max-width: 600px) { .nav-mobile { display: block; } }
+.nav-inner .nav-mobile { margin: 0; }
+.nav-inner .nav-mobile:hover { background: none; color: #ff4a39; }
 
 .header { position: relative; height: 60px; line-height: 60px; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }

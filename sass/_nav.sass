@@ -5,21 +5,28 @@
   left: 0
   right: 0
   background: $blue
+  overflow: hidden
   color: #fff
   height: 60px
-  overflow: hidden
   +clr
   .l
     position: relative
     background: none
   &_footer
     position: static
+    overflow: visible
+    .nav__slide
+      overflow: visible
     .nav__icons
       margin-right: 0
       a
         +head-c
         text-transform: uppercase
         color: $red
+  // &.is-show-search
+  //   overflow: hidden
+  //   .nav__search
+  //     margin-top: 0
   +r(1100)
     .nav__slide
       margin-left: 40px
@@ -27,8 +34,8 @@
       margin-left: -20px
 
 .nav__slide
-  overflow: hidden
   position: relative
+  overflow: hidden
 
 .nav__search
   width: 100%
@@ -120,6 +127,8 @@
     &:hover
       color: #fff
       text-decoration: underline
+  +r(600)
+    display: none
 
 .nav__icons
   float: right
@@ -130,6 +139,7 @@
   .icon
     vertical-align: middle
     padding: 0 10px
+    +tap
 
 .menuFlexBtn
   position: relative
@@ -145,6 +155,9 @@
   li
     display: block
     line-height: 30px
+  .nav_footer &
+    bottom: 100%
+    top: auto
 
 
 .nav-inner
@@ -179,3 +192,38 @@
       +tr-color
       &:hover
         color: $red
+  +r(600)
+    display: none
+
+
+.nav-mobile
+  position: relative
+  height: 60px
+  margin-right: 80px
+  display: none
+  &:hover
+    background: $red
+  span
+    display: block
+    font-size: 20px
+    line-height: 60px
+    +head-b
+    text-align: center
+    text-transform: uppercase
+    +tap
+  select
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    opacity: 0
+    -webkit-appearance: none
+    font-size: 16px
+  +r(600)
+    display: block
+  .nav-inner &
+    margin: 0
+    &:hover
+      background: none
+      color: $red

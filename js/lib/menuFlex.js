@@ -35,7 +35,7 @@
       };
 
       function removeFromPopup() {
-        if (menuPopup.length) {
+        if (menuPopup !== undefined && menuPopup.length) {
           menuItemsInPopup = menuPopup.find('> li');
           btnWidth = menu.find('.menuFlexBtn').width();
           for ( i = 0; i <= menuItemsInPopup.length-1; i++ ) {
