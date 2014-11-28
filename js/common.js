@@ -4,12 +4,12 @@ head.ready(function() {
 
     $('.nav__icons .icon_search').on('click', function(event) {
         event.preventDefault();
-        $('.nav__search').addClass('is-visible');
+        $('.js-nav').addClass('is-show-search');
     });
 
     $('.nav__search-close').on('click', function(event) {
         event.preventDefault();
-        $('.nav__search').removeClass('is-visible');
+        $('.js-nav').removeClass('is-show-search');
     });
 
     $('.slider__list').slick({
@@ -67,31 +67,33 @@ head.ready(function() {
     };
 
     //accordion
-    $('.accordion__header').on('click', function(event) {
-        if ( !$(this).hasClass('is-link') ) {
-            event.preventDefault();
-            var section = $(this).parents('.accordion__section');
-            var content = $(this).siblings('.accordion__content');
-            if ( !section.hasClass('is-active') ) {
-                $('.accordion__section').removeClass('is-active');
-                $('.accordion__content').slideUp();
-                section.addClass('is-active');
-                content.slideDown();
-            } else {
-                section.removeClass('is-active');
-                content.slideUp();
-            };
-
-            var closeBtn = content.find('.opinion__close');
-            if ( closeBtn.length != 0 ) {
-                closeBtn.on('click', function(event) {
-                    event.preventDefault();
+    if ($('.accordion').length) {
+        $('.accordion__header').on('click', function(event) {
+            if ( !$(this).hasClass('is-link') ) {
+                event.preventDefault();
+                var section = $(this).parents('.accordion__section');
+                var content = $(this).siblings('.accordion__content');
+                if ( !section.hasClass('is-active') ) {
+                    $('.accordion__section').removeClass('is-active');
+                    $('.accordion__content').slideUp();
+                    section.addClass('is-active');
+                    content.slideDown();
+                } else {
                     section.removeClass('is-active');
                     content.slideUp();
-                });
+                };
+
+                var closeBtn = content.find('.opinion__close');
+                if ( closeBtn.length != 0 ) {
+                    closeBtn.on('click', function(event) {
+                        event.preventDefault();
+                        section.removeClass('is-active');
+                        content.slideUp();
+                    });
+                };
             };
-        };
-    });
+        });
+    };
 
 
     //showing left/right shadow when scrolling table when screen width < table width
@@ -149,46 +151,51 @@ head.ready(function() {
     //menuSelector    - selector of primary navigation
     //title           - title for mobile navigation block
     //firstOptionText - text for first option in mobile-navigations selecting list
-    var createNavForMobile = function(wrapperSelector, menuSelector, title, firstOptionText) {
+    var createNavForMobile = function(wrapperSelector, menuSelector, title) {
 
        $(wrapperSelector).each(function() {
 
-            $(this).append('<div class="nav-mobile"><span></span><select></select></div>');
+            navMobile = $(this).find('.nav-mobile');
 
-            var navMobile       = $(this).find('.nav-mobile'),
-                navMobileSelect = navMobile.find('select'),
-                navMobileTitle  = navMobile.find('span'),
-                navItem         = $(this).find(menuSelector).find('li a');
+            if (!navMobile.length) {
 
-            if (title !== undefined) {
-                navMobileTitle.text(title);
-            };
+                $(this).append('<div class="nav-mobile"><span></span><select></select></div>');
 
-            if (firstOptionText !== undefined) {
-                $('<option />', {
-                        'value'    : ' ',
-                        'selected' : 'selected',
-                        'disabled' : 'disabled',
-                        'text'     : firstOptionText
+                var navMobile       = $(this).find('.nav-mobile'),
+                    navMobileSelect = navMobile.find('select'),
+                    navMobileTitle  = navMobile.find('span'),
+                    navItems        = $(this).find(menuSelector).find('li a'),
+                    navItemActive   = $(this).find(menuSelector).find('li.is-active');
+
+                navItems.each(function() {
+                    var el = $(this);
+                    $('<option />', {
+                        'value' : el.attr('href'),
+                        'text'  : el.text()
                     }).appendTo(navMobileSelect);
+                });
+
+                navMobileSelect.find('option').eq(navItemActive.index()).attr({
+                    'selected': 'selected',
+                    'disabled': 'disabled'
+                    });
+
+                if (title != undefined) {
+                    navMobileTitle.text(title);
+                } else {
+                    var text = $(this).find(menuSelector).find('li.is-active a').text();
+                    navMobileTitle.text(text);
+                };
+
+                navMobileSelect.on('change', function(event) {
+                    window.location = $(this).find('option:selected').val();
+                });
+
             };
-
-            navItem.each(function() {
-                var el = $(this);
-                $('<option />', {
-                    'value' : el.attr('href'),
-                    'text'  : el.text()
-                }).appendTo(navMobileSelect);
-            });
-
-            navMobileSelect.on('change', function(event) {
-                window.location = $(this).find('option:selected').val();
-            });
         });
     };
 
-    if ( $(window).width() < 650 ) {
-        createNavForMobile('.nav__slide', '.nav__links', 'Меню', 'Выберите страницу...');
-        createNavForMobile('.nav-inner', '.nav-inner__links', 'Подменю', 'Выберите...');
-    };
+    createNavForMobile('.nav__slide', '.nav__links');
+    createNavForMobile('.nav-inner', '.nav-inner__links');
+
 });

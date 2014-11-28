@@ -21,10 +21,10 @@ gulp.task('browser-sync', function() {
         files: ["css/*.css", "*.html", "js/**/*.js"],
         port: 8080,
         open: false,
+        notify: false,
         // proxy: 'yourlocal.dev',
         // host: '192.168.1.1',
         // injectChanges: true,
-        // notify: false,
         // browser: ['google chrome', 'firefox'],
         ghostMode: {
             clicks: false,

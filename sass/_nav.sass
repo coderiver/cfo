@@ -5,7 +5,6 @@
   left: 0
   right: 0
   background: $blue
-  overflow: hidden
   color: #fff
   height: 60px
   +clr
@@ -23,10 +22,11 @@
         +head-c
         text-transform: uppercase
         color: $red
-  // &.is-show-search
-  //   overflow: hidden
-  //   .nav__search
-  //     margin-top: 0
+  &.is-show-search
+    .nav__links, .nav__icons
+      opacity: 0
+    .nav__search
+      top: 0
   +r(1100)
     .nav__slide
       margin-left: 40px
@@ -35,16 +35,19 @@
 
 .nav__slide
   position: relative
-  overflow: hidden
 
 .nav__search
+  position: absolute
+  z-index: 3
+  top: -60px
+  left: 0
   width: 100%
   height: 60px
-  margin-top: -60px
-  +transition(margin-top 0.2s linear)
+  background: $blue
+  +transition(0.2s linear)
   +clr
   &.is-visible
-    margin-top: 0
+    top: 0
   .search-field
     position: relative
     margin-right: 70px
@@ -57,6 +60,7 @@
 
 .nav__search-icon
   position: absolute
+  z-index: 2
   top: 13px
   bottom: 0
   right: 0
@@ -109,6 +113,13 @@
   font-size: 0
   +head-c
   text-transform: uppercase
+  opacity: 1
+  +tr(opacity 0.2s linear)
+  > ul
+    height: 60px
+    overflow: hidden
+    &.menuFlex
+      overflow: visible
   li
     display: inline-block
     vertical-align: top
@@ -136,6 +147,8 @@
   height: 60px
   line-height: 60px
   text-align: right
+  opacity: 1
+  +tr(opacity 0.2s linear)
   .icon
     vertical-align: middle
     padding: 0 10px
@@ -143,6 +156,9 @@
 
 .menuFlexBtn
   position: relative
+  cursor: pointer
+  &:hover
+    text-decoration: underline
 
 .menuFlexPopup
   display: none
@@ -178,7 +194,7 @@
     &.is-active
       a
         color: $red
-        background: #fff
+        // background: #fff
     a
       display: block
       padding: 14px 10px
@@ -197,16 +213,19 @@
 
 
 .nav-mobile
+  display: none
   position: relative
   height: 60px
+  line-height: 56px
   margin-right: 80px
-  display: none
   &:hover
     background: $red
   span
-    display: block
-    font-size: 20px
-    line-height: 60px
+    display: inline-block
+    vertical-align: middle
+    width: 100%
+    font-size: 18px
+    line-height: 1
     +head-b
     text-align: center
     text-transform: uppercase
@@ -220,10 +239,10 @@
     opacity: 0
     -webkit-appearance: none
     font-size: 16px
-  +r(600)
-    display: block
   .nav-inner &
     margin: 0
     &:hover
       background: none
       color: $red
+  +r(600)
+    display: block
